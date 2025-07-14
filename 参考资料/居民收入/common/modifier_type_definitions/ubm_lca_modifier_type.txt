@@ -1,0 +1,7 @@
+state_dependent_wage_add={
+	decimals=2
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

@@ -1,0 +1,111 @@
+ubm_calc_lca_effect = { # （刷新）计算并执行全民基本收入
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_variable = ubm_person_yearly_lca } }
+			set_variable = {
+				name = ubm_person_yearly_lca
+				value = 0
+			}
+		}
+		clamp_variable = {
+			name = ubm_person_yearly_lca
+			max = 100
+			min = 0
+		}
+		if = {
+			limit = { has_modifier = universal_basic_income_effect_lca }
+			remove_modifier = universal_basic_income_effect_lca
+		}
+		if = {
+			limit = { has_modifier = universal_basic_income_expenditures_lca }
+			remove_modifier = universal_basic_income_expenditures_lca
+		}
+		if = {
+			limit = { has_modifier = universal_basic_income_bureaucracy_cost_lca }
+			remove_modifier = universal_basic_income_bureaucracy_cost_lca
+		}
+		if = {
+			limit = {
+				OR = {
+					has_modifier = country_default
+					has_modifier = declared_bankruptcy
+					has_law = law_type:law_poor_laws
+					has_law = law_type:law_no_social_security
+				}
+			}
+			if = {
+				limit = { has_modifier = ubm_invalid_lca }
+				remove_modifier = ubm_invalid_lca
+			}
+			add_modifier = {
+				name = ubm_invalid_lca
+				years = 1
+			}
+			set_variable = {
+				name = ubm_person_yearly_lca
+				value = 0
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_modifier = ubm_invalid_lca }
+			has_variable = ubm_person_yearly_lca
+			var:ubm_person_yearly_lca > 0
+		}
+		custom_tooltip = effect_tootlip_basic_income_lca
+		add_modifier = {
+			name = universal_basic_income_effect_lca
+			multiplier = value_dependent_wage_yearly_lca
+		}
+		add_modifier = {
+			name = universal_basic_income_expenditures_lca
+			multiplier = value_cost_weekly_lca
+		}
+		custom_tooltip = effect_tootlip_bureaucracy_cost_lca
+		add_modifier = {
+			name = universal_basic_income_bureaucracy_cost_lca
+			multiplier = var:ubm_person_yearly_lca
+		}
+	}
+}
+
+ubm_calc_reinvestment_lca_effect = { # （刷新）计算并执行国有投资比例
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_variable = ubm_reinvestment_extra_ratio_lca } }
+			set_variable = {
+				name = ubm_reinvestment_extra_ratio_lca
+				value = 0
+			}
+		}
+		clamp_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			max = 1
+			min = -1
+		}
+		if = {
+			limit = { has_modifier = reinvestment_modifier_lca }
+			remove_modifier = reinvestment_modifier_lca
+		}
+		if = {
+			limit = { has_modifier = reinvestment_bureaucracy_cost_lca }
+			remove_modifier = reinvestment_bureaucracy_cost_lca
+		}
+	}
+	if = {
+		limit = {
+			has_variable = ubm_reinvestment_extra_ratio_lca
+			var:ubm_reinvestment_extra_ratio_lca != 0
+		}
+		add_modifier = {
+			name = reinvestment_modifier_lca
+			multiplier = var:ubm_reinvestment_extra_ratio_lca
+		}
+		custom_tooltip = effect_tootlip_bureaucracy_cost_lca
+		add_modifier = {
+			name = reinvestment_bureaucracy_cost_lca
+			multiplier = value_abs_reinvestment_extra_ratio_lca
+		}
+	}
+}

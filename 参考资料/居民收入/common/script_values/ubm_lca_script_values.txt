@@ -1,0 +1,44 @@
+# var:ubm_person_yearly_lca
+
+value_state_dependent_wage_divisor = { # 全国受扶养人口收入系数
+	value = 1
+	add = modifier:state_dependent_wage_mult
+}
+
+value_total_dependents_lca = { # 全国受扶养人口总数
+	every_scope_pop = {
+		add = dependents
+	}
+}
+
+value_average_dependent_ratio_lca = { # 平均受扶养人口比例
+	# 注意这会遍历pop，所以还是有点卡的。
+	add = value_total_dependents_lca
+	divide = total_population
+}
+
+value_dependent_wage_yearly_lca = { # 受扶养人口收入增加
+	add = var:ubm_person_yearly_lca
+	divide = value_state_dependent_wage_divisor
+	divide = value_average_dependent_ratio_lca
+}
+
+value_cost_weekly_lca = { # 每周全国支出
+	add = var:ubm_person_yearly_lca
+	multiply = total_population
+	divide = 52
+}
+
+value_abs_reinvestment_extra_ratio_lca = { # 额外投资比例的绝对值
+	value = var:ubm_reinvestment_extra_ratio_lca
+	if = {
+		limit = { var:ubm_reinvestment_extra_ratio_lca < 0 }
+		multiply = -1
+	}
+}
+
+value_total_reinvestment_ratio_lca = {
+	value = modifier:country_government_dividends_reinvestment_add
+	min = 0
+	max = 1
+}

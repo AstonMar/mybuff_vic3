@@ -1,0 +1,28 @@
+reinvestment_modifier_lca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_government_dividends_reinvestment_add = 1.0
+}
+
+reinvestment_bureaucracy_cost_lca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	state_bureaucracy_population_base_cost_factor_mult = 1.25
+}
+
+universal_basic_income_effect_lca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	state_dependent_wage_add = 1.0
+}
+
+universal_basic_income_expenditures_lca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1.0
+}
+
+universal_basic_income_bureaucracy_cost_lca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_bureaucracy_population_base_cost_factor_mult = 0.5
+}
+
+ubm_invalid_lca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+}

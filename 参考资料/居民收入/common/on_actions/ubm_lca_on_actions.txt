@@ -1,0 +1,28 @@
+on_monthly_pulse_country = {
+	on_actions = {
+		ubm_lca_init_on_action
+	}
+}
+
+ubm_lca_init_on_action = {
+	effect = {
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { has_journal_entry = universal_basic_income_lca_je }
+			}
+			add_journal_entry = {
+				type = universal_basic_income_lca_je
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { has_journal_entry = universal_reinvestment_lca_je }
+			}
+			add_journal_entry = {
+				type = universal_reinvestment_lca_je
+			}
+		}
+	}
+}

@@ -6,3 +6,9 @@
  remove_my_buff_decision_desc:0 "自我奋斗"
 
  my_buff_super_company:0 "超级BUFF公司"
+
+ my_add_tax_per_capita:0 "加0.01人均税"
+ my_add_tax_per_capita_desc:0 "加0.01人均税"
+
+ my_reduce_tax_per_capita:0 "减0.01人均税"
+ my_reduce_tax_per_capita_desc:0 "减0.01人均税"

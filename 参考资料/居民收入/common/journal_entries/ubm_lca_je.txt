@@ -1,0 +1,99 @@
+universal_basic_income_lca_je = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_internal_affairs
+
+	status_desc = {
+		desc = universal_basic_income_lca_je_status
+	}
+
+	is_shown_when_inactive = {
+		is_ai = no
+	}
+
+	possible = {
+		is_ai = no
+	}
+
+	immediate = {
+		set_variable = {
+			name = ubm_person_yearly_lca
+			value = 0
+		}
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			ubm_calc_lca_effect = yes
+		}
+	}
+
+	complete = {
+		always = no
+	}
+
+	invalid = {
+		
+	}
+
+	scripted_button = universal_basic_income_lca_button_cancel
+	scripted_button = universal_basic_income_lca_button_recalc
+	scripted_button = universal_basic_income_lca_button_decrease1
+	scripted_button = universal_basic_income_lca_button_increase1
+	scripted_button = universal_basic_income_lca_button_decrease2
+	scripted_button = universal_basic_income_lca_button_increase2
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+universal_reinvestment_lca_je = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_internal_affairs
+
+	status_desc = {
+		desc = universal_reinvestment_lca_je_status
+	}
+
+	is_shown_when_inactive = {
+		is_ai = no
+	}
+
+	possible = {
+		is_ai = no
+	}
+
+	immediate = {
+		set_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			value = 0
+		}
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			ubm_calc_reinvestment_lca_effect = yes
+		}
+	}
+
+	complete = {
+		always = no
+	}
+
+	invalid = {
+		
+	}
+
+	scripted_button = universal_reinvestment_lca_button_cancel
+	scripted_button = universal_reinvestment_lca_button_recalc
+	scripted_button = universal_reinvestment_lca_button_decrease1
+	scripted_button = universal_reinvestment_lca_button_increase1
+	scripted_button = universal_reinvestment_lca_button_decrease2
+	scripted_button = universal_reinvestment_lca_button_increase2
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,130 @@
+universal_reinvestment_lca_button_cancel = {
+	name = universal_reinvestment_lca_button_cancel
+	desc = universal_reinvestment_lca_button_cancel_desc
+	
+	visible = { always = yes }
+
+	possible = {
+		custom_description = {
+			text = nonzero_lca
+			AND = {
+				has_variable = ubm_reinvestment_extra_ratio_lca
+				var:ubm_reinvestment_extra_ratio_lca != 0
+			}
+		}
+	}
+
+	effect = {
+		set_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			value = 0
+		}
+		ubm_calc_reinvestment_lca_effect = yes
+	}
+
+	ai_chance = {
+		base = 10000
+	}
+}
+
+universal_reinvestment_lca_button_recalc = {
+	name = universal_reinvestment_lca_button_recalc
+	desc = universal_reinvestment_lca_button_recalc_desc
+	
+	possible = {
+		always = yes
+	}
+
+	effect = {
+		custom_tooltip = auto_recalc_lca
+		ubm_calc_reinvestment_lca_effect = yes
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+universal_reinvestment_lca_button_decrease1 = {
+	name = universal_reinvestment_lca_button_decrease1
+	desc = universal_reinvestment_lca_button_decrease1_desc
+
+	possible = {
+		
+	}
+
+	effect = {
+		change_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			subtract = 0.1
+		}
+		ubm_calc_reinvestment_lca_effect = yes
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+universal_reinvestment_lca_button_decrease2 = {
+	name = universal_reinvestment_lca_button_decrease2
+	desc = universal_reinvestment_lca_button_decrease2_desc
+
+	possible = {
+		
+	}
+
+	effect = {
+		change_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			subtract = 0.01
+		}
+		ubm_calc_reinvestment_lca_effect = yes
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+universal_reinvestment_lca_button_increase1 = {
+	name = universal_reinvestment_lca_button_increase1
+	desc = universal_reinvestment_lca_button_increase1_desc
+
+	possible = {
+		
+	}
+
+	effect = {
+		change_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			add = 0.1
+		}
+		ubm_calc_reinvestment_lca_effect = yes
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+universal_reinvestment_lca_button_increase2 = {
+	name = universal_reinvestment_lca_button_increase2
+	desc = universal_reinvestment_lca_button_increase2_desc
+
+	possible = {
+		
+	}
+
+	effect = {
+		change_variable = {
+			name = ubm_reinvestment_extra_ratio_lca
+			add = 0.01
+		}
+		ubm_calc_reinvestment_lca_effect = yes
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
