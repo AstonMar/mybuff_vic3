@@ -1,0 +1,934 @@
+﻿###商品定义
+MH_RU_GL_RP = {
+	type = goods
+	log_loc_errors = no
+
+	#淫欲结晶
+	text = {  
+		trigger = {
+			this = g:mh_succubus_lust_crystal
+		}
+		localization_key = RU_GL_RP_mh_succubus_lust_crystal
+	}
+
+
+	text = {
+		localization_key = RU_GL_RP_DEFAULT
+	}
+}
+
+###
+MH_RU_GL_DP = {
+	type = goods
+	log_loc_errors = no
+
+	#淫欲结晶
+	text = {  
+		trigger = {
+			this = g:mh_succubus_lust_crystal
+		}
+		localization_key = RU_GL_DP_mh_succubus_lust_crystal
+	}
+
+	text = {
+		localization_key = RU_GL_DP_DEFAULT
+	}
+}
+
+###
+MH_RU_GL_VP = {
+	type = goods
+	log_loc_errors = no
+
+	#淫欲结晶
+	text = {  
+		trigger = {
+			this = g:mh_succubus_lust_crystal
+		}
+		localization_key = RU_GL_VP_mh_succubus_lust_crystal
+	}
+
+	text = {
+		localization_key = RU_GL_VP_DEFAULT
+	}
+}
+
+###
+MH_RU_GL_TP = {
+	type = goods
+	log_loc_errors = no
+
+	#淫欲结晶
+	text = {  
+		trigger = {
+			this = g:mh_succubus_lust_crystal
+		}
+		localization_key = RU_GL_TP_mh_succubus_lust_crystal
+	}
+
+	text = {
+		localization_key = RU_GL_TP_DEFAULT
+	}
+}
+
+###
+MH_RU_GL_PP = {
+	type = goods
+	log_loc_errors = no
+
+	#淫欲结晶
+	text = {  
+		trigger = {
+			this = g:mh_succubus_lust_crystal
+		}
+		localization_key = RU_GL_PP_mh_succubus_lust_crystal
+	}
+
+	text = {
+		localization_key = RU_GL_PP_DEFAULT
+	}
+}
+
+###文化定义
+MH_RU_CUL_ADJ = {
+	type = culture
+	log_loc_errors = no
+
+	#魅魔文化
+	text = {  
+		trigger = {
+			this = cu:mh_succubus_culture
+		}
+		localization_key = RU_CUL_ADJ_mh_succubus_culture
+	}
+	
+	text = {
+		localization_key = RU_CUL_ADJ_DEFAULT
+	}
+}
+
+###宗教定义
+MH_RU_RL_ADJ_IE = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_IE_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_IE_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_IH = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_IH_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_IH_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_MI = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_MI_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_MI_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_YU = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_YU_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_YU_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_YA = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_YA_YA_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_YA_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_OE = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_OE_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_OE_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_OI = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_OI_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_OI_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_GO = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_GO_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_GO_DEFAULT
+	}
+}
+
+MH_RU_RL_ADJ_IM = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_ADJ_IM_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_ADJ_IM_DEFAULT
+	}
+}
+
+MH_RU_RL_RP = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_RP_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_RP_DEFAULT
+	}
+}
+
+MH_RU_RL_DP = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_DP_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_DP_DEFAULT
+	}
+}
+
+MH_RU_RL_VP = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_VP_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_VP_DEFAULT
+	}
+}
+
+MH_RU_RL_TP = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_TP_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_TP_DEFAULT
+	}
+}
+
+MH_RU_RL_PP = {
+	type = religion
+	log_loc_errors = no
+
+	#魅魔欢愉天（信仰）
+	text = {  
+		trigger = {
+			this = rel:mh_succubus_lust_heaven
+		}
+		localization_key = RU_RL_PP_mh_succubus_lust_heaven
+	}
+
+	text = {
+		localization_key = RU_RL_PP_DEFAULT
+	}
+}
+
+###建筑定义
+##魅魔城市群
+MH_RU_BL_RP = {
+	type = building
+	log_loc_errors = no
+
+	#魅魔城市群
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_city_clusters
+		}
+		localization_key = RU_BL_RP_mh_succubus_city_clusters
+	}
+
+	#魅魔炼金工坊
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_alchemy_workshop
+		}
+		localization_key = RU_BL_RP_mh_succubus_alchemy_workshop
+	}
+
+	#魅魔生态园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_ecological_park
+		}
+		localization_key = RU_BL_RP_mh_succubus_ecological_park
+	}
+
+	#魅魔基础工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_basic_industry_industrial_park
+		}
+		localization_key = RU_BL_RP_mh_succubus_basic_industry_industrial_park
+	}
+
+	#魅魔民用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_civilian_industry_industrial_park
+		}
+		localization_key = RU_BL_RP_mh_succubus_civilian_industry_industrial_park
+	}
+
+	#魅魔军用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_military_industry_industrial_park
+		}
+		localization_key = RU_BL_RP_mh_succubus_military_industry_industrial_park
+	}
+
+	#魅魔重工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_heavy_industry_park
+		}
+		localization_key = RU_BL_RP_mh_succubus_heavy_industry_park
+	}
+
+	#魅魔奢侈品工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_luxury_goods_industrial_park
+		}
+		localization_key = RU_BL_RP_mh_succubus_luxury_goods_industrial_park
+	}
+
+	text = {
+		localization_key = RU_BL_RP_DEFAULT
+	}
+}
+
+MH_RU_BL_DP = {
+	type = building
+	log_loc_errors = no
+
+	#魅魔城市群
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_city_clusters
+		}
+		localization_key = RU_BL_DP_mh_succubus_city_clusters
+	}
+
+	#魅魔炼金工坊
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_alchemy_workshop
+		}
+		localization_key = RU_BL_DP_mh_succubus_alchemy_workshop
+	}
+
+	#魅魔生态园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_ecological_park
+		}
+		localization_key = RU_BL_DP_mh_succubus_ecological_park
+	}
+
+	#魅魔基础工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_basic_industry_industrial_park
+		}
+		localization_key = RU_BL_DP_mh_succubus_basic_industry_industrial_park
+	}
+
+	#魅魔民用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_civilian_industry_industrial_park
+		}
+		localization_key = RU_BL_DP_mh_succubus_civilian_industry_industrial_park
+	}
+
+	#魅魔军用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_military_industry_industrial_park
+		}
+		localization_key = RU_BL_DP_mh_succubus_military_industry_industrial_park
+	}
+
+	#魅魔重工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_heavy_industry_park
+		}
+		localization_key = RU_BL_DP_mh_succubus_heavy_industry_park
+	}
+
+	#魅魔奢侈品工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_luxury_goods_industrial_park
+		}
+		localization_key = RU_BL_DP_mh_succubus_luxury_goods_industrial_park
+	}
+
+	text = {
+		localization_key = RU_BL_DP_DEFAULT
+	}
+}
+
+MH_RU_BL_VP = {
+	type = building
+	log_loc_errors = no
+
+	#魅魔城市群
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_city_clusters
+		}
+		localization_key = RU_BL_VP_mh_succubus_city_clusters
+	}
+
+	#魅魔炼金工坊
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_alchemy_workshop
+		}
+		localization_key = RU_BL_VP_mh_succubus_alchemy_workshop
+	}
+
+	#魅魔生态园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_ecological_park
+		}
+		localization_key = RU_BL_VP_mh_succubus_ecological_park
+	}
+
+	#魅魔基础工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_basic_industry_industrial_park
+		}
+		localization_key = RU_BL_VP_mh_succubus_basic_industry_industrial_park
+	}
+
+	#魅魔民用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_civilian_industry_industrial_park
+		}
+		localization_key = RU_BL_VP_mh_succubus_civilian_industry_industrial_park
+	}
+
+	#魅魔军用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_military_industry_industrial_park
+		}
+		localization_key = RU_BL_VP_mh_succubus_military_industry_industrial_park
+	}
+
+	#魅魔重工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_heavy_industry_park
+		}
+		localization_key = RU_BL_VP_mh_succubus_heavy_industry_park
+	}
+
+	#魅魔奢侈品工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_luxury_goods_industrial_park
+		}
+		localization_key = RU_BL_VP_mh_succubus_luxury_goods_industrial_park
+	}
+
+	text = {
+		localization_key = RU_BL_VP_DEFAULT
+	}
+}
+
+MH_RU_BL_TP = {
+	type = building
+	log_loc_errors = no
+
+	#魅魔城市群
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_city_clusters
+		}
+		localization_key = RU_BL_TP_mh_succubus_city_clusters
+	}
+
+	#魅魔炼金工坊
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_alchemy_workshop
+		}
+		localization_key = RU_BL_TP_mh_succubus_alchemy_workshop
+	}
+
+	#魅魔生态园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_ecological_park
+		}
+		localization_key = RU_BL_TP_mh_succubus_ecological_park
+	}
+
+	#魅魔基础工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_basic_industry_industrial_park
+		}
+		localization_key = RU_BL_TP_mh_succubus_basic_industry_industrial_park
+	}
+
+	#魅魔民用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_civilian_industry_industrial_park
+		}
+		localization_key = RU_BL_TP_mh_succubus_civilian_industry_industrial_park
+	}
+
+	#魅魔轻武器工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_military_industry_industrial_park
+		}
+		localization_key = RU_BL_TP_mh_succubus_military_industry_industrial_park
+	}
+
+	#魅魔重工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_heavy_industry_park
+		}
+		localization_key = RU_BL_TP_mh_succubus_heavy_industry_park
+	}
+
+	#魅魔奢侈品工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_luxury_goods_industrial_park
+		}
+		localization_key = RU_BL_TP_mh_succubus_luxury_goods_industrial_park
+	}
+
+	text = {
+		localization_key = RU_BL_TP_DEFAULT
+	}
+}
+
+MH_RU_BL_PP = {
+	type = building
+	log_loc_errors = no
+
+	#魅魔城市群
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_city_clusters
+		}
+		localization_key = RU_BL_PP_mh_succubus_city_clusters
+	}
+
+	#魅魔炼金工坊
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_alchemy_workshop
+		}
+		localization_key = RU_BL_PP_mh_succubus_alchemy_workshop
+	}
+
+	#魅魔生态园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_ecological_park
+		}
+		localization_key = RU_BL_PP_mh_succubus_ecological_park
+	}
+
+	#魅魔基础工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_basic_industry_industrial_park
+		}
+		localization_key = RU_BL_PP_mh_succubus_basic_industry_industrial_park
+	}
+
+	#魅魔民用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_civilian_industry_industrial_park
+		}
+		localization_key = RU_BL_PP_mh_succubus_civilian_industry_industrial_park
+	}
+
+	#魅魔军用工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_military_industry_industrial_park
+		}
+		localization_key = RU_BL_PP_mh_succubus_military_industry_industrial_park
+	}
+
+	#魅魔重工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_heavy_industry_park
+		}
+		localization_key = RU_BL_PP_mh_succubus_heavy_industry_park
+	}
+
+	#魅魔奢侈品工业园区
+	text = {
+		trigger = {
+			is_building_type = mh_succubus_luxury_goods_industrial_park
+		}
+		localization_key = RU_BL_PP_mh_succubus_luxury_goods_industrial_park
+	}
+
+	text = {
+		localization_key = RU_BL_PP_DEFAULT
+	}
+}
+
+###国名定义
+MH_RU_CL_RP = {
+	type = country
+	log_loc_errors = no
+
+	###魅魔赛里斯国名
+	#爱欲神州
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+		}
+		localization_key = dyn_c_succubus_chi_RU_CL_RP
+	}
+	#淫欲天朝
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_monarchy									#拥有法律：君主制
+		}
+		localization_key = dyn_c_succubus_monarchy_chi_RU_CL_RP
+	}
+	#淫欲神州魅魔社会主义共和国
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_council_republic							#拥有法律：委员会共和制
+		}
+		localization_key = dyn_c_succubus_council_republic_chi_RU_CL_RP
+	}
+}
+
+MH_RU_CL_DP = {
+	type = country
+	log_loc_errors = no
+
+	###魅魔赛里斯国名
+	#爱欲神州
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+		}
+		localization_key = dyn_c_succubus_chi_RU_CL_DP
+	}
+	#淫欲天朝
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_monarchy									#拥有法律：君主制
+		}
+		localization_key = dyn_c_succubus_monarchy_chi_RU_CL_DP
+	}
+	#淫欲神州魅魔社会主义共和国
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_council_republic							#拥有法律：委员会共和制
+		}
+		localization_key = dyn_c_succubus_council_republic_chi_RU_CL_DP
+	}
+}
+
+MH_RU_CL_VP = {
+	type = country
+	log_loc_errors = no
+
+	###魅魔赛里斯国名
+	#爱欲神州
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+		}
+		localization_key = dyn_c_succubus_chi_RU_CL_VP
+	}
+	#淫欲天朝
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_monarchy									#拥有法律：君主制
+		}
+		localization_key = dyn_c_succubus_monarchy_chi_RU_CL_VP
+	}
+	#淫欲神州魅魔社会主义共和国
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_council_republic							#拥有法律：委员会共和制
+		}
+		localization_key = dyn_c_succubus_council_republic_chi_RU_CL_VP
+	}
+}
+
+MH_RU_CL_TP = {
+	type = country
+	log_loc_errors = no
+
+	###魅魔赛里斯国名
+	#爱欲神州
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+		}
+		localization_key = dyn_c_succubus_chi_RU_CL_TP
+	}
+	#淫欲天朝
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_monarchy									#拥有法律：君主制
+		}
+		localization_key = dyn_c_succubus_monarchy_chi_RU_CL_TP
+	}
+	#淫欲神州魅魔社会主义共和国
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_council_republic							#拥有法律：委员会共和制
+		}
+		localization_key = dyn_c_succubus_council_republic_chi_RU_CL_TP
+	}
+}
+
+MH_RU_CL_PP = {
+	type = country
+	log_loc_errors = no
+
+	###魅魔赛里斯国名
+	#爱欲神州
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+		}
+		localization_key = dyn_c_succubus_chi_RU_CL_PP
+	}
+	#淫欲天朝
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_monarchy									#拥有法律：君主制
+		}
+		localization_key = dyn_c_succubus_monarchy_chi_RU_CL_PP
+	}
+	#淫欲神州魅魔社会主义共和国
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_council_republic							#拥有法律：委员会共和制
+		}
+		localization_key = dyn_c_succubus_council_republic_chi_RU_CL_PP
+	}
+}
+
+MH_RU_CL_ADJ = {
+	type = country
+	log_loc_errors = no
+
+	###魅魔赛里斯国名
+	#爱欲神州
+	text = {
+		trigger = {
+			exists = market
+			market.owner = {
+				exists = c:CHI
+				this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			}
+		}
+		localization_key = dyn_c_succubus_chi_RU_ML_ADJ
+	}
+	#淫欲天朝
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_monarchy									#拥有法律：君主制
+		}
+		localization_key = dyn_c_succubus_monarchy_chi_RU_ML_ADJ
+	}
+	#淫欲神州魅魔社会主义共和国
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			country_has_primary_culture = cu:mh_succubus_culture			#拥有主流文化：魅魔文化
+			has_law = law_type:law_council_republic							#拥有法律：委员会共和制
+		}
+		localization_key = dyn_c_succubus_council_republic_chi_RU_ML_ADJ
+	}
+}

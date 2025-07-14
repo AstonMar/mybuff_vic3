@@ -1,0 +1,3 @@
+﻿colors = {
+	MH_succubus_color = rgb { 250 0 140 }
+} 

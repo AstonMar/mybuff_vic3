@@ -1,0 +1,124 @@
+my_buff = {
+	#行政力
+	country_authority_add=2000 					#权威力
+	country_authority_mult=1 					#权威力
+	state_bureaucracy_population_base_cost_factor_mult = -0.25	#已整合地区人口行政力花费乘数
+
+	#权威力
+	country_authority_mult = 1					#国家权威力
+
+	#影响力
+	country_influence_mult = 1					#国家影响力
+
+	#铸币
+	country_minting_mult=1						#铸币
+
+	#工资
+	country_government_wages_mult=-0.5 				#政府工资
+	country_military_wages_mult=-0.5 				#军队工资
+
+	#移民
+	state_migration_pull_mult = 1.0					#移民吸引力
+
+	#政治
+	# country_legitimacy_base_add = 50				#政权合法性
+	# country_prestige_mult = 0.5					#国家威望
+	# state_assimilation_mult = 10					#同化
+	# interest_group_approval_add = 50				#派系支持
+	# state_radicals_from_sol_change_mult = -0.5			#生活水平所影响的激进派
+
+	#建造
+  	country_max_weekly_construction_progress_add = 50 # 国家每周最大建设进度上限增加50点
+
+	#军事
+	unit_offense_mult = 0.5						#单位攻击
+	unit_defense_mult = 0.5						#单位防御
+	unit_recovery_rate_add = 0.5					#单位恢复速率
+	state_conscription_rate_add=1 					#征兵率
+	state_conscription_rate_mult=0.5 				#可征召营队
+	state_building_conscription_center_max_level_add=200		#征兵上限
+	state_building_barracks_max_level_add=300 			#兵营最大等级
+	unit_army_experience_gain_add=100 				#陆军每周单位经验获得
+	unit_army_experience_gain_mult=1				#陆军每周单位经验获得
+	building_training_rate_add=100 					#训练率
+	building_training_rate_mult=1					#训练率
+	country_military_goods_cost_mult=-0.5 				#军用商品花费
+	unit_navy_offense_mult = 0.5 # 海军单位的攻击力提高50%
+  	unit_navy_defense_mult = 0.5 # 海军单位的防御力提高50%
+  	military_formation_movement_speed_mult = 0.5 # 军事编队的移动速度降低50%
+  	state_working_adult_ratio_add = 0.20 # 州的成年劳动力比例增加10%，提供更多可用劳动力
+	
+
+	#科技
+    technology_invention_cost_mult = -0.2				#科技花费
+	country_weekly_innovation_add = 10				#创新
+	country_tech_spread_add = 5					#科技扩散
+    state_education_access_add = 0.5				#受教育機會
+    # state_mortality_mult = -0.5					#死亡率
+    # state_construction_mult = 50                  		#建造能力修正
+	country_construction_add = 50                			#基础建筑能力
+
+	#经济
+    #building_throughput_mult = 5					#工厂吞吐
+	# building_subsistence_output_add = 5				#自给农场工资
+	# building_input_mult = -0.5					#工厂输入需求
+	# building_training_rate_add = 5				#建筑训练速率
+	# building_group_bg_service_throughput_mult = 5			#服务产出
+	# building_government_administration_throughput_mult = 5	#政府管理吞吐量
+	country_trade_route_competitiveness_mult = 5			#贸易路线竞争力
+	# country_expenses_add = -10000					#政府支出
+
+
+	#税收
+	#country_consumption_tax_cost_mult = -0.50			#消费税花费
+	tax_consumption_add = 0.35					#消费税
+	tax_land_add = 0.70						#土地税
+	tax_income_add = 0.1						#所得税
+	tax_per_capita_add = 0.70					#人均税
+	tax_dividends_add = 0.4						#分红税
+
+	#立法
+	country_law_enactment_time_mult = -0.2				#立法时间
+
+	#殖民
+	country_tension_decay_mult = 1000 				#紧张度衰减
+	state_colony_growth_creation_factor = 0.5			#殖民地创建速度
+	state_colony_growth_speed_mult = 0.5				#殖民地增长速度
+	state_non_homeland_colony_growth_speed_mult=10 #非本土地区的殖民地发展速度
+
+	#机构
+	country_institution_size_change_speed_mult=0.5 			#机构规模变更速度
+	country_institution_size_change_speed_institution_colonial_affairs_mult = 0.5 	#殖民机构变更速度
+	country_institution_size_change_speed_institution_police_mult=0.5 		#执法机构规模变更速度
+	country_institution_size_change_speed_institution_schools_mult=0.5 		#教育机构规模变更速度
+
+	#恶名
+	country_infamy_generation_mult= -0.5				#恶名产生
+	country_infamy_decay_mult=0.8					#恶名衰减
+	country_infamy_generation_against_unrecognized_mult=-0.8	#对未受认可国家的恶名产生
+
+	#附庸
+	country_liberty_desire_of_subjects_add=-1 			#所有附属的每周独立倾向
+	#country_liberty_desire_decrease_mult=0 			#每周独立倾向降低
+
+	#外交博弈
+	country_initiator_war_goal_maneuver_cost_mult=-0.8 		#外交博弈发起者的战争目标博弈行动力花费
+	country_diplomatic_play_maneuvers_add=100 			#每次外交博弈的博弈行动力
+
+	#国家集团
+	country_leverage_generation_add=200 #影响产生
+	country_leverage_generation_mult=1 #影响产生
+	country_leverage_resistance_add=-200 #影响抗性
+	country_leverage_resistance_mult=-1 #影响抗性
+	power_bloc_mandate_progress_mult=1 #每周授权进度
+	power_bloc_leverage_generation_mult=2 #影响产生
+	power_bloc_invite_acceptance_add=200 #国家集团邀请接受概率
+	power_bloc_allow_wider_migration_area_bool=1 #允许国家集团内移民
+	power_bloc_customs_union_bool=1 #关税同盟
+	power_bloc_trade_advantage_add=100 #国家集团内的贸易优势
+
+	#整合
+	state_incorporation_speed_mult=5 #整合速度
+	state_non_contiguous_incorporation_speed_mult=5 #非接壤整合速度
+	state_contiguous_incorporation_speed_mult=10 #接壤整合速度
+}

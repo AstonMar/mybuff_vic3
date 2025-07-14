@@ -1,0 +1,108 @@
+﻿###自给农场
+#家庭作坊
+pmg_home_workshops_building_subsistence_farms = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_farms
+		pm_home_workshops_building_subsistence_farms
+		mh_pm_succubus_slack_season_prostitution_farms							#农闲卖春
+	}
+}
+#农奴制
+pmg_serfdom_building_subsistence_farms = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_no
+		pm_serfdom
+		pm_homesteading_building_subsistence
+		mh_pm_succubus_free_peasants_farms										#魅魔自由农
+	}
+}
+
+###自给果园
+#家庭作坊
+pmg_home_workshops_building_subsistence_orchards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_orchards
+		pm_home_workshops_building_subsistence_orchards
+		mh_pm_succubus_slack_season_prostitution_orchards						#农闲卖春
+	}
+}
+
+#农奴制
+pmg_serfdom_building_subsistence_orchards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_no
+		pm_serfdom_building_subsistence_orchards
+		pm_homesteading_building_subsistence
+		mh_pm_succubus_free_peasants_orchards									#魅魔自由农
+	}
+}
+
+###自给牧场
+#家庭作坊
+pmg_home_workshops_building_subsistence_pastures = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_pastures
+		pm_home_workshops_building_subsistence_pastures
+		mh_pm_succubus_slack_season_prostitution_pastures						#农闲卖春
+	}
+}
+
+#农奴制
+pmg_serfdom_building_subsistence_pastures = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_no
+		pm_serfdom_building_subsistence_pastures
+		pm_homesteading_building_subsistence
+		mh_pm_succubus_free_peasants_pastures									#魅魔自由农
+	}
+}
+
+###自给渔村
+#家庭作坊
+pmg_home_workshops_building_subsistence_fishing_villages = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_fishing_villages
+		pm_home_workshops_building_subsistence_fishing_villages
+		mh_pm_succubus_slack_season_prostitution_fishing_villages				#农闲卖春
+	}
+}
+
+#农奴制
+pmg_serfdom_building_subsistence_fishing_villages = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_no
+		pm_serfdom_building_subsistence_fishing_villages
+		pm_homesteading_building_subsistence
+		mh_pm_succubus_free_peasants_fishing_villages							#魅魔自由农
+	}
+}
+
+###自给稻田
+#家庭作坊
+pmg_home_workshops_building_subsistence_rice_paddies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_rice_paddies
+		pm_home_workshops_building_subsistence_rice_paddies
+		mh_pm_succubus_slack_season_prostitution_rice_paddies					#农闲卖春
+	}
+}
+
+#农奴制
+pmg_serfdom_building_subsistence_rice_paddies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_no
+		pm_serfdom_building_subsistence_rice_paddies
+		pm_homesteading_building_subsistence
+		mh_pm_succubus_free_peasants_rice_paddies								#魅魔自由农
+	}
+}

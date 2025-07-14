@@ -1,0 +1,115 @@
+﻿#梦回酱の魅魔至上法~
+law_succubus_supreme = {
+	#所属的法律组：公民权
+	group = lawgroup_citizenship
+	
+	#先进性
+	progressiveness = 75
+	
+	#标志图片
+	icon = "gfx/interface/icons/law_icons/MH_law_succubus_supreme_icon.png"
+
+	#存在某一法律时该法律禁用
+	disallowing_laws = {
+		law_succubus_come_not
+	}
+
+	#所需前置科技
+	unlocking_technologies = {
+		MH_succubus_nationalism
+	}
+	
+	#所有人群将立即重新确定他们支持的利益集团
+	on_enact = {
+		recalculate_pop_ig_support = yes
+	}
+	
+	#接受文化类型：全部
+	cultural_acceptance_rule = {
+		always = yes
+	}
+	
+	#固定效果
+	modifier = {
+		country_authority_add = 200										#权威力
+		country_influence_add = 200										#影响力
+	}
+	
+	modifier = {
+		country_acceptance_primary_culture_add = 100					#来自主流文化的接纳度
+		country_acceptance_shared_heritage_and_cultural_trait_add = 90	#来自传承和文化特质的接纳度
+		country_acceptance_shared_heritage_trait_add = 85				#来自传承特质的接纳度
+		country_acceptance_shared_cultural_trait_add = 80				#来自文化特质的接纳度
+		country_acceptance_culture_base_add = 75						#来自文化的接纳度
+	}
+
+	acceptance_modifier = {
+		#country_radicalism_increases_violent_hostility_mult = 0.33		#【暴力对抗】地位的激进度提高
+		#country_radicalism_increases_cultural_erasure_mult = 0.2		#【文化抹除】地位的激进度提高
+		#country_radicalism_increases_second_rate_citizen_mult = -0.1	#【二等公民】地位的激进度提高
+		#country_radicalism_increases_full_acceptance_mult = -0.2		#【完全接纳】地位的激进度提高
+
+		country_loyalism_increases_second_rate_citizen_mult = 0.2		#【二等公民】地位的忠诚度提高
+		country_loyalism_increases_full_acceptance_mult = 0.33			#【完全接纳】地位的忠诚度提高
+
+		country_allow_voting_violent_hostility_bool = no				#给予【暴力对抗】地位投票权
+		country_allow_voting_cultural_erasure_bool = no					#给予【文化抹除】地位投票权
+		country_allow_voting_open_prejudice_bool = no					#给予【公开歧视】地位投票权
+		country_allow_voting_second_rate_citizen_bool = no				#给予【二等公民】地位投票权
+		country_allow_voting_full_acceptance_bool = yes					#给予【完全接纳】地位投票权
+
+		#无投票权，所以注释掉此条目
+		#country_voting_power_second_rate_citizen_mult = -0.5			#【二等公民】地位投票的政治力量贡献
+
+		country_allow_assimilation_cultural_erasure_bool = yes			#允许【文化抹除】地位同化
+		country_allow_assimilation_open_prejudice_bool = yes			#允许【公开歧视】地位同化
+		country_allow_assimilation_second_rate_citizen_bool = yes		#允许【二等公民】地位同化
+		country_allow_assimilation_violent_hostility_bool = yes			#允许【暴力对抗】地位同化
+		country_allow_assimilation_full_acceptance_bool = yes			#允许【完全接纳】地位同化
+
+		country_assimilation_cultural_erasure_mult = 0.05				#【文化抹除】地位同化
+		country_assimilation_open_prejudice_mult = 0.15					#【公开歧视】地位同化
+
+		country_political_strength_violent_hostility_mult = -0.5		#【暴力对抗】地位的政治力量
+		country_political_strength_cultural_erasure_mult = -0.4			#【文化抹除】地位的政治力量
+		country_political_strength_open_prejudice_mult = -0.3			#【公开歧视】地位的政治力量
+		country_political_strength_second_rate_citizen_mult = -0.15		#【二等公民】地位的政治力量
+		country_political_strength_full_acceptance_mult = 0.25			#【完全接纳】地位的政治力量
+
+		#工资全部注释掉，因为工资过少会直接导致生活水平下降，导致激进度暴涨
+		#country_wage_violent_hostility_mult = -0.5						#【暴力对抗】地位的工资
+		#country_wage_cultural_erasure_mult = -0.4						#【文化抹除】地位的工资
+		#country_wage_open_prejudice_mult = -0.25						#【公开歧视】地位的工资
+		#country_wage_second_rate_citizen_mult = -0.15					#【二等公民】地位的工资
+		#country_wage_full_acceptance_mult = 0.25						#【完全接纳】地位的工资
+
+		#资质提高减少会导致你的很多底层人民成为中层知识分子的数量，进而导致一些建筑工作人口不足
+		#country_qualification_growth_violent_hostility_mult = -0.5		#【暴力对抗】地位的资质提高
+		#country_qualification_growth_cultural_erasure_mult = -0.3		#【文化抹除】地位的每月资质提高
+		#country_qualification_growth_open_prejudice_mult = -0.1		#【公开歧视】地位的每月资质提高
+
+		#全都不禁止
+		country_disallow_military_work_violent_hostility_bool = no		#禁止【暴力对抗】地位在军事建筑中工作
+		country_disallow_military_work_cultural_erasure_bool = no		#禁止【文化抹除】地位在军事建筑中工作
+ 		country_disallow_military_work_open_prejudice_bool = no			#禁止【公开歧视】地位在军事建筑中工作
+		country_disallow_military_work_second_rate_citizen_bool = no	#禁止【二等公民】地位在军事建筑中工作
+		country_disallow_military_work_full_acceptance_bool = no		#禁止【完全接纳】地位在军事建筑中工作
+
+		#全都不禁止
+		country_disallow_government_work_violent_hostility_bool = no	#禁止【暴力对抗】地位在政府建筑中工作
+		country_disallow_government_work_cultural_erasure_bool = no		#禁止【文化抹除】地位在政府建筑中工作
+		country_disallow_government_work_open_prejudice_bool = no		#禁止【公开歧视】地位在政府建筑中工作
+		country_disallow_government_work_second_rate_citizen_bool = no	#禁止【二等公民】地位在政府建筑中工作
+		country_disallow_government_work_full_acceptance_bool = no		#禁止【完全接纳】地位在政府建筑中工作
+	}
+
+	#AI是否会启用该法律
+	ai_will_do = {
+		always = no
+	}
+
+	#AI是否会就该法律发起请愿
+	ai_enact_weight_modifier = {
+		value = 0
+	}
+}

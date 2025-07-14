@@ -1,0 +1,184 @@
+﻿#睡服淫行
+mh_succubus_sleep_and_sex = {
+	#可用的国家集团成员：领袖
+	groups= { power_bloc_leader }
+
+	#地图上显示
+	show_in_lens = no
+
+	#图标
+	texture = "gfx/interface/icons/diplomatic_action_icons/force_become_subject.dds"
+
+	#启用条件
+	selectable = {
+		#是国家集团领袖
+		is_power_bloc_leader = yes
+		#可以睡服国家集团成员
+		power_bloc ?= {
+			modifier:power_bloc_leader_can_mh_succubus_sleep_and_sex_bool = yes
+		}		
+	}
+
+	#作用范围
+	potential = {
+		#你集团里的所有国家
+		power_bloc ?= {
+			scope:target_country.power_bloc ?= this
+		}
+	}
+
+	#目标国家所需达成条件
+	possible = {
+		#启用需要集团成员国呆在集团里的年份
+		scope:target_country = {
+			tenure_in_current_power_bloc_years >= 3
+			#自定义提示工具
+			custom_tooltip = {
+				#插入文本
+				text = mh_succubus_sleep_and_sex_flag_custom_tooltip
+				#没有变量标记
+				NOT = { has_variable = mh_succubus_sleep_and_sex_flag }
+			}
+		}
+	}
+
+	#效果
+	accept_effect = {
+		scope:target_country = {
+			#添加主流文化：魅魔文化
+			add_primary_culture = cu:mh_succubus_culture
+			#更改国教：魅魔欢愉天
+			set_state_religion = rel:mh_succubus_lust_heaven
+		}
+
+		#吞并（第一次判定）
+		if = {
+			#条件
+			limit = {
+				#目标国家
+				scope:target_country = {
+					#是你的附属国
+					is_direct_subject_of = root
+					#附属类型
+					OR = {
+						has_diplomatic_pact = { who = root type = colony }			#是你的殖民领
+						has_diplomatic_pact = { who = root type = puppet }			#是你的傀儡国
+						has_diplomatic_pact = { who = root type = vassal }			#是你的附庸国
+					}
+				}
+			}
+
+			#吞并国家
+			root = {
+				annex = scope:target_country
+			}
+		}
+
+		#削减自治权（第二次判定）
+		else_if = {
+			#条件
+			limit = { 
+				#发起方未受认
+				is_country_type = unrecognized
+				#目标国家
+				scope:target_country = {
+					#是你的附属国
+					is_direct_subject_of = root
+					#你附属国的附属类型
+					OR = {
+						has_diplomatic_pact = { who = root type = protectorate }	#是你的受保护国
+						has_diplomatic_pact = { who = root type = tributary }		#是你的朝贡国
+					}
+				}
+			}
+			#变成傀儡国
+			create_diplomatic_pact = {
+				country = scope:target_country
+				type = vassal
+			}
+		}
+
+		#削减自治权（第二次判定）
+		else_if = {
+			#条件
+			limit = { 
+				#目标国家
+				scope:target_country = {
+					#是你的附属国
+					is_direct_subject_of = root
+					#你附属国的附属类型
+					OR = {
+						has_diplomatic_pact = { who = root type = protectorate }	#是你的受保护国
+						has_diplomatic_pact = { who = root type = tributary }		#是你的朝贡国
+					}
+				}
+			}
+			#变成傀儡国
+			create_diplomatic_pact = {
+				country = scope:target_country
+				type = puppet
+			}
+		}
+
+		#发起方未受认可则建立朝贡国（第三次判定）
+		else_if = {
+			#条件
+			limit = { is_country_type = unrecognized }
+			create_diplomatic_pact = {
+				country = scope:target_country
+				type = tributary
+			}				
+		}
+
+		#发起方受认可则建立保护国（第四次判定）
+		else_if = {
+			create_diplomatic_pact = {
+				country = scope:target_country
+				type = protectorate
+			}
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本
+			text = mh_succubus_sleep_and_sex_pop_tt
+		}
+		#隐藏效果
+		hidden_effect = {
+			scope:target_country = {
+				#人口同化：魅魔文化
+				every_scope_pop = {
+					change_pop_culture = {
+						#文化：魅魔文化
+						target = cu:mh_succubus_culture
+						#同化比例
+						value = 0.15
+					}
+				}
+
+				#皈依信仰：魅魔欢愉天
+				every_scope_state = {
+					convert_population = {
+						#信仰：魅魔欢愉天
+						target = rel:mh_succubus_lust_heaven
+						#皈依比例
+						value = 0.15
+					}
+				}
+
+				#添加决议变量标记
+				set_variable = {
+					name = mh_succubus_sleep_and_sex_flag
+					months = 36	#月
+				}
+			}
+		}
+	}
+
+	#AI使用可能性：0
+	ai = {
+		evaluation_chance = {
+			value = 0
+		}
+	}
+}

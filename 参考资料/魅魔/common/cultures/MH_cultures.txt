@@ -1,0 +1,264 @@
+﻿#魅魔文化
+mh_succubus_culture = {
+	
+	#该文化的信仰：魅魔欢愉天
+	religion = mh_succubus_lust_heaven
+	
+	#代表该文化的颜色
+	color = rgb { 250  0  140 }			#代表该文化的颜色
+	
+	#文化特征
+	traits = {
+		MH_succubus_language_system		#魅魔语言体系
+		MH_succubus_race				#魅魔种
+		MH_succubus_inherit				#魅魔传承
+
+		european_heritage				#欧洲传承
+		african_heritage				#非洲传承
+		east_asian_heritage				#东亚传承
+		north_asian_heritage			#北亚传承
+		middle_eastern_heritage			#中东传承
+		american_heritage				#美洲传承
+		central_asian_heritage			#中亚传承
+		south_asian_heritage			#南亚传承
+		indigenous_american_heritage	#美洲原住民传承
+		southeast_asian_heritage		#东南亚传承
+		indigenous_oceanic_heritage		#大洋洲原住民传承
+	}
+	
+	#该文化痴迷的物品
+	obsessions = {
+		#mh_succubus_lust_crystal		#淫欲结晶
+		#semen							#津液
+		#human_milk						#母乳
+	}
+
+	male_common_first_names={			#男性通用名
+		Anastrianna
+		Antinua
+		Drusilia
+		Felosial
+		Ielenia
+		Lia
+		Mialee
+		Qillathe
+		Silaqui
+		Vadania
+		Valanthe
+		Xanaphia
+		Amaryllis
+		Charmaine
+		Cora
+		Euphemia
+		Jillian
+		Lavinia
+		Lidda
+		Merla
+		Portia
+		Seraphina
+		Verna
+		Bimpnottin
+		Caramip
+		Duvamil
+		Ellywick
+		Ellyjobell
+		Loopmottin
+		Mardnab
+		Roywyn
+		Shamil
+		Waywocket
+		Artin
+		Audhild
+		Dagnal
+		Diesa
+		Gunnloda
+		Hlin
+		Ilde
+		Liftrasa
+		Sannl
+		Torgga
+		Andrea
+		Bridget
+		Cecilia
+		Celeste
+		Christine
+		Dolores
+		Edwina
+		Elizabeth
+		Evangeline
+		Florence
+		Gladys
+		Gloria
+		Griselda
+		Gustave
+		Heloise
+		Hilary
+		Letitia
+		Michaelia
+		Odelette
+		Olivia
+		Ophelia
+		Patricia
+		Phoenix
+		Rosalind
+		Rosemary
+		Roxanne
+		Sabrina
+		Sigrid
+		Stephanie
+		Veronica
+		Victoria
+		Violet
+		Virginia
+		Winifred
+		Xaviera
+		Zenobia
+	}
+	female_common_first_names = {			#女性通用名
+		Anastrianna
+		Antinua
+		Drusilia
+		Felosial
+		Ielenia
+		Lia
+		Mialee
+		Qillathe
+		Silaqui
+		Vadania
+		Valanthe
+		Xanaphia
+		Amaryllis
+		Charmaine
+		Cora
+		Euphemia
+		Jillian
+		Lavinia
+		Lidda
+		Merla
+		Portia
+		Seraphina
+		Verna
+		Bimpnottin
+		Caramip
+		Duvamil
+		Ellywick
+		Ellyjobell
+		Loopmottin
+		Mardnab
+		Roywyn
+		Shamil
+		Waywocket
+		Artin
+		Audhild
+		Dagnal
+		Diesa
+		Gunnloda
+		Hlin
+		Ilde
+		Liftrasa
+		Sannl
+		Torgga
+		Andrea
+		Bridget
+		Cecilia
+		Celeste
+		Christine
+		Dolores
+		Edwina
+		Elizabeth
+		Evangeline
+		Florence
+		Gladys
+		Gloria
+		Griselda
+		Gustave
+		Heloise
+		Hilary
+		Letitia
+		Michaelia
+		Odelette
+		Olivia
+		Ophelia
+		Patricia
+		Phoenix
+		Rosalind
+		Rosemary
+		Roxanne
+		Sabrina
+		Sigrid
+		Stephanie
+		Veronica
+		Victoria
+		Violet
+		Virginia
+		Winifred
+		Xaviera
+		Zenobia
+	}	
+	noble_last_names = {			#贵族姓氏
+		Amastacia
+		Amakiir
+		Galanodel
+		Holimion
+		Liadon
+		Meliamne
+		Nailo
+		Siannodel
+		Ilphukiir
+		Xilocient
+		Beren
+		Daergel
+		Folkor
+		Garrick
+		Nackle
+		Murnig
+		Raulnor
+		Scheppen
+		Turen
+		Balderk
+		Dankil
+		Gorunn
+		Holderhek
+		Loderr
+		Lutgehr
+		Rumnaheim
+		Strakeln
+		Torunn
+		Ungart
+	}
+	common_last_names={			#常用姓氏
+		Amastacia
+		Amakiir
+		Galanodel
+		Holimion
+		Liadon
+		Meliamne
+		Nailo
+		Siannodel
+		Ilphukiir
+		Xilocient
+		Beren
+		Daergel
+		Folkor
+		Garrick
+		Nackle
+		Murnig
+		Raulnor
+		Scheppen
+		Turen
+		Balderk
+		Dankil
+		Gorunn
+		Holderhek
+		Loderr
+		Lutgehr
+		Rumnaheim
+		Strakeln
+		Torunn
+		Ungart
+	}
+	ethnicities = {			#种族属地
+		1 = asian			#亚洲
+	}
+	graphics = east_asian		#文化人物图像：亚洲
+}

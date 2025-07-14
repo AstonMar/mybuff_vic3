@@ -1,0 +1,29 @@
+# ai_enact_weight_modifier 说明文档
+
+此值会加/减到 AI 实施某项法律的基础权重（base weight）上。设为 0 表示仅使用基础权重；设为 -50 则表示（基础权重 - 50）。
+基础权重由策略（strategy）和该法律是否有运动（movement）支持等因素设定，通常在较低的百位数范围内。因此，+100 会相当显著，+1000 则会非常显著。
+请注意，如果您*真的*希望 AI 通过该法律，您可能还需要调整 AI 政治策略（AI politics strategies）中的 `change_law_chance`（变更法律几率）和 `revolution_aversion`（革命厌恶度）。
+即使将此值设为 100000 并将 `change_law_chance` 设为 100，如果 AI 缺乏政府/运动支持、害怕革命，或者 `ai_will_do` 评估为假（false），AI 也可能无法实施该法律。
+根作用域（Root scope）是 AI 国家（AI country）。作用域：`law` 包含该国家的相关法律。
+
+# 示例
+
+	ai_enact_weight_modifier = {
+		value = 0 // 基础值设为 0
+
+		if = { // 条件判断
+			limit = {  // 触发条件限制
+				this = c:GBR // 当前作用域国家为大不列颠 (GBR)
+				exists = var:GBR_favorite_law // 存在变量 GBR_favorite_law
+				scope:law = var:GBR_favorite_law // 作用域:law 等于变量 GBR_favorite_law 的值
+			}
+			add = 10 // 如果条件满足，额外增加 10
+		}
+	}
+
+# 对附属国强制执行法律
+
+只有宗主国（overlords）才能对其附属国（subject）强制执行法律。
+
+*   **`can_impose = { }`**: 添加用于判断是否能强制执行的触发条件（triggers）。发起强制执行的国家作为 `initiator`（发起国）作用域可用。这些条件在目标国家（target country）的作用域下进行评估。
+*   **`on_impose = { }`**: 添加强制执行法律时将执行的效果（effects）。发起强制执行的国家作为 `initiator`（发起国）作用域可用。这些效果在目标国家（target country）的作用域下执行。

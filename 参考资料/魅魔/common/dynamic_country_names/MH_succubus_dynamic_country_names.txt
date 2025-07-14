@@ -1,0 +1,114 @@
+﻿#魅魔专属国名
+#赛里斯
+CHI = {
+	dynamic_country_name = {
+		name = dyn_c_great_qing
+		adjective = dyn_c_great_qing_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor ?= {
+				#无魅魔主流文化
+				NOT = { country_has_primary_culture = cu:mh_succubus_culture }
+				country_has_primary_culture = cu:manchu
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_empire_of_china
+		adjective = dyn_c_empire_of_china_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor ?= {
+				NOT = {
+					country_has_primary_culture = cu:manchu
+					#无魅魔主流文化
+					country_has_primary_culture = cu:mh_succubus_culture
+				}
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_peoples_republic_of_china
+		adjective = CHI_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor ?= {
+				#无魅魔主流文化
+				NOT = { country_has_primary_culture = cu:mh_succubus_culture }
+			}
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	#淫欲神州
+	dynamic_country_name = {
+		#显示国名
+		name = dyn_c_succubus_chi
+		#文本中的国名形容词
+		adjective = dyn_c_succubus_chi_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			#拥有主流文化：魅魔文化
+			scope:actor ?= {
+				NOT = {
+					#拥有法律：君主制
+					has_law = law_type:law_monarchy
+					#拥有法律：委员会共和制
+					has_law = law_type:law_council_republic
+				}
+				country_has_primary_culture = cu:mh_succubus_culture
+			}
+		}
+	}
+	#淫欲天朝(君主制)
+	dynamic_country_name = {
+		#显示国名
+		name = dyn_c_succubus_monarchy_chi
+		#文本中的国名形容词
+		adjective = dyn_c_succubus_monarchy_chi_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			#拥有主流文化：魅魔文化
+			scope:actor ?= {
+				country_has_primary_culture = cu:mh_succubus_culture
+				#拥有法律：君主制
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+	#淫欲神州魅魔社会主义共和国(委员会共和制)
+	dynamic_country_name = {
+		#显示国名
+		name = dyn_c_succubus_council_republic_chi
+		#文本中的国名形容词
+		adjective = dyn_c_succubus_council_republic_chi_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			#拥有主流文化：魅魔文化
+			scope:actor ?= {
+				country_has_primary_culture = cu:mh_succubus_culture
+				#拥有法律：委员会共和制
+				has_law = law_type:law_council_republic
+			}
+		}
+	}
+}

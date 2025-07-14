@@ -1,0 +1,9 @@
+texticon = {
+	icon = mh_succubus_lust_crystal
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/mh_succubus_lust_crystal.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

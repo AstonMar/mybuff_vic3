@@ -1,0 +1,12 @@
+﻿#奢侈品
+goods_is_artisanal = {
+	OR = {
+		this = g:fish
+		this = g:fine_art
+		this = g:luxury_clothes
+		this = g:luxury_furniture
+		this = g:liquor
+		#淫能水晶
+		this = g:mh_succubus_lust_crystal
+	}
+}

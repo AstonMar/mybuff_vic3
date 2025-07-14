@@ -1,0 +1,139 @@
+﻿#进行魅魔转换中~
+MH_succubus_conversion = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+}
+
+#进行人类本土文化清除计划中~
+MH_succubus_perform_erasure_homeland_culture = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+}
+
+#魅魔初临
+MH_succubus_population_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_infrastructure_from_population_max_add = 30		#来自人口的基础设施上限
+	state_birth_rate_mult = 0.03							#出生率
+	state_mortality_mult = -0.03							#死亡率
+
+	state_migration_pull_add = 30							#移民吸引力
+	state_migration_pull_mult = 0.03						#移民吸引力（百分比）
+
+	state_education_access_add = 0.03						#受教育机会
+	state_pop_qualifications_mult = 0.03					#资质
+
+	country_authority_mult = 0.03							#权威力
+	country_influence_mult = 0.03							#影响力
+	country_prestige_mult = 0.03							#威望
+
+	unit_offense_mult = 0.05								#陆军进攻
+	unit_defense_mult = 0.05								#陆军防御
+
+	country_infamy_generation_mult = -0.03					#恶名产生
+	country_infamy_decay_mult = 0.07						#恶名衰减
+
+	country_weekly_innovation_max_add = 30					#最大创新力投入
+}
+
+#魅魔少数族裔
+MH_succubus_population_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_infrastructure_from_population_max_add = 60		#来自人口的基础设施上限
+	state_birth_rate_mult = 0.06							#出生率
+	state_mortality_mult = -0.06							#死亡率
+
+	state_migration_pull_add = 60							#移民吸引力
+	state_migration_pull_mult = 0.06						#移民吸引力（百分比）
+
+	state_education_access_add = 0.06						#受教育机会
+	state_pop_qualifications_mult = 0.06					#资质
+
+	country_authority_mult = 0.06							#权威力
+	country_influence_mult = 0.06							#影响力
+	country_prestige_mult = 0.06							#威望
+
+	unit_offense_mult = 0.10								#陆军进攻
+	unit_defense_mult = 0.10								#陆军防御
+
+	country_infamy_generation_mult = -0.06					#恶名产生
+	country_infamy_decay_mult = 0.14						#恶名衰减
+
+	country_weekly_innovation_max_add = 60					#最大创新力投入
+}
+
+#魅魔族裔
+MH_succubus_population_3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_infrastructure_from_population_max_add = 90		#来自人口的基础设施上限
+	state_birth_rate_mult = 0.09							#出生率
+	state_mortality_mult = -0.09							#死亡率
+
+	state_migration_pull_add = 90							#移民吸引力
+	state_migration_pull_mult = 0.09						#移民吸引力（百分比）
+
+	state_education_access_add = 0.09						#受教育机会
+	state_pop_qualifications_mult = 0.09					#资质
+
+	country_authority_mult = 0.09							#权威力
+	country_influence_mult = 0.09							#影响力
+	country_prestige_mult = 0.09							#威望
+
+	unit_offense_mult = 0.15								#陆军进攻
+	unit_defense_mult = 0.15								#陆军防御
+
+	country_infamy_generation_mult = -0.09					#恶名产生
+	country_infamy_decay_mult = 0.21						#恶名衰减
+
+	country_weekly_innovation_max_add = 90					#最大创新力投入
+}
+
+#魅魔主体国家
+MH_succubus_population_4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_infrastructure_from_population_max_add = 120		#来自人口的基础设施上限
+	state_birth_rate_mult = 0.12							#出生率
+	state_mortality_mult = -0.12							#死亡率
+
+	state_migration_pull_add = 120							#移民吸引力
+	state_migration_pull_mult = 0.12						#移民吸引力（百分比）
+
+	state_education_access_add = 0.12						#受教育机会
+	state_pop_qualifications_mult = 0.12					#资质
+
+	country_authority_mult = 0.12							#权威力
+	country_influence_mult = 0.12							#影响力
+	country_prestige_mult = 0.12							#威望
+
+	unit_offense_mult = 0.20								#陆军进攻
+	unit_defense_mult = 0.20								#陆军防御
+
+	country_infamy_generation_mult = -0.12					#恶名产生
+	country_infamy_decay_mult = 0.28						#恶名衰减
+
+	country_weekly_innovation_max_add = 120					#最大创新力投入
+}
+
+#纯粹的魅魔国度
+MH_succubus_population_5 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_infrastructure_from_population_max_add = 150		#来自人口的基础设施上限
+	state_birth_rate_mult = 0.15							#出生率
+	state_mortality_mult = -0.15							#死亡率
+
+	state_migration_pull_add = 150							#移民吸引力
+	state_migration_pull_mult = 0.15						#移民吸引力（百分比）
+
+	state_education_access_add = 0.15						#受教育机会
+	state_pop_qualifications_mult = 0.15					#资质
+
+	country_authority_mult = 0.15							#权威力
+	country_influence_mult = 0.15							#影响力
+	country_prestige_mult = 0.15							#威望
+
+	unit_offense_mult = 0.25								#陆军进攻
+	unit_defense_mult = 0.25								#陆军防御
+
+	country_infamy_generation_mult = -0.15					#恶名产生
+	country_infamy_decay_mult = 0.35						#恶名衰减
+
+	country_weekly_innovation_max_add = 150					#最大创新力投入
+}

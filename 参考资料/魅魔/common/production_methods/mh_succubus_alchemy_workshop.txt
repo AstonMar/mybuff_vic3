@@ -1,0 +1,611 @@
+﻿#####淫欲冶金术#####
+#未启用的淫欲冶金术
+mh_pm_succubus_alchemy_workshop_metal_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	#building_modifiers = {
+	#	#商品产出与投入
+	#	workforce_scaled = { }
+	#
+	#	#每级需求的各类工作人员
+	#	level_scaled = { }
+	#}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#不成熟的淫欲冶金术
+mh_pm_succubus_alchemy_workshop_metal_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 1		#淫欲结晶
+
+			#产出
+			goods_output_iron_add = 30							#铁产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#成熟的淫欲冶金术
+mh_pm_succubus_alchemy_workshop_metal_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district					#扩建魅魔风俗街
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 2		#淫欲结晶
+
+			#产出
+			goods_output_gold_add = 3							#黄金
+			goods_output_iron_add = 60							#铁产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#完美的淫欲冶金术
+mh_pm_succubus_alchemy_workshop_metal_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗街~
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 3		#淫欲结晶
+
+			#产出
+			goods_output_gold_add = 5							#黄金
+			goods_output_iron_add = 90							#铁产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#####淫欲碳化术#####
+#未启用的淫欲碳化术
+mh_pm_succubus_alchemy_workshop_coal_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	#building_modifiers = {
+	#	#商品产出与投入
+	#	workforce_scaled = { }
+	#
+	#	#每级需求的各类工作人员
+	#	level_scaled = { }
+	#}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#不成熟的淫欲碳化术
+mh_pm_succubus_alchemy_workshop_coal_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 1		#淫欲结晶
+
+			#产出
+			goods_output_coal_add = 45							#煤炭产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#成熟的淫欲碳化术
+mh_pm_succubus_alchemy_workshop_coal_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district					#扩建魅魔风俗街
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 2		#淫欲结晶
+
+			#产出
+			goods_output_oil_add = 12							#油产出
+			goods_output_coal_add = 80							#煤炭产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#完美的淫欲碳化术
+mh_pm_succubus_alchemy_workshop_coal_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗街~
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 3		#淫欲结晶
+
+			#产出
+			goods_output_oil_add = 20							#油产出
+			goods_output_coal_add = 115							#煤炭产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#####淫欲铅化术#####
+#未启用的淫欲铅化术
+mh_pm_succubus_alchemy_workshop_lead_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	#building_modifiers = {
+	#	#商品产出与投入
+	#	workforce_scaled = { }
+	#
+	#	#每级需求的各类工作人员
+	#	level_scaled = { }
+	#}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#不成熟的淫欲铅化术
+mh_pm_succubus_alchemy_workshop_lead_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 1		#淫欲结晶
+
+			#产出
+			goods_output_lead_add = 30							#铅产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#成熟的淫欲铅化术
+mh_pm_succubus_alchemy_workshop_lead_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district					#扩建魅魔风俗街
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 2		#淫欲结晶
+
+			#产出
+			goods_output_glass_add = 25							#玻璃产出
+			goods_output_lead_add = 60							#铅产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#完美的淫欲铅化术
+mh_pm_succubus_alchemy_workshop_lead_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗街~
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 3		#淫欲结晶
+
+			#产出
+			goods_output_glass_add = 50							#玻璃产出
+			goods_output_lead_add = 90							#铅产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#####淫欲硫化术#####
+#未启用的淫欲硫化术
+mh_pm_succubus_alchemy_workshop_sulfur_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	#building_modifiers = {
+	#	#商品产出与投入
+	#	workforce_scaled = { }
+	#
+	#	#每级需求的各类工作人员
+	#	level_scaled = { }
+	#}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#不成熟的淫欲硫化术
+mh_pm_succubus_alchemy_workshop_sulfur_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 1		#淫欲结晶
+
+			#产出
+			goods_output_sulfur_add = 40						#硫磺产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#成熟的淫欲硫化术
+mh_pm_succubus_alchemy_workshop_sulfur_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district					#扩建魅魔风俗街
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 2		#淫欲结晶
+
+			#产出
+			goods_output_fertilizer_add = 50					#肥料产出
+			goods_output_sulfur_add = 70						#硫磺产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#完美的淫欲硫化术
+mh_pm_succubus_alchemy_workshop_sulfur_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_slack_season_prostitution.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗街~
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_mh_succubus_lust_crystal_add = 3		#淫欲结晶
+
+			#产出
+			goods_output_fertilizer_add = 100					#肥料产出
+			goods_output_sulfur_add = 100						#硫磺产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 300			#店主
+			building_employment_engineers_add = 600				#工程师
+			building_employment_machinists_add = 600			#技工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = {
+	#	workforce_scaled = {
+	#		state_pollution_generation_add = -125				#污染
+	#	}
+	#}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}

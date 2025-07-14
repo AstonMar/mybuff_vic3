@@ -1,0 +1,13 @@
+﻿#魅魔欢愉天
+mh_succubus_lust_heaven = {
+	#标志图片
+	texture = "gfx/interface/icons/religion_icons/mh_succubus_lust_heaven_icon.png"
+	
+	#宗教特征
+	traits = {
+		MH_succubus_belief		#魅魔信仰
+	}
+	
+	#图标颜色
+	color = rgb { 250  0  140 }			#代表该文化的颜色
+}

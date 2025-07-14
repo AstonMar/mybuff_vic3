@@ -1,0 +1,108 @@
+﻿#魅魔大姐姐们の体液赏赐~
+MH_succubus_love_affection_liquid_reward = {
+	texture = "gfx/interface/icons/decree/MH_succubus_love_affection_liquid_reward_icon.png"
+
+	#需要权威力
+	cost = 35
+
+	#启用需要解锁的科技
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#启用条件
+	state_trigger = {
+		#没有以下情况
+		NOR = { 
+			has_decree = decree_road_maintenance						#道路养护
+			has_decree = decree_violent_suppression						#暴力镇压
+			has_decree = decree_emergency_relief						#紧急救济
+			has_decree = decree_promote_social_mobility					#促进社会流动
+			has_decree = decree_promote_national_values					#弘扬国家价值
+			has_decree = decree_encourage_manufacturing_industry		#鼓励制造业
+			has_decree = decree_encourage_agricultural_industry			#鼓励农业
+			has_decree = decree_encourage_resource_industry				#鼓励资源产业
+			has_decree = decree_greener_grass_campaign					#青草运动
+			has_decree = decree_enlistment_efforts						#鼓励征兵
+		}
+	}
+
+	#固定效果
+	modifier = {
+		#取自道路养护
+		state_infrastructure_from_population_add = 1					#人口产生的基础设施
+		state_infrastructure_from_population_max_add = 20				#来自人口的基础设施上限
+		state_construction_mult = 0.10									#地区建造力效率
+
+		#取自暴力镇压
+		state_turmoil_effects_mult = -0.5								#来自动乱地区的惩罚
+		#state_mortality_turmoil_mult = 0.02							#每级动乱的死亡率
+
+		#取自紧急救济
+		#state_tax_collection_mult = -0.5								#税收
+		state_infrastructure_mult = 0.1									#基础设施
+		state_market_access_price_impact = 0.05							#市场接入度的价格影响
+		state_food_security_add = 0.05									#粮食安全
+
+		#取自促进社会流动
+		state_education_access_add = 0.25								#受教育机会
+		state_pop_qualifications_mult = 0.25							#资质
+
+		#取自弘扬国家价值
+		state_assimilation_mult = 1										#人口同化
+		state_conversion_mult = 1										#信仰皈依
+
+		#取自鼓励制造业
+		building_group_bg_manufacturing_throughput_add = 0.2			#制造业吞吐量
+		building_group_bg_service_throughput_add = 0.2					#服务业吞吐量
+		
+		#取自鼓励农业
+		building_group_bg_ranching_throughput_add = 0.2					#牧场吞吐量
+		building_group_bg_agriculture_throughput_add = 0.2				#农业吞吐量
+		building_group_bg_plantations_throughput_add = 0.2				#种植园吞吐量
+
+		#取自鼓励资源产业
+		building_group_bg_rubber_throughput_add = 0.2					#橡胶种植园吞吐量
+		building_group_bg_mining_throughput_add = 0.2					#矿井吞吐量
+		building_group_bg_logging_throughput_add = 0.2					#林业吞吐量
+		building_group_bg_fishing_throughput_add = 0.2					#渔业吞吐量
+		building_group_bg_whaling_throughput_add = 0.2					#捕鲸业吞吐量
+		building_group_bg_oil_extraction_throughput_add = 0.2			#石油精炼厂吞吐量
+
+		#取自青草运动
+		state_migration_pull_add = 20									#移民吸引力
+		state_migration_pull_mult = 0.25								#移民吸引力（百分比）
+
+		#取自鼓励征兵
+		state_conscription_rate_add = 0.05								#征兵率
+		building_training_rate_mult = 0.25								#训练率
+	}
+
+	#AI使用概率
+	ai_weight = {
+		value = 0
+	}
+}
+
+#魅魔大姐姐们の人类本土文化清除计划~
+MH_succubus_erasure_homeland_culture = {
+	texture = "gfx/interface/icons/decree/MH_succubus_love_affection_liquid_reward_icon.png"
+
+	#需要权威力
+	cost = 0
+
+	#启用需要解锁的科技
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#固定效果
+	modifier = {
+		state_birth_rate_mult = -1.00						#出生率
+	}
+
+	#AI使用概率
+	ai_weight = {
+		value = 0
+	}
+}

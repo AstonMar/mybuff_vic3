@@ -1,0 +1,12 @@
+﻿#删除了第三第四原则槽位的授权限制
+unlock_power_bloc_principle_slot_3 = {
+	hidden_trigger = {
+		has_dlc_feature = power_bloc_features
+	}
+}
+
+unlock_power_bloc_principle_slot_4 = {
+	hidden_trigger = {
+		has_dlc_feature = power_bloc_features
+	}
+}

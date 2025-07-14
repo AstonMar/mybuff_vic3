@@ -1,0 +1,225 @@
+﻿#####名贵商品设定区域
+###公司：魅魔基础工业园区
+#淫能工具
+MH_succubus_prestige_good_tools = {
+	#商品原型：工具
+	base_good = tools
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_tools.dds"
+}
+
+#淫能特种钢
+MH_succubus_prestige_good_steel = {
+	#商品原型：钢
+	base_good = steel
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_steel.dds"
+}
+
+#淫能发动机
+MH_succubus_prestige_good_engines = {
+	#商品原型：发动机
+	base_good = engines
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_engines.dds"
+}
+
+#淫能炸药
+MH_succubus_prestige_good_explosives = {
+	#商品原型：炸药
+	base_good = explosives
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_explosives.dds"
+}
+
+###公司：魅魔民用工业园区
+#情趣家具
+MH_succubus_prestige_good_furniture = {
+	#商品原型：家具
+	base_good = furniture
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_furniture.dds"
+}
+
+#情趣衣物
+MH_succubus_prestige_good_clothes = {
+	#商品原型：情趣衣物
+	base_good = clothes
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_clothes.dds"
+}
+
+#淫能纸张
+MH_succubus_prestige_good_paper = {
+	#商品原型：淫能纸张
+	base_good = paper
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_paper.dds"
+}
+
+#爱液食品
+MH_succubus_prestige_good_groceries = {
+	#商品原型：食品
+	base_good = groceries
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_groceries.dds"
+}
+
+###公司：魅魔军用工业园区
+#淫能轻武器
+MH_succubus_prestige_good_small_arms = {
+	#商品原型：轻武器
+	base_good = small_arms
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_small_arms.dds"
+}
+
+#淫能弹药
+MH_succubus_prestige_good_ammunition = {
+	#商品原型：弹药（原版无名贵商品）
+	base_good = ammunition
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_ammunition.dds"
+}
+
+#淫能火炮
+MH_succubus_prestige_good_artillery = {
+	#商品原型：火炮
+	base_good = artillery
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_artillery.dds"
+}
+
+#淫能汽车
+MH_succubus_prestige_good_automobiles = {
+	#商品原型：汽车
+	base_good = automobiles
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_automobiles.dds"
+}
+
+###公司：魅魔重工业园区
+#淫能飞机
+MH_succubus_prestige_good_aeroplanes = {
+	#商品原型：飞机（原版无名贵商品）
+	base_good = aeroplanes
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_aeroplanes.dds"
+}
+
+#淫能坦克
+MH_succubus_prestige_good_tanks = {
+	#商品原型：坦克（原版无名贵商品）
+	base_good = tanks
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_tanks.dds"
+}
+
+#淫能帆船
+MH_succubus_prestige_good_clippers = {
+	#商品原型：帆船（原版无名贵商品）
+	base_good = clippers
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_clippers.dds"
+}
+
+#淫能蒸汽船
+MH_succubus_prestige_good_steamers = {
+	#商品原型：蒸汽船
+	base_good = steamers
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_steamers.dds"
+}
+
+#淫能风帆战舰
+MH_succubus_prestige_good_manowars = {
+	#商品原型：风帆战舰（原版无名贵商品）
+	base_good = manowars
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_manowars.dds"
+}
+
+#淫能铁甲舰
+MH_succubus_prestige_good_ironclads = {
+	#商品原型：铁甲舰
+	base_good = ironclads
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_ironclads.dds"
+}
+
+###公司：魅魔奢侈品工业园区
+#触手衣物
+MH_succubus_prestige_good_luxury_clothes = {
+	#商品原型：高档衣物
+	base_good = luxury_clothes
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_luxury_clothes.dds"
+}
+
+#触手家具
+MH_succubus_prestige_good_luxury_furniture = {
+	#商品原型：高档家具
+	base_good = luxury_furniture
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_luxury_furniture.dds"
+}
+
+#色欲瓷器
+MH_succubus_prestige_good_porcelain = {
+	#商品原型：瓷器
+	base_good = porcelain
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_porcelain.dds"
+}
+
+#爱液烈酒
+MH_succubus_prestige_good_liquor = {
+	#商品原型：烈酒
+	base_good = liquor
+	#名望奖励
+	prestige_bonus = 0.2
+	#商品图标
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_liquor.dds"
+}

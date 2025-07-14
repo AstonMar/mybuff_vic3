@@ -1,0 +1,933 @@
+﻿###社会科技
+#社会结构魅魔化
+MH_succubus_social_structure = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society
+
+	#是否可以研究
+	can_research = no
+
+	#效果
+	modifier = {
+		#country_diplomatic_play_maneuvers_add = 25								#博弈力
+		#country_prestige_mult = 0.15											#威望
+		country_authority_mult = 0.15											#权威力
+		#country_influence_mult = 0.15											#影响力
+		#country_legitimacy_base_add = 15										#合法性
+		#country_loan_interest_rate_add = -0.05									#利率
+		
+		#country_infamy_generation_mult = -0.15									#恶名产生
+		#country_infamy_decay_mult = 0.35										#恶名衰减
+	}
+
+	#前置科技
+	#unlocking_technologies = { }
+
+	#AI权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+###调试
+#规划魅魔风俗区
+MH_succubus_plan_red_light_district = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_1				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：城镇规划
+	unlocking_technologies = {
+		urban_planning
+	}
+
+	#效果
+	modifier = {
+		state_mh_succubus_city_clusters_max_level_add = 10						#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 10					#魅魔炼金工坊最大等级（暂时挂靠）
+		state_mh_succubus_ecological_park_max_level_add = 10					#魅魔生态园区最大等级（暂时挂靠）
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#建设魅魔风俗产业
+#解锁法律：梦回酱の魅魔工作法案~
+MH_succubus_construct_red_light_district = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_1				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：规划魅魔风俗区
+	unlocking_technologies = {
+		MH_succubus_plan_red_light_district
+	}
+
+	#效果
+	modifier = {
+		state_mh_succubus_city_clusters_max_level_add = 5						#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 5					#魅魔炼金工坊最大等级（暂时挂靠）
+		state_mh_succubus_ecological_park_max_level_add = 5						#魅魔生态园区最大等级（暂时挂靠）
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#扩建魅魔风俗街
+MH_succubus_expand_red_light_district = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：建设魅魔风俗产业
+	unlocking_technologies = {
+		MH_succubus_construct_red_light_district
+	}
+
+	#效果
+	modifier = {
+		state_mh_succubus_city_clusters_max_level_add = 5						#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 5					#魅魔炼金工坊最大等级（暂时挂靠）
+		state_mh_succubus_ecological_park_max_level_add = 5						#魅魔生态园区最大等级（暂时挂靠）
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#拥有城市的魅魔风俗区
+MH_succubus_having_a_city_red_light_district = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：扩建魅魔风俗街
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district
+	}
+
+	#效果
+	modifier = {
+		state_mh_succubus_city_clusters_max_level_add = 5						#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 5					#魅魔炼金工坊最大等级（暂时挂靠）
+		state_mh_succubus_ecological_park_max_level_add = 5						#魅魔生态园区最大等级（暂时挂靠）
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔淫欲之城
+MH_succubus_city_full_of_desires = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_4				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：拥有城市的魅魔风俗区
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district
+	}
+
+	#效果
+	modifier = {
+		state_mh_succubus_city_clusters_max_level_add = 5						#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 5					#魅魔炼金工坊最大等级（暂时挂靠）
+		state_mh_succubus_ecological_park_max_level_add = 5						#魅魔生态园区最大等级（暂时挂靠）
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔狂淫世界
+MH_succubus_world_full_of_lust = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_5				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：魅魔淫欲之城
+	unlocking_technologies = {
+		MH_succubus_city_full_of_desires
+	}
+
+	#效果
+	modifier = {
+		state_mh_succubus_city_clusters_max_level_add = 5						#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 5					#魅魔炼金工坊最大等级（暂时挂靠）
+		state_mh_succubus_ecological_park_max_level_add = 5						#魅魔生态园区最大等级（暂时挂靠）
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#人类保留地
+MH_succubus_human_reservations = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_5				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：魅魔淫欲之城
+	unlocking_technologies = {
+		MH_succubus_city_full_of_desires
+	}
+
+	#效果
+	modifier = {
+		country_influence_mult = 0.15											#影响力
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###官僚体系
+#情趣公务员
+MH_succubus_pornographic_functionary = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_1				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：官僚体系
+	unlocking_technologies = {
+		tech_bureaucracy
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#义务化侍奉
+MH_succubus_compulsory_sexual_services = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：情趣公务员
+	unlocking_technologies = {
+		MH_succubus_pornographic_functionary
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔性爱行政中心
+#解锁法律：梦回酱の魅魔官僚制~
+MH_succubus_sexual_services_administration_center = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：义务化侍奉
+	unlocking_technologies = {
+		MH_succubus_compulsory_sexual_services
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###执法
+#推行魅魔治安
+MH_succubus_public_security = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_1				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：执法
+	unlocking_technologies = {
+		law_enforcement
+	}
+
+	#效果
+	modifier = {
+		country_institution_cost_institution_police_mult = -0.25		#执法机构行政力投入
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔榨精宪兵
+#解锁法律：梦回酱の魅魔治安法~
+MH_succubus_to_extract_semen_military_police = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：推行魅魔治安
+	unlocking_technologies = {
+		MH_succubus_public_security
+	}
+
+	#效果
+	modifier = {
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔痴女巡警
+#解锁法律：梦回酱の魅魔警察部队~
+MH_succubus_nymphomaniac_patrolman = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：推行魅魔治安
+	unlocking_technologies = {
+		MH_succubus_public_security
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###国际贸易
+#性能力量化分析
+MH_succubus_analysis_of_sexual_value = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：国际贸易
+	unlocking_technologies = {
+		international_trade
+	}
+
+	#效果
+	modifier = {
+		country_minting_mult = 0.35							#铸币收入
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#以性贷款
+MH_succubus_sexual_loan = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：性能力量化分析
+	unlocking_technologies = {
+		MH_succubus_analysis_of_sexual_value
+	}
+
+	#效果
+	modifier = {
+		country_loan_interest_rate_mult = -0.35				#贷款利率
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+
+#欲望银行
+#解锁法律：梦回酱の魅魔商贸法~
+MH_succubus_sex_value_bank = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：性能力量化分析
+	unlocking_technologies = {
+		MH_succubus_analysis_of_sexual_value
+	}
+
+	#效果
+	modifier = {
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###货币本位制
+#性力本位制
+#解锁法律：梦回酱の魅魔经济体制~
+MH_succubus_sexual_love_economic_oriented = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：货币本位制
+	unlocking_technologies = {
+		currency_standards
+	}
+
+	#效果
+	modifier = {
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###中央银行
+#欲能分配
+#解锁法律：梦回酱の魅魔税收法~
+MH_succubus_allocation_of_mating_rights = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：中央银行/欲望银行
+	unlocking_technologies = {
+		central_banking
+		MH_succubus_sex_value_bank
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#国营性奴
+MH_succubus_state_run_sex_slave = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_4				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：欲能分配
+	unlocking_technologies = {
+		MH_succubus_allocation_of_mating_rights
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#私营性奴
+MH_succubus_private_sex_slave = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_4				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：股份公司/欲能分配
+	unlocking_technologies = {
+		joint_stock_companies
+		MH_succubus_allocation_of_mating_rights
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###国际关系
+#确认魅魔的存在
+#解锁日志中的【告知世界魅魔们的存在（受认可）】~
+MH_succubus_confirm_existence = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：国际关系
+	unlocking_technologies = {
+		international_relations
+	}
+
+	#效果
+	modifier = {
+		country_influence_mult = 0.25											#影响力
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#境外魅魔公民地位
+MH_succubus_status_abroad = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：确认魅魔的存在
+	unlocking_technologies = {
+		MH_succubus_confirm_existence
+	}
+
+	#效果
+	modifier = {
+		country_prestige_mult = 0.25											#威望
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#境内非魅魔公民地位
+MH_succubus_domestic_racial_division = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：确认魅魔的存在
+	unlocking_technologies = {
+		MH_succubus_confirm_existence
+	}
+
+	#效果
+	modifier = {
+		country_authority_mult = 0.25											#权威力
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###殖民
+#魅魔租界
+MH_succubus_concession = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：殖民
+	unlocking_technologies = {
+		colonization
+	}
+
+	#效果
+	modifier = {
+		country_institution_cost_institution_colonial_affairs_mult = -0.25		#殖民机构行政力投入
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#掠夺人类
+#解锁法律：梦回酱の魅魔殖民法案~
+MH_succubus_plucking_population = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：魅魔租界
+	unlocking_technologies = {
+		MH_succubus_concession
+	}
+
+	#效果
+	modifier = {
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###经验主义
+#农闲卖春
+#解锁法律：梦回酱の农闲卖春法案~
+MH_succubus_slack_season_engage_in_prostitution = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：经验主义
+	unlocking_technologies = {
+		empiricism
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔宗教
+#解锁法律：梦回酱の魅魔真信法~
+MH_succubus_religion = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：经验主义
+	unlocking_technologies = {
+		empiricism
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#仪式化魅魔信仰
+MH_succubus_faith_ceremony = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：魅魔宗教
+	unlocking_technologies = {
+		MH_succubus_religion
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#欲望十字军
+MH_succubus_lust_crusaders = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：仪式化魅魔信仰
+	unlocking_technologies = {
+		MH_succubus_faith_ceremony
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###社会主义
+#魅魔博爱主义
+#解锁法律：梦回酱の魅魔福利法案~
+MH_succubus_philanthropy = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：社会主义
+	unlocking_technologies = {
+		socialism
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###浪漫主义
+#非理性主义
+MH_succubus_irrationalism = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_1				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：浪漫主义
+	unlocking_technologies = {
+		romanticism
+	}
+
+	#效果
+	modifier = {
+		country_diplomatic_play_maneuvers_add = 15		#每次外交博弈的博弈行动力
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#淫欲义务教育
+#解锁法律：梦回酱の魅魔教育法~
+MH_succubus_lust_compulsory_education = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：非理性主义
+	unlocking_technologies = {
+		MH_succubus_irrationalism
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#呻吟盖过声音
+#解锁法律：梦回酱の魅魔禁语法~
+MH_succubus_moaning_drowned_out_the_sound = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：非理性主义
+	unlocking_technologies = {
+		MH_succubus_irrationalism
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#撰写魅魔们的历史
+MH_succubus_writing_history = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：呻吟盖过声音
+	unlocking_technologies = {
+		MH_succubus_moaning_drowned_out_the_sound
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#魅魔民族主义
+#解锁法律：梦回酱の魅魔至上法~
+MH_succubus_nationalism = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：淫欲义务教育/撰写魅魔们的历史
+	unlocking_technologies = {
+		MH_succubus_lust_compulsory_education
+		MH_succubus_writing_history
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###药物
+#爱液制药
+#解锁法律：梦回酱の魅魔医疗体系~
+MH_succubus_love_liquid_pharmaceutical_industry = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：药物
+	unlocking_technologies = {
+		pharmaceuticals
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###组织运动
+#淫风吹拂世界
+#解锁法律：梦回酱の魅魔大姐姐军队~
+MH_succubus_lust_wind_blows_through_the_world = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_2				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：组织运动
+	unlocking_technologies = {
+		organized_sports
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+#输出色情
+MH_succubus_output_pornography = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：
+	unlocking_technologies = {
+		MH_succubus_lust_wind_blows_through_the_world
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}
+
+###人权
+#女仆主义
+#解锁法律：梦回酱の魅魔女仆教育~
+MH_succubus_maid_doctrine = {
+	#科技图标
+	texture = "gfx/interface/icons/invention_icons/MH_succubus_social_structure.png"
+	category = society		#科技类型
+	era = era_3				#科技等级
+	#can_research = no		#是否显示
+
+	#前置科技：人权
+	unlocking_technologies = {
+		human_rights
+	}
+
+	#效果
+	modifier = {
+		#
+	}
+
+	#AI权重
+	ai_weight = { value = 0 }
+}

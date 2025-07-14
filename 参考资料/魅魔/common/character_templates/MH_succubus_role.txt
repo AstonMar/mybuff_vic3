@@ -1,0 +1,39 @@
+﻿###统治者
+#梦回酱
+agitator_menghui_jiang = {
+    first_name = MH_menghuijiang					#名字
+	last_name = MH_zayu								#姓氏
+	historical = last_name							#历史名字
+    ruler = yes										#统治者
+	interest_group = ig_trade_unions				#利益集团：工会
+	female = yes									#是否为女性
+	#dna = dna_karl_marx							#DNA
+	ideology = ideology_communist					#意识形态：共产主义者
+	culture = cu:mh_succubus_culture				#文化：魅魔文化
+	religion = rel:mh_succubus_lust_heaven			#信仰：魅魔欢愉天
+
+	#特质
+	traits = {
+		#性格特质
+		direct										#直率
+		cautious									#谨慎
+		tactful										#圆滑
+		ambitious									#雄心勃勃
+		reserved									#内敛
+		meticulous									#谨小慎微
+		charismatic									#魅力四射
+		brave										#勇敢
+		innovative									#创新精神
+		honorable									#体面
+
+		#能力特质
+		masterful_diplomat							#外交大师
+		expert_colonial_administrator				#殖民地管理专家
+		expert_political_operator					#政治运作专家
+		explorer									#探险家
+		firebrand									#煽动大师
+		literary									#文学家
+		engineer									#工程师
+		master_bureaucrat							#高明官僚
+	}
+}

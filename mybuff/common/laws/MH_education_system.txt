@@ -1,0 +1,48 @@
+﻿#梦回酱の魅魔教育法~
+law_succubus_education = {
+	#所属的法律组：教育体制
+	group = lawgroup_education_system
+	
+	#先进性
+	progressiveness = 100
+	
+	#标志图片
+	icon = "gfx/interface/icons/law_icons/MH_law_succubus_education_icon.png"
+
+	##存在某一法律时该法律禁用
+	#disallowing_laws = {
+	#	law_succubus_come_not
+	#}
+
+	#所需前置科技
+	#unlocking_technologies = {
+	#	MH_succubus_lust_compulsory_education
+	#}
+
+	#法律关联机构：教育机构
+	institution = institution_schools
+
+	#固定效果
+	modifier = {
+		country_institution_cost_institution_schools_mult = -0.4	#教育行政力花费
+	}
+	
+	#每一级为教育机构提供的属性
+	institution_modifier = {
+		state_conversion_mult = 0.2									#皈依
+		state_assimilation_mult = 0.2								#同化
+		state_education_access_add = 0.2							#受教育机会
+		state_education_access_wealth_add = 0.01					#基于财富的受教育机会
+		country_weekly_innovation_max_add = 30						#最大创新力投入
+	}
+
+	#AI是否会启用该法律
+	ai_will_do = {
+		always = no
+	}
+
+	#AI是否会就该法律发起请愿
+	ai_enact_weight_modifier = {
+		value = 0
+	}
+}

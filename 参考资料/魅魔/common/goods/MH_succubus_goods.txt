@@ -1,0 +1,20 @@
+﻿#淫欲结晶
+mh_succubus_lust_crystal = {
+	#图标路径
+	texture = "gfx/interface/icons/goods_icons/mh_succubus_lust_crystal.dds"
+
+	#基础价格（原版最高：200）
+	cost = 200
+
+	#商品类别：奢侈品
+	category = luxury
+	
+	#痴迷几率（原版最高：2）
+	obsession_chance = 2.0
+
+	#前列生产国带来的威望系数（原版最高：15）（第一应该是系数*4，第二系数*2，第三为系数*1）
+	prestige_factor = 25
+	
+	#交易数量（原版最少：2）
+	traded_quantity = 2
+}

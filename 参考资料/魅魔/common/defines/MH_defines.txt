@@ -1,0 +1,10 @@
+﻿NDiplomacy = {
+	BASE_YEARLY_INFAMY_DECAY_RATE = 10 				#年度恶名衰减基础值：【原本数值：5】
+	INFAMY_THRESHOLD_INFAMOUS = 50					#臭名昭著所需恶名：【原本数值：25】
+	INFAMY_THRESHOLD_NOTORIOUS = 100				#声名狼藉所需恶名：【原本数值：50】
+	INFAMY_THRESHOLD_PARIAH = 200					#国际弃民所需恶名：【原本数值：100】
+	AI_AGGRESSION_MAX_ACCEPTABLE_INFAMY = 200		#AI可接受的最高恶名：【原本数值：100】
+}
+NCharacters = {
+	RECRUIT_COMMANDER_NUM_OPTIONS = 5				#招募栏将领数量：【原本数值：3】
+}

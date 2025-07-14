@@ -1,0 +1,4 @@
+﻿#魅魔传承
+MH_succubus_inherit = {
+	heritage = yes
+}

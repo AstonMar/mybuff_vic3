@@ -1,0 +1,21 @@
+﻿l_simp_chinese:
+
+ #魅魔王族（上层阶级）
+
+ #魅魔（中层阶级）
+ mh_succubus_elder_sister: "@bureaucrats!$bureaucrats_no_icon$"
+ mh_succubus_elder_sister_only_icon: "@bureaucrats!"
+ mh_succubus_elder_sister_no_icon: "魅魔大姐姐"
+ mh_succubus_elder_sister_desc: ""
+ 
+ #普通魅魔（下层阶级）
+ mh_succubus_little: "@mh_succubus_ordinary!$mh_succubus_ordinary_no_icon$"
+ mh_succubus_little_only_icon: "@mh_succubus_ordinary!"
+ mh_succubus_little_no_icon: "小魅魔"
+ mh_succubus_little_desc: ""
+ 
+ #魅魔性奴隶（下层奴隶阶级）
+ mh_succubus_sex_slaves: "@mh_succubus_sex_slaves!$mh_succubus_sex_slaves_no_icon$"
+ mh_succubus_sex_slaves_only_icon: "@mh_succubus_sex_slaves!"
+ mh_succubus_sex_slaves_no_icon: "魅魔性奴隶"
+ mh_succubus_sex_slaves_desc: ""

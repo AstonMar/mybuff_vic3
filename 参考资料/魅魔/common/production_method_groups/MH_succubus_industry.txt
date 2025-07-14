@@ -1,0 +1,372 @@
+﻿#####魅魔风俗街#####
+#魅魔行政中心
+mh_pmg_succubus_administration_center = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_administration_center_1				#情趣行政职员
+		mh_pm_succubus_administration_center_2				#高频淫具佩戴
+		mh_pm_succubus_administration_center_3				#做爱才能办理业务！
+	}
+}
+
+#魅魔色欲法阵
+mh_pmg_succubus_lust_circle = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_lust_circle_1						#小催淫法阵
+		mh_pm_succubus_lust_circle_2						#纵欲催淫法阵
+		mh_pm_succubus_lust_circle_3						#大型增敏淫堕法阵
+	}
+}
+
+#魅魔风俗街
+mh_pmg_succubus_red_light_district = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_red_light_district_1					#大面积红灯区
+		mh_pm_succubus_red_light_district_2					#地区露天交配合法化
+		mh_pm_succubus_red_light_district_3					#固定式肉便器公服务法案
+	}
+}
+
+#魅魔圣欲堂
+mh_pmg_succubus_temple = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_temple_1								#全裸土下座
+		mh_pm_succubus_temple_2								#穿戴触手装
+		mh_pm_succubus_temple_3								#触手精液浴
+	}
+}
+
+#####魅魔炼金工坊#####
+#淫欲冶金术
+mh_pmg_succubus_alchemy_workshop_metal = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_alchemy_workshop_metal_0				#未启用的淫欲冶金术
+		mh_pm_succubus_alchemy_workshop_metal_1				#不成熟的淫欲冶金术
+		mh_pm_succubus_alchemy_workshop_metal_2				#成熟的淫欲冶金术
+		mh_pm_succubus_alchemy_workshop_metal_3				#完美的淫欲冶金术
+	}
+}
+
+#淫欲碳化术
+mh_pmg_succubus_alchemy_workshop_coal = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_alchemy_workshop_coal_0				#未启用的淫欲碳化术
+		mh_pm_succubus_alchemy_workshop_coal_1				#不成熟的淫欲碳化术
+		mh_pm_succubus_alchemy_workshop_coal_2				#成熟的淫欲碳化术
+		mh_pm_succubus_alchemy_workshop_coal_3				#完美的淫欲碳化术
+	}
+}
+
+#淫欲铅化术
+mh_pmg_succubus_alchemy_workshop_lead = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_alchemy_workshop_lead_0				#未启用的淫欲铅化术
+		mh_pm_succubus_alchemy_workshop_lead_1				#不成熟的淫欲冶金术
+		mh_pm_succubus_alchemy_workshop_lead_2				#成熟的淫欲铅化术
+		mh_pm_succubus_alchemy_workshop_lead_3				#完美的淫欲铅化术
+	}
+}
+
+#淫欲硫化术
+mh_pmg_succubus_alchemy_workshop_sulfur = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_alchemy_workshop_sulfur_0			#未启用的淫欲硫化术
+		mh_pm_succubus_alchemy_workshop_sulfur_1			#不成熟的淫欲冶金术
+		mh_pm_succubus_alchemy_workshop_sulfur_2			#成熟的淫欲硫化术
+		mh_pm_succubus_alchemy_workshop_sulfur_3			#完美的淫欲硫化术
+	}
+}
+
+#####魅魔生态园区#####
+#淫欲林木培育
+mh_pmg_succubus_ecological_park_forest = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_ecological_park_forest_0				#未培养
+		mh_pm_succubus_ecological_park_forest_1				#爱液灌木
+		mh_pm_succubus_ecological_park_forest_2				#触手林木
+		mh_pm_succubus_ecological_park_forest_3				#淫欲树母
+	}
+}
+
+#淫欲林木培育
+mh_pmg_succubus_ecological_park_flesh_worm = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_ecological_park_flesh_worm_0			#未培养
+		mh_pm_succubus_ecological_park_flesh_worm_1			#花棉淫虫
+		mh_pm_succubus_ecological_park_flesh_worm_2			#丝绵淫虫
+		mh_pm_succubus_ecological_park_flesh_worm_3			#彩织淫虫
+	}
+}
+
+#淫欲林木培育
+mh_pmg_succubus_ecological_park_slime = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_ecological_park_slime_0				#未培养
+		mh_pm_succubus_ecological_park_slime_1				#彩绘史莱姆
+		mh_pm_succubus_ecological_park_slime_2				#凝胶史莱姆
+		mh_pm_succubus_ecological_park_slime_3				#彩胶史莱姆
+	}
+}
+
+#####魅魔基础工业园区#####
+#工艺装备生产区
+mh_pmg_succubus_tooling_workshops = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_tooling_workshops_0					#未启用
+		mh_pm_succubus_tooling_workshops_1					#锻铁工具
+		mh_pm_succubus_tooling_workshops_2					#钢制工具
+		mh_pm_succubus_tooling_workshops_3					#机械化钢制工具
+	}
+}
+
+#炼钢产业区
+mh_pmg_succubus_steel_mills = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_steel_mills_0						#未启用
+		mh_pm_succubus_steel_mills_1						#泡钢法
+		mh_pm_succubus_steel_mills_2						#贝塞麦转炉炼钢法
+		mh_pm_succubus_steel_mills_3						#平炉炼钢法
+		mh_pm_succubus_steel_mills_4						#电弧炉炼钢法
+	}
+}
+
+#动力机械设备产业区
+mh_pmg_succubus_motor_industry = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_motor_industry_0						#未启用
+		mh_pm_succubus_motor_industry_1						#蒸汽发动机
+		mh_pm_succubus_motor_industry_2						#电力发动机
+		mh_pm_succubus_motor_industry_3						#柴油发动机
+	}
+}
+
+#炸药产业区
+mh_pmg_succubus_explosives_factory = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_explosives_factory_0					#未启用
+		mh_pm_succubus_explosives_factory_1					#勒布朗法
+		mh_pm_succubus_explosives_factory_2					#氨碱法
+		mh_pm_succubus_explosives_factory_3					#真空蒸发
+		mh_pm_succubus_explosives_factory_4					#氯碱法
+	}
+}
+
+#####魅魔民用工业园区#####
+#家具制造产业区
+mh_pmg_succubus_furniture_manufacturies = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_furniture_manufacturies_0			#未启用
+		mh_pm_succubus_furniture_manufacturies_1			#手工家具
+		mh_pm_succubus_furniture_manufacturies_2			#车床加工
+		mh_pm_succubus_furniture_manufacturies_3			#机械化工坊
+	}
+}
+
+#纺织产业区
+mh_pmg_succubus_textile_mills = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_textile_mills_0						#未启用
+		mh_pm_succubus_textile_mills_1						#手工衣物
+		mh_pm_succubus_textile_mills_2						#染料工坊
+		mh_pm_succubus_textile_mills_3						#缝纫机
+		mh_pm_succubus_textile_mills_4						#电动缝纫机
+	}
+}
+
+#造纸产业区
+mh_pmg_succubus_paper_mills = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_paper_mills_0						#未启用
+		mh_pm_succubus_paper_mills_1						#纸浆压榨
+		mh_pm_succubus_paper_mills_2						#亚硫酸盐制浆
+		mh_pm_succubus_paper_mills_3						#纸浆漂白
+	}
+}
+
+#食品产业区
+mh_pmg_succubus_food_industry = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_food_industry_0						#未启用
+		mh_pm_succubus_food_industry_1						#面包房
+		mh_pm_succubus_food_industry_2						#甜味剂
+		mh_pm_succubus_food_industry_3						#发酵粉
+	}
+}
+
+#####魅魔轻武器工业园区#####
+#武器产业区
+mh_pmg_succubus_arms_industry = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_arms_industry_0						#未启用
+		mh_pm_succubus_arms_industry_1						#滑膛枪
+		mh_pm_succubus_arms_industry_2						#步枪
+		mh_pm_succubus_arms_industry_3						#连发步枪
+		mh_pm_succubus_arms_industry_4						#栓动步枪
+	}
+}
+
+#弹药产业区
+mh_pmg_succubus_munition_plants = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_munition_plants_0					#未启用
+		mh_pm_succubus_munition_plants_1					#火帽
+		mh_pm_succubus_munition_plants_2					#可爆弹
+	}
+}
+
+#火炮铸造产业区
+mh_pmg_succubus_artillery_foundries = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_artillery_foundries_0				#未启用
+		mh_pm_succubus_artillery_foundries_1				#火炮
+		mh_pm_succubus_artillery_foundries_2				#滑膛炮
+		mh_pm_succubus_artillery_foundries_3				#后膛炮
+		mh_pm_succubus_artillery_foundries_4				#后坐式机制
+	}
+}
+
+#汽车生产产业区
+mh_pmg_succubus_automobile_production = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_automobile_production_0				#未启用
+		mh_pm_succubus_automobile_production_1				#汽车生产
+		mh_pm_succubus_automobile_production_2				#大规模生产
+	}
+}
+
+#####魅魔重工业园区#####
+#飞机产业区
+mh_pmg_succubus_artillery = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_aeroplanes_0							#未启用
+		mh_pm_succubus_aeroplanes_1							#飞机生产
+	}
+}
+
+#坦克产业区
+mh_pmg_succubus_tanks = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_tank_0								#未启用
+		mh_pm_succubus_tank_1								#坦克生产
+	}
+}
+
+#民用造船厂
+mh_pmg_succubus_base_building_shipyards = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_base_building_shipyards_0			#未启用
+		mh_pm_succubus_base_building_shipyards_1			#木船
+		mh_pm_succubus_base_building_shipyards_2			#强化木船
+		mh_pm_succubus_base_building_shipyards_3			#蒸汽船
+		mh_pm_succubus_base_building_shipyards_4			#电焊蒸汽船
+	}
+}
+
+#军用造船厂
+mh_pmg_succubus_military_base = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_military_base_0						#未启用
+		mh_pm_succubus_military_base_1						#木制船身
+		mh_pm_succubus_military_base_2						#蒸汽船
+		mh_pm_succubus_military_base_3						#钢制船身
+		mh_pm_succubus_military_base_4						#主力舰
+	}
+}
+
+#####魅魔奢侈品工业园区#####
+#高档衣物产业区
+mh_pmg_succubus_luxury_textile_mills = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_luxury_textile_mills_0				#未启用
+		mh_pm_succubus_luxury_textile_mills_1				#工匠缝纫
+		mh_pm_succubus_luxury_textile_mills_2				#弹性织物
+	}
+}
+
+#高档家具产业区
+mh_pmg_succubus_luxury_furniture_manufacturies = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_luxury_furniture_manufacturies_0		#未启用
+		mh_pm_succubus_luxury_furniture_manufacturies_1		#高档家具生产
+		mh_pm_succubus_luxury_furniture_manufacturies_2		#精密工具
+	}
+}
+
+#瓷器产业区
+mh_pmg_succubus_glassworks = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_glassworks_0							#未启用
+		mh_pm_succubus_glassworks_1							#陶瓷
+		mh_pm_succubus_glassworks_2							#骨瓷
+	}
+}
+
+#酿酒产业区
+mh_pmg_succubus_distillery = {
+	#图片
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		mh_pm_succubus_distillery_0							#未启用
+		mh_pm_succubus_distillery_1							#罐式蒸馏器
+		mh_pm_succubus_distillery_2							#连续式蒸馏器
+	}
+}

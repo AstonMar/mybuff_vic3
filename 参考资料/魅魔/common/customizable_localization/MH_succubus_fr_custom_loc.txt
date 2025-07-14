@@ -1,0 +1,18 @@
+﻿#商品定义
+MH_FR_goods_template = {
+	type = goods
+	log_loc_errors = no
+
+	#淫欲结晶
+	text = {  
+		trigger = {
+			this = g:mh_succubus_lust_crystal
+		}
+		localization_key = mh_succubus_lust_crystal
+	}
+
+	text = {
+		localization_key = FR_Goods_fallback
+		fallback = yes
+	}
+}

@@ -1,0 +1,541 @@
+﻿#####事件组命名（可以理解为事件名称前缀，只有拥有前缀的事件才会在游戏里生效）
+namespace = MH_succubus_come_event		#事件组：梦回酱的降临~
+
+###事件组：梦回酱的降临~
+#长着小恶魔翅膀的的巨乳萝莉~
+MH_succubus_come_event.1 = {
+	#事件类型
+	type = country_event					#国家事件
+
+	#
+	placement = ROOT						#
+
+	#事件标题
+	title = MH_succubus_come_event.1.t		#
+
+	#事件描述
+	desc = MH_succubus_come_event.1.d		#
+	flavor = MH_succubus_come_event.1.f		#
+
+	#事件录像？
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	#事件出发时的音效
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	#点击事件选项后的音效
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	#事件图片
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	#事件存在时间
+	duration = 60
+
+	#事件选项1
+	option = {
+		name = MH_succubus_come_event.1.a		#选项1:
+
+		#隐藏效果
+		hidden_effect = {
+			#直接添加科技：第一梯队列强科技
+			effect_starting_technology_tier_1_tech = yes
+		}
+		#插入文本
+		custom_tooltip = {
+			#插入文本
+			text = effect_starting_technology_tier_1_tech_tt
+		}
+
+		#隐藏效果
+		hidden_effect = {
+			#直接添加科技：解锁全部魅魔科技
+			MH_succubus_unlock_all_technologies = yes
+		}
+		#插入文本
+		custom_tooltip = {
+			#插入文本
+			text = MH_succubus_unlock_all_technologies_tt
+		}
+
+		#直接添加科技：奎宁
+		add_technology_researched = quinine
+
+		#直接添加科技：疟疾预防
+		add_technology_researched = malaria_prevention
+
+		#启用法律
+		activate_law = law_type:law_succubus_come										#魅魔降临~
+		activate_law = law_type:law_succubus_revenue									#梦回酱の魅魔税收法~
+		activate_law = law_type:law_succubus_bureaucrats								#梦回酱の魅魔官僚制~
+		activate_law = law_type:law_succubus_forbidden_language							#梦回酱の魅魔禁语法~
+		activate_law = law_type:law_succubus_commerce_and_trade							#梦回酱の魅魔商贸法~
+		activate_law = law_type:law_succubus_supreme									#梦回酱の魅魔至上法~
+		activate_law = law_type:law_succubus_true_faith									#梦回酱の魅魔真信法~
+		activate_law = law_type:law_succubus_education									#梦回酱の魅魔教育法~
+		activate_law = law_type:law_succubus_medical_system								#梦回酱の魅魔医疗体系~
+		activate_law = law_type:law_succubus_professional								#梦回酱の魅魔工作法案~
+		activate_law = law_type:law_succubus_army										#梦回酱の魅魔大姐姐军队~
+		#activate_law = law_type:law_succubus_police_force								#梦回酱の魅魔警察部队~
+		#activate_law = law_type:law_succubus_public_security							#梦回酱の魅魔治安法~
+		#activate_law = law_type:law_succubus_colonial_colonization						#梦回酱の魅魔殖民法案~
+		activate_law = law_type:law_succubus_maid_education								#梦回酱の魅魔女仆教育~
+		activate_law = law_type:law_succubus_economic_system							#梦回酱の魅魔经济体制~
+		#activate_law = law_type:law_succubus_welfare_act								#梦回酱の魅魔福利法案~
+		activate_law = law_type:law_succubus_slack_season_prostitution					#梦回酱の农闲卖春法案~
+
+		#添加变量标记
+		set_variable = MH_succubus_come_flag
+
+		#修改国教：魅魔欢愉天
+		set_state_religion = rel:mh_succubus_lust_heaven
+
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 1
+			}
+		}
+
+		#添加主流文化：魅魔文化
+		add_primary_culture = cu:mh_succubus_culture
+
+		#删除本国所有非魅魔文化的主流文化
+		#MH_succubus_remove_primary_culture = yes
+
+		#同化人口
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 1
+			}
+		}
+
+		#获得国家修正：纯粹的魅魔国度~
+		add_modifier = {
+			name = MH_succubus_population_5
+		}
+
+		#触发国内事务
+		add_journal_entry = {
+			type = MH_succubus_conversion_journal_entries
+		}
+
+		#触发事件
+		trigger_event = {
+			id = MH_succubus_come_event.3
+			popup = yes
+		}
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#事件选项2
+	option = {
+		name = MH_succubus_come_event.1.b		#选项2:
+
+		#添加变量标记
+		set_variable = MH_succubus_come_flag
+
+		#触发事件
+		trigger_event = {
+			id = MH_succubus_come_event.2
+			popup = yes
+		}
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#事件选项3
+	option = {
+		name = MH_succubus_come_event.1.c		#选项3:
+
+		#默认选项
+		default_option = yes
+
+		#AI选择概率
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+#他们来了~
+MH_succubus_come_event.2 = {
+	#事件类型
+	type = country_event					#国家事件
+
+	#
+	placement = ROOT						#
+
+	#事件标题
+	title = MH_succubus_come_event.2.t		#
+
+	#事件描述
+	desc = MH_succubus_come_event.2.d		#
+	flavor = MH_succubus_come_event.2.f		#
+
+	#事件录像？
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	#事件出发时的音效
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	#点击事件选项后的音效
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	#事件图片
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	#事件存在时间
+	duration = 60
+
+	#事件选项1
+	option = {
+		name = MH_succubus_come_event.2.a		#选项1:
+
+		#触发国内事务
+		add_journal_entry = {
+			type = MH_succubus_conversion_journal_entries
+		}
+
+		#隐藏效果
+		hidden_effect = {
+			#直接添加科技：第一梯队列强科技
+			effect_starting_technology_tier_1_tech = yes
+		}
+		#插入文本
+		custom_tooltip = {
+			#插入文本
+			text = effect_starting_technology_tier_1_tech_tt
+		}
+
+		#直接添加科技：奎宁
+		add_technology_researched = quinine
+
+		#直接添加科技：疟疾预防
+		add_technology_researched = malaria_prevention
+
+		#直接添加科技：社会结构魅魔化
+		add_technology_researched = MH_succubus_social_structure
+
+		#直接添加科技：规划魅魔风俗区
+		add_technology_researched = MH_succubus_plan_red_light_district
+
+		#启用法律
+		activate_law = law_type:law_succubus_come									#魅魔降临~
+
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 0.05
+			}
+		}
+
+		#同化人口
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 0.05
+			}
+		}
+
+		#添加变量标记
+		set_variable = MH_succubus_come_flag
+
+		#获得国家修正：魅魔初临~
+		add_modifier = {
+			name = MH_succubus_population_1
+		}
+
+		#触发事件
+		trigger_event = {
+			id = MH_succubus_come_event.3
+			popup = yes
+		}
+
+		#默认选项
+		default_option = yes
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#仅剩的淫能将用于何处？
+MH_succubus_come_event.3 = {
+	#事件类型
+	type = country_event					#国家事件
+
+	#
+	placement = ROOT						#
+
+	#事件标题
+	title = MH_succubus_come_event.3.t		#
+
+	#事件描述
+	desc = MH_succubus_come_event.3.d		#
+	flavor = MH_succubus_come_event.3.f		#
+
+	#事件录像？
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	#事件出发时的音效
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	#点击事件选项后的音效
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	#事件图片
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	#事件存在时间
+	duration = 60
+
+	#事件选项1
+	option = {
+		name = MH_succubus_come_event.3.a		#选项1:
+
+		#定义域：全国地区
+		every_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔城市群
+				building="mh_succubus_city_clusters"
+ 				#建造数量
+				level=1
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔基础工业园区
+				building="mh_succubus_basic_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔民用工业园区
+				building="mh_succubus_civilian_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔军用工业园区
+				building="mh_succubus_military_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔重工业园区
+				building="mh_succubus_heavy_industry_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔奢侈品工业园区
+				building="mh_succubus_luxury_goods_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#事件选项2
+	option = {
+		name = MH_succubus_come_event.3.b		#选项2:
+
+		#成为受认可政权
+		set_country_type = recognized
+
+		#移除痴迷：鸦片
+		every_primary_culture = {
+			remove_cultural_obsession = opium
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔基础工业园区
+				building="mh_succubus_basic_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔民用工业园区
+				building="mh_succubus_civilian_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔军用工业园区
+				building="mh_succubus_military_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔重工业园区
+				building="mh_succubus_heavy_industry_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔奢侈品工业园区
+				building="mh_succubus_luxury_goods_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#事件选项3
+	option = {
+		name = MH_succubus_come_event.3.c		#选项3:
+
+		#创建角色
+		create_character = {
+			#样板：梦回酱
+			template = agitator_menghui_jiang
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔基础工业园区
+				building="mh_succubus_basic_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔民用工业园区
+				building="mh_succubus_civilian_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔军用工业园区
+				building="mh_succubus_military_industry_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔重工业园区
+				building="mh_succubus_heavy_industry_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#定义域：随机城市
+		random_scope_state = {
+			#建造建筑
+			create_building={
+ 				#建筑名称：魅魔奢侈品工业园区
+				building="mh_succubus_luxury_goods_industrial_park"
+ 				#建造数量
+				level=5
+ 			}
+		}
+
+		#默认选项
+		default_option = yes
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+}

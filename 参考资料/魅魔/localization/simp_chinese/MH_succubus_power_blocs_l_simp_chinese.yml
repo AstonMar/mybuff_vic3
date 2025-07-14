@@ -1,0 +1,63 @@
+﻿l_simp_chinese:
+ #国家集团
+ MH_identity_succubus_lust_heaven: "魅魔欢愉天"
+ MH_identity_succubus_lust_heaven_desc: "魅魔们组建的国家集团致力于以愉快的做爱消弭一切矛盾、解决一切问题，让肉和肉的碰撞取代战争与竞争，用魂与魂的相交抵达和平的天堂~"
+ 
+ #集团行为
+ power_bloc_leader_can_mh_succubus_sleep_and_sex_bool: "可以#b 睡服#!$concept_power_bloc_member$"
+ power_bloc_leader_can_mh_succubus_sleep_and_sex_bool_desc: "[concept_power_bloc_leader]可以使用[concept_bloc_member_action]使[Concept('concept_power_bloc_member','$concept_power_bloc_members$')]成为[Concept('concept_subject','$concept_subjects$')]"
+ 
+ mh_succubus_sleep_and_sex: "睡服淫行"
+ mh_succubus_sleep_and_sex_action_name: "睡服淫行"
+ mh_succubus_sleep_and_sex_flag_custom_tooltip: "对同一个国家，每三年我们只能进行一次睡服淫行~"
+ mh_succubus_sleep_and_sex_desc: "立即将他们转变为我们的[concept_subject]，且[concept_power_bloc_member]立即变更[concept_state_religion]以与我们相吻合。"
+ mh_succubus_sleep_and_sex_action_notification_name: "被[INITIATOR_COUNTRY.GetName]睡服"
+ mh_succubus_sleep_and_sex_action_notification_desc: "[INITIATOR_COUNTRY.GetName]将我们转变为了他们的[concept_subject]"
+ mh_succubus_sleep_and_sex_action_notification_third_party_name: "被[INITIATOR_COUNTRY.GetName]睡服"
+ mh_succubus_sleep_and_sex_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName]将[TARGET_COUNTRY.GetName]转变为了他们的[TARGET_COUNTRY.GetSubjectType.GetName]且[concept_power_bloc_member]变更[concept_state_religion]以与我们相吻合。"
+ mh_succubus_sleep_and_sex_pop_tt: "对全国15%的非$mh_succubus_lust_heaven$信仰和$mh_succubus_culture$文化的人口进行转化"
+ 
+ power_bloc_leader_can_mh_succubus_display_charm_lust_art: "可以施展魅惑淫术"
+ power_bloc_leader_can_mh_succubus_display_charm_lust_art_desc: "[concept_power_bloc_leader]可以对所有非松散部落制度国家施展魅惑淫术，以此来同化并取得大量的好感来争取对方加入我们的国家集团。"
+ 
+ mh_succubus_charm_lust_art: "魅惑淫术"
+ mh_succubus_charm_lust_art_action_name: "魅惑淫术"
+ mh_succubus_charm_lust_art_action_propose_name: "启用【魅惑淫术】"
+ mh_succubus_charm_lust_art_action_break_name: "解除【魅惑淫术】"
+ mh_succubus_charm_lust_art_desc: "魅惑【魅惑淫术】继续生效，但这份欢愉并不会就此落下帷幕，这不过是做爱劳累后的一次中场休息而已~"
+ mh_succubus_charm_lust_art_pop_tt: "在【魅惑淫术】生效的情况下，我们会将对方全国0.1%的非$mh_succubus_lust_heaven$信仰和$mh_succubus_culture$文化的人口进行偷偷转化~\n当对方国家魅魔文化的人口达到50%时，魅魔文化将会成为她们的主流文化~\n当对方国家信仰魅魔欢愉天的人口达到75%，魅魔欢愉天将会成为她们的国教~"
+ mh_succubus_charm_lust_art_action_notification_name: "魅惑淫术5"
+ mh_succubus_charm_lust_art_action_notification_desc: "魅惑淫术6"
+ mh_succubus_charm_lust_art_pact_desc: "魅惑淫术7"
+ mh_succubus_charm_lust_art_action_notification_break_name: "魅惑淫术8"
+ mh_succubus_charm_lust_art_action_notification_break_desc: "魅惑淫术9"
+ 
+ #集团法案
+ MH_principle_group_succubus_contract_to_indulge_in_lust: "溺欲之契"
+ MH_principle_succubus_contract_to_indulge_in_lust_1_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_contract_to_indulge_in_lust_2_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_contract_to_indulge_in_lust_3_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ 
+ MH_principle_group_succubus_the_agreement_to_satisfy_the_desire_for_sex: "爱欲之约"
+ MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_1_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_2_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_3_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ 
+ MH_principle_group_succubus_sexual_intercourse_in_a_drunken_dream: "醉欲梦淫"
+ MH_principle_succubus_sexual_intercourse_in_a_drunken_dream_1_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_sexual_intercourse_in_a_drunken_dream_2_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_sexual_intercourse_in_a_drunken_dream_3_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ 
+ MH_principle_group_succubus_casting_a_city_for_sexual_intercourse: "铸城宣淫"
+ MH_principle_succubus_casting_a_city_for_sexual_intercourse_1_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_casting_a_city_for_sexual_intercourse_2_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ MH_principle_succubus_casting_a_city_for_sexual_intercourse_3_desc: "与魅魔大姐姐们签下了沉沦于欲望之中的契约~"
+ 
+ #集团图案
+ MH_succubus_lewd_pattern_1: "淫纹I"
+ MH_succubus_lewd_pattern_2: "淫纹II"
+ MH_succubus_lewd_pattern_3: "淫纹III"
+ MH_succubus_lewd_pattern_4: "淫纹IV"
+ MH_succubus_lewd_pattern_5: "淫纹V"
+ MH_succubus_lewd_pattern_6: "淫纹VI"
+ MH_succubus_lewd_pattern_7: "淫纹VII"

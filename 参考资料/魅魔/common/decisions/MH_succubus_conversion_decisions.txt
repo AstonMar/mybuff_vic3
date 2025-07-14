@@ -1,0 +1,34 @@
+﻿#####决议组：梦回酱の降临与国家魅魔化
+###长着小恶魔翅膀的的巨乳萝莉~
+MH_succubus_come_decision_1 = {
+	#显示条件
+	is_shown = {
+		is_ai = no			#不是AI
+		#没有该决议变量标记
+		NOT = {
+			has_variable = MH_succubus_come_decision_1_flag
+		}
+	}
+
+	#决议启用条件
+	possible = {
+		is_player = yes		#国家由玩家控制
+	}
+
+	#AI使用概率
+	ai_chance = {
+		value = 0
+    }
+
+	#立即产生的决议效果
+	when_taken = {
+		#触发事件
+		trigger_event = {
+			id = MH_succubus_come_event.1
+			popup = yes
+		}
+
+		#添加决议变量标记
+		set_variable = MH_succubus_come_decision_1_flag
+	}
+}

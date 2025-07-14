@@ -1,0 +1,461 @@
+﻿#启用人类魅魔化触发器(按钮)
+MH_succubus_ban_conversion_button = {
+	#触发器名称：启用人类魅魔化
+	name = "MH_succubus_ban_conversion"
+
+	#触发器文本：人类的躯体太过脆弱，生老病死，行动不便，反应迟缓，而我们，将通过爱与性赋予她们新生！—— —— ——魅魔转换专员·朝露歌
+	desc = "MH_succubus_ban_conversion_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#没有
+		NOT = {
+			#拥有国家修正
+			has_modifier = MH_succubus_conversion
+		}
+	}
+
+	#启用条件
+	possible = {
+		#始终
+		always = yes
+	}
+
+	#启用效果
+	effect = {
+		#获得国家修正：进行魅魔转换中~
+		add_modifier = {
+			name = MH_succubus_conversion
+		}
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#停止人类魅魔化触发器(按钮)
+MH_succubus_unban_conversion_button = {
+	#触发器名称：停止人类魅魔化
+	name = "MH_succubus_unban_conversion"
+
+	#触发器文本：对全体人类进行魅魔化的过程是极其消耗人力物力的，现在我们的国库已经支撑不了多久了，也许是时候稍微暂停一下了~
+	desc = "MH_succubus_unban_conversion_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#拥有国家修正
+		has_modifier = MH_succubus_conversion
+	}
+
+	#启用条件
+	possible = {
+		#始终
+		always = yes
+	}
+
+	#启用效果
+	effect = {
+		#移除国家修正：进行魅魔转换中~
+		remove_modifier = MH_succubus_conversion
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#启用人类本土文化清除计划(按钮)~
+MH_succubus_ban_erasure_homeland_culture_button = {
+	#触发器名称：启用人类本土文化清除计划~
+	name = "MH_succubus_ban_erasure_homeland_culture"
+
+	#触发器文本：
+	desc = "MH_succubus_ban_erasure_homeland_culture_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#没有
+		NOT = {
+			#拥有国家修正：进行人类本土文化清除计划中~
+			has_modifier = MH_succubus_perform_erasure_homeland_culture
+		}
+	}
+
+	#启用条件
+	possible = {
+		#始终
+		always = yes
+	}
+
+	#启用效果
+	effect = {
+		#获得国家修正：进行人类本土文化清除计划中~
+		add_modifier = {
+			name = MH_succubus_perform_erasure_homeland_culture
+		}
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#停止人类本土文化清除计划~
+MH_succubus_unban_erasure_homeland_culture_button = {
+	#触发器名称：停止人类本土文化清除计划
+	name = "MH_succubus_unban_erasure_homeland_culture"
+
+	#触发器文本：
+	desc = "MH_succubus_unban_erasure_homeland_culture_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#拥有国家修正：进行人类本土文化清除计划中~
+		has_modifier = MH_succubus_perform_erasure_homeland_culture
+	}
+
+	#启用条件
+	possible = {
+		#始终
+		always = yes
+	}
+
+	#启用效果
+	effect = {
+		#移除国家修正：进行人类本土文化清除计划中~
+		remove_modifier = MH_succubus_perform_erasure_homeland_culture
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#让魅魔们进入主流文化圈(按钮)~
+MH_succubus_primary_culture_button = {
+	#触发器名称：让魅魔们进入主流文化圈~
+	name = "MH_succubus_primary_culture"
+
+	#触发器文本：
+	desc = "MH_succubus_primary_culture_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#未拥有主流文化：魅魔文化
+		NOT = { country_has_primary_culture = cu:mh_succubus_culture }
+	}
+
+	#启用条件
+	possible = {
+		#魅魔文化人口占据总人口的35%
+		culture_percent_country = {
+			target = cu:mh_succubus_culture
+			value >= 0.35
+		}
+	}
+
+	#启用效果
+	effect = {
+		#添加主流文化：魅魔文化
+		add_primary_culture = cu:mh_succubus_culture
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#魅魔文化是唯一的主流文化(按钮)~
+MH_succubus_only_primary_culture_button = {
+	#触发器名称：魅魔文化是唯一的主流文化
+	name = "MH_succubus_only_primary_culture"
+
+	#触发器文本：
+	desc = "MH_succubus_only_primary_culture_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#拥有主流文化：魅魔文化
+		country_has_primary_culture = cu:mh_succubus_culture
+	}
+
+	#启用条件
+	possible = {
+		#拥有科技：撰写魅魔们的历史
+		has_technology_researched = MH_succubus_writing_history
+		#魅魔文化人口占据总人口的90%
+		culture_percent_country = {
+			target = cu:mh_succubus_culture
+			value >= 0.90
+		}
+	}
+
+	#启用效果
+	effect = {
+		#隐藏效果
+		hidden_effect = {
+			#直接添加科技：删除所有非魅魔文化
+			MH_succubus_remove_primary_culture = yes
+		}
+		#插入文本
+		custom_tooltip = {
+			#插入文本
+			text = MH_succubus_remove_primary_culture_tt
+		}
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#魅魔们的绝对真信(按钮)~
+MH_succubus_true_faith_button = {
+	#触发器名称：魅魔们的绝对真信
+	name = "MH_succubus_true_faith"
+
+	#触发器文本：
+	desc = "MH_succubus_true_faith_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+	}
+
+	#启用条件
+	possible = {
+		#拥有科技：魅魔宗教
+		has_technology_researched = MH_succubus_religion
+		#魅魔信仰人口占据总人口的50%
+		religion_percent_country = {
+			target = rel:mh_succubus_lust_heaven
+			value >= 0.50
+		}
+	}
+
+	#启用效果
+	effect = {
+		#更改国教：魅魔欢愉天
+		set_state_religion = rel:mh_succubus_lust_heaven
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#告知世界魅魔们的存在(按钮)~
+MH_succubus_declare_exist_button = {
+	#触发器名称：告知世界魅魔们的存在~
+	name = "MH_succubus_declare_exist"
+
+	#触发器文本：
+	desc = "MH_succubus_declare_exist_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#国家类型：非受认可政权
+		NOT = { is_country_type = recognized }
+	}
+
+	#启用条件
+	possible = {
+		#拥有科技：确认魅魔的存在
+		has_technology_researched = MH_succubus_confirm_existence
+	}
+
+	#启用效果
+	effect = {
+		#设置国家类型：受认可政权
+		set_country_type = recognized
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#隐匿魅魔们的存在(按钮)~
+MH_succubus_conceal_exist_button = {
+	#触发器名称：隐匿魅魔们的存在
+	name = "MH_succubus_conceal_exist"
+
+	#触发器文本：
+	desc = "MH_succubus_conceal_exist_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#国家类型：受认可政权
+		is_country_type = recognized
+	}
+
+	#启用条件
+	possible = {
+	}
+
+	#启用效果
+	effect = {
+		#设置国家类型：未受认可政权
+		set_country_type = unrecognized
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#让梦回酱成为这个国家的女帝(按钮)~
+MH_succubus_menghuijiang_ruler_button = {
+	#触发器名称：隐匿魅魔们的存在
+	name = "MH_succubus_menghuijiang_ruler"
+
+	#触发器文本：
+	desc = "MH_succubus_menghuijiang_ruler_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+	}
+
+	#启用条件
+	possible = {
+		#魅魔文化人口占据总人口的51%
+		culture_percent_country = {
+			target = cu:mh_succubus_culture
+			value >= 0.51
+		}
+	}
+
+	#启用效果
+	effect = {
+		#创建角色
+		create_character = {
+			#样板：梦回酱
+			template = agitator_menghui_jiang
+		}
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#宣扬魅魔大姐姐优越论(按钮)~
+MH_succubus_superiority_theory_button = {
+	#触发器名称：宣扬魅魔大姐姐优越论
+	name = "MH_succubus_superiority_theory"
+
+	#触发器文本：
+	desc = "MH_succubus_superiority_theory_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#未拥有科技：魅魔民族主义
+		NOT = { has_technology_researched = MH_succubus_nationalism }
+	}
+
+	#启用条件
+	possible = {
+		#拥有科技：淫欲义务教育
+		has_technology_researched = MH_succubus_lust_compulsory_education
+	}
+
+	#启用效果
+	effect = {
+		#添加意识形态
+		ig:ig_intelligentsia = { add_ideology = law_succubus_superiority_theory }			#为【知识分子】添加魅魔大姐姐优越论意识形态
+		ig:ig_rural_folk = { add_ideology = law_succubus_superiority_theory }				#为【乡村民众】添加魅魔大姐姐优越论意识形态
+		ig:ig_devout = { add_ideology = law_succubus_superiority_theory }					#为【虔信者】添加魅魔大姐姐优越论意识形态
+		ig:ig_industrialists = { add_ideology = law_succubus_superiority_theory }			#为【实业家】添加魅魔大姐姐优越论意识形态
+		ig:ig_petty_bourgeoisie = { add_ideology = law_succubus_superiority_theory }		#为【小市民】添加魅魔大姐姐优越论意识形态
+		ig:ig_landowners = { add_ideology = law_succubus_superiority_theory }				#为【地主】添加魅魔大姐姐优越论意识形态
+		ig:ig_armed_forces = { add_ideology = law_succubus_superiority_theory }				#为【军队】添加魅魔大姐姐优越论意识形态
+		ig:ig_trade_unions = { add_ideology = law_succubus_superiority_theory }				#为【工会】添加魅魔大姐姐优越论意识形态
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}
+
+#向魅魔大姐姐们的小穴献上热吻(按钮)~
+MH_succubus_fanatical_followers_button = {
+	#触发器名称：向魅魔大姐姐们的小穴献上热吻
+	name = "MH_succubus_fanatical_followers"
+
+	#触发器文本：
+	desc = "MH_succubus_fanatical_followers_desc"
+
+	#显示条件
+	visible = {
+		#启用国内事务：人类魅魔化转换
+		has_journal_entry = MH_succubus_conversion_journal_entries
+		#拥有科技：魅魔民族主义
+		has_technology_researched = MH_succubus_nationalism
+	}
+
+	#启用条件
+	possible = {
+		#拥有科技：魅魔民族主义
+		has_technology_researched = MH_succubus_nationalism
+	}
+
+	#启用效果
+	effect = {
+		#移除意识形态
+		ig:ig_intelligentsia = { remove_ideology = law_succubus_superiority_theory }		#为【知识分子】移除魅魔大姐姐优越论意识形态
+		ig:ig_rural_folk = { remove_ideology = law_succubus_superiority_theory }			#为【乡村民众】移除魅魔大姐姐优越论意识形态
+		ig:ig_devout = { remove_ideology = law_succubus_superiority_theory }				#为【虔信者】移除魅魔大姐姐优越论意识形态
+		ig:ig_industrialists = { remove_ideology = law_succubus_superiority_theory }		#为【实业家】移除魅魔大姐姐优越论意识形态
+		ig:ig_petty_bourgeoisie = { remove_ideology = law_succubus_superiority_theory }		#为【小市民】移除魅魔大姐姐优越论意识形态
+		ig:ig_landowners = { remove_ideology = law_succubus_superiority_theory }			#为【地主】移除魅魔大姐姐优越论意识形态
+		ig:ig_armed_forces = { remove_ideology = law_succubus_superiority_theory }			#为【军队】移除魅魔大姐姐优越论意识形态
+		ig:ig_trade_unions = { remove_ideology = law_succubus_superiority_theory }			#为【工会】移除魅魔大姐姐优越论意识形态
+		#添加意识形态
+		ig:ig_intelligentsia = { add_ideology = law_succubus_fanatical_followers }			#为【知识分子】添加魅魔们的狂热追随者意识形态
+		ig:ig_rural_folk = { add_ideology = law_succubus_fanatical_followers }				#为【乡村民众】添加魅魔们的狂热追随者意识形态
+		ig:ig_devout = { add_ideology = law_succubus_fanatical_followers }					#为【虔信者】添加魅魔们的狂热追随者意识形态
+		ig:ig_industrialists = { add_ideology = law_succubus_fanatical_followers }			#为【实业家】添加魅魔们的狂热追随者意识形态
+		ig:ig_petty_bourgeoisie = { add_ideology = law_succubus_fanatical_followers }		#为【小市民】添加魅魔们的狂热追随者意识形态
+		ig:ig_landowners = { add_ideology = law_succubus_fanatical_followers }				#为【地主】添加魅魔们的狂热追随者意识形态
+		ig:ig_armed_forces = { add_ideology = law_succubus_fanatical_followers }			#为【军队】添加魅魔们的狂热追随者意识形态
+		ig:ig_trade_unions = { add_ideology = law_succubus_fanatical_followers }			#为【工会】添加魅魔们的狂热追随者意识形态
+	}
+
+	#AI点击概率
+	ai_chance = {
+        value = 0		 
+    }
+}

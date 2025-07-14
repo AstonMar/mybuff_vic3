@@ -1,0 +1,841 @@
+﻿#当前每月文化同化速度
+MH_succubus_monthly_culture_assimilation_speed = {
+ 	name = "MH_succubus_monthly_culture_assimilation_speed_name"
+ 	desc = "MH_succubus_monthly_culture_assimilation_speed_desc"
+
+ 	#进度条颜色
+	#default_green = yes			#绿色
+	#double_sided_gold = yes		#橙色
+	default_bad= yes				#红色
+	#default = yes					#蓝色
+	#double_sided_bad = yes			#蓝色（完成部分）/红色（未完成部分）
+
+	#月度判定
+	monthly_progress = {
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_social_structure							#拥有科技：社会结构魅魔化
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_social_structure_flag }							#未拥有变量标记
+			}
+			add = 5																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_plan_red_light_district						#拥有科技：规划魅魔风俗区
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_plan_red_light_district_flag }					#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_construct_red_light_district				#拥有科技：建设魅魔风俗产业
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_construct_red_light_district_flag }				#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_expand_red_light_district					#拥有科技：扩建魅魔风俗街
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_expand_red_light_district_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_having_a_city_red_light_district			#拥有科技：拥有城市的魅魔风俗区
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_having_a_city_red_light_district_flag }			#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_city_full_of_desires						#拥有科技：魅魔淫欲之城
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_city_full_of_desires_flag }						#未拥有变量标记
+			}
+			add = 4																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_world_full_of_lust							#拥有科技：魅魔狂淫世界
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_world_full_of_lust_flag }						#未拥有变量标记
+			}
+			add = 5																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_human_reservations							#拥有科技：人类保留地
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_human_reservations_flag }						#未拥有变量标记
+			}
+			add = 5																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_pornographic_functionary					#拥有科技：情趣公务员
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_pornographic_functionary_flag }					#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_compulsory_sexual_services					#拥有科技：义务化侍奉
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_compulsory_sexual_services_flag }				#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sexual_services_administration_center		#拥有科技：魅魔性爱行政中心
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sexual_services_administration_center_flag }		#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_public_security								#拥有科技：推行魅魔治安
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_public_security_flag }							#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_to_extract_semen_military_police			#拥有科技：魅魔榨精宪兵
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_to_extract_semen_military_police_flag }			#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_nymphomaniac_patrolman						#拥有科技：魅魔痴女巡警
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_nymphomaniac_patrolman_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_analysis_of_sexual_value					#拥有科技：性能力量化分析
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_analysis_of_sexual_value_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sexual_loan									#拥有科技：以性贷款
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sexual_loan_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sex_value_bank								#拥有科技：欲望银行
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sex_value_bank_flag }							#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sexual_love_economic_oriented				#拥有科技：性力本位制
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sexual_love_economic_oriented_flag }				#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_allocation_of_mating_rights					#拥有科技：欲能分配
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_allocation_of_mating_rights_flag }				#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_state_run_sex_slave							#拥有科技：国营性奴
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_state_run_sex_slave_flag }						#未拥有变量标记
+			}
+			add = 4																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_private_sex_slave							#拥有科技：私营性奴
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_private_sex_slave_flag }							#未拥有变量标记
+			}
+			add = 4																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_confirm_existence							#拥有科技：确认魅魔的存在
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_confirm_existence_flag }							#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_status_abroad								#拥有科技：境外魅魔公民地位
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_status_abroad_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_domestic_racial_division					#拥有科技：境内非魅魔公民地位
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_domestic_racial_division_flag }					#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_concession									#拥有科技：魅魔租界
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_concession_flag }								#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_plucking_population							#拥有科技：掠夺人类
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_plucking_population_flag }						#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_slack_season_engage_in_prostitution			#拥有科技：农闲卖春
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_slack_season_engage_in_prostitution_flag }		#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_religion									#拥有科技：魅魔宗教
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_religion_flag }									#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_faith_ceremony								#拥有科技：仪式化魅魔信仰
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_faith_ceremony_flag }							#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_lust_crusaders								#拥有科技：欲望十字军
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_lust_crusaders_flag }							#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_philanthropy								#拥有科技：魅魔博爱主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_philanthropy_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_irrationalism								#拥有科技：非理性主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_irrationalism_flag }								#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_lust_compulsory_education					#拥有科技：淫欲义务教育
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_lust_compulsory_education_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_moaning_drowned_out_the_sound				#拥有科技：呻吟盖过声音
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_moaning_drowned_out_the_sound_flag }				#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_writing_history								#拥有科技：撰写魅魔们的历史
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_writing_history_flag }							#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_nationalism									#拥有科技：魅魔民族主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_nationalism_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_love_liquid_pharmaceutical_industry			#拥有科技：爱液制药
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_love_liquid_pharmaceutical_industry_flag }		#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_lust_wind_blows_through_the_world			#拥有科技：淫风吹拂世界
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_lust_wind_blows_through_the_world_flag }			#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_output_pornography							#拥有科技：规划魅魔风俗区
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_output_pornography_flag }						#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_maid_doctrine								#拥有科技：女仆主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_maid_doctrine_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 1000
+}
+
+#当前每月信仰皈依速度
+MH_succubus_monthly_belief_assimilation_speed = {
+ 	name = "MH_succubus_monthly_belief_assimilation_speed_name"
+ 	desc = "MH_succubus_monthly_belief_assimilation_speed_desc"
+
+ 	#进度条颜色
+	#default_green = yes			#绿色
+	#double_sided_gold = yes		#橙色
+	default_bad= yes				#红色
+	#default = yes					#蓝色
+	#double_sided_bad = yes			#蓝色（完成部分）/红色（未完成部分）
+
+	#月度判定
+	monthly_progress = {
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_social_structure							#拥有科技：社会结构魅魔化
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_social_structure_flag }							#未拥有变量标记
+			}
+			add = 5																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_plan_red_light_district						#拥有科技：规划魅魔风俗区
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_plan_red_light_district_flag }					#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_construct_red_light_district				#拥有科技：建设魅魔风俗产业
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_construct_red_light_district_flag }				#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_expand_red_light_district					#拥有科技：扩建魅魔风俗街
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_expand_red_light_district_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_having_a_city_red_light_district			#拥有科技：拥有城市的魅魔风俗区
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_having_a_city_red_light_district_flag }			#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_city_full_of_desires						#拥有科技：魅魔淫欲之城
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_city_full_of_desires_flag }						#未拥有变量标记
+			}
+			add = 4																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_world_full_of_lust							#拥有科技：魅魔狂淫世界
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_world_full_of_lust_flag }						#未拥有变量标记
+			}
+			add = 5																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_human_reservations							#拥有科技：人类保留地
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_human_reservations_flag }						#未拥有变量标记
+			}
+			add = 5																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_pornographic_functionary					#拥有科技：情趣公务员
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_pornographic_functionary_flag }					#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_compulsory_sexual_services					#拥有科技：义务化侍奉
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_compulsory_sexual_services_flag }				#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sexual_services_administration_center		#拥有科技：魅魔性爱行政中心
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sexual_services_administration_center_flag }		#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_public_security								#拥有科技：推行魅魔治安
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_public_security_flag }							#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_to_extract_semen_military_police			#拥有科技：魅魔榨精宪兵
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_to_extract_semen_military_police_flag }			#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_nymphomaniac_patrolman						#拥有科技：魅魔痴女巡警
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_nymphomaniac_patrolman_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_analysis_of_sexual_value					#拥有科技：性能力量化分析
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_analysis_of_sexual_value_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sexual_loan									#拥有科技：以性贷款
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sexual_loan_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sex_value_bank								#拥有科技：欲望银行
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sex_value_bank_flag }							#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_sexual_love_economic_oriented				#拥有科技：性力本位制
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_sexual_love_economic_oriented_flag }				#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_allocation_of_mating_rights					#拥有科技：欲能分配
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_allocation_of_mating_rights_flag }				#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_state_run_sex_slave							#拥有科技：国营性奴
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_state_run_sex_slave_flag }						#未拥有变量标记
+			}
+			add = 4																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_private_sex_slave							#拥有科技：私营性奴
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_private_sex_slave_flag }							#未拥有变量标记
+			}
+			add = 4																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_confirm_existence							#拥有科技：确认魅魔的存在
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_confirm_existence_flag }							#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_status_abroad								#拥有科技：境外魅魔公民地位
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_status_abroad_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_domestic_racial_division					#拥有科技：境内非魅魔公民地位
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_domestic_racial_division_flag }					#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_concession									#拥有科技：魅魔租界
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_concession_flag }								#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_plucking_population							#拥有科技：掠夺人类
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_plucking_population_flag }						#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_slack_season_engage_in_prostitution			#拥有科技：农闲卖春
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_slack_season_engage_in_prostitution_flag }		#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_religion									#拥有科技：魅魔宗教
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_religion_flag }									#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_faith_ceremony								#拥有科技：仪式化魅魔信仰
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_faith_ceremony_flag }							#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_lust_crusaders								#拥有科技：欲望十字军
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_lust_crusaders_flag }							#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_philanthropy								#拥有科技：魅魔博爱主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_philanthropy_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_irrationalism								#拥有科技：非理性主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_irrationalism_flag }								#未拥有变量标记
+			}
+			add = 1																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_lust_compulsory_education					#拥有科技：淫欲义务教育
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_lust_compulsory_education_flag }					#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_moaning_drowned_out_the_sound				#拥有科技：呻吟盖过声音
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_moaning_drowned_out_the_sound_flag }				#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_writing_history								#拥有科技：撰写魅魔们的历史
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_writing_history_flag }							#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_nationalism									#拥有科技：魅魔民族主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_nationalism_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_love_liquid_pharmaceutical_industry			#拥有科技：爱液制药
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_love_liquid_pharmaceutical_industry_flag }		#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_lust_wind_blows_through_the_world			#拥有科技：淫风吹拂世界
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_lust_wind_blows_through_the_world_flag }			#未拥有变量标记
+			}
+			add = 2																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_output_pornography							#拥有科技：规划魅魔风俗区
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_output_pornography_flag }						#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+		#判定
+		if = {
+			#条件
+			limit = {
+				has_technology_researched = MH_succubus_maid_doctrine								#拥有科技：女仆主义
+				has_modifier = MH_succubus_conversion												#拥有国家修正
+				NOT = { has_variable = MH_succubus_maid_doctrine_flag }								#未拥有变量标记
+			}
+			add = 3																					#进度值
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 1000
+}

@@ -1,0 +1,466 @@
+﻿###魅魔城市群
+##魅魔行政中心
+#情趣行政职员
+mh_pm_succubus_administration_center_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_administration_center_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		#workforce_scaled = { }
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clerks_add = 10				#职员
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_tax_capacity_add = 35							#征税能力
+		}
+	}
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 75						#行政力
+		}
+	}
+}
+
+#高频淫具佩戴
+mh_pm_succubus_administration_center_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_administration_center_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_pornographic_functionary					#情趣公务员~
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		#workforce_scaled = { }
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clerks_add = 10				#职员
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_tax_capacity_add = 70							#征税能力
+		}
+	}
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 150						#行政力
+		}
+	}
+}
+
+#做爱才能办理业务!
+mh_pm_succubus_administration_center_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_administration_center_3.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_compulsory_sexual_services					#义务化侍奉~
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		#workforce_scaled = { }
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clerks_add = 10				#职员
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_tax_capacity_add = 105						#征税能力
+		}
+	}
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 225						#行政力
+		}
+	}
+}
+
+###魅魔色欲法阵
+#小催淫法阵
+mh_pm_succubus_lust_circle_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_lust_circle_3.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			#暂无
+
+			#产出
+			goods_output_mh_succubus_lust_crystal_add = 35		#淫欲结晶
+			goods_output_electricity_add = 25					#电力产出
+			goods_output_transportation_add = 20				#运力
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clergymen_add = 10			#教士
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 25						#基础设施
+		}
+	}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#纵欲催淫法阵
+mh_pm_succubus_lust_circle_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_lust_circle_3.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district					#魅魔风俗产业建设
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			#暂无
+
+			#产出
+			goods_output_mh_succubus_lust_crystal_add = 70		#淫欲结晶
+			goods_output_electricity_add = 50					#电力产出
+			goods_output_transportation_add = 40				#运力
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clergymen_add = 10			#教士
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 50						#基础设施
+		}
+	}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+#大型增敏淫堕法阵
+mh_pm_succubus_lust_circle_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_lust_circle_3.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗区
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			#暂无
+
+			#产出
+			goods_output_mh_succubus_lust_crystal_add = 105		#淫欲结晶
+			goods_output_electricity_add = 75					#电力产出
+			goods_output_transportation_add = 60				#运力
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clergymen_add = 10			#教士
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 75						#基础设施
+		}
+	}
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+##魅魔风俗街
+#大面积红灯区
+mh_pm_succubus_red_light_district_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_red_light_district_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			#暂无
+
+			#产出
+			goods_output_services_add = 25						#服务
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_laborers_add = 50				#劳工
+			building_employment_clerks_add = 50				#职员
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_minting_add = 50							#铸币
+			country_influence_add = 0.20						#影响力
+		}
+	}
+}
+
+#地区露天交配合法化
+mh_pm_succubus_red_light_district_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_red_light_district_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_expand_red_light_district					#魅魔风俗产业建设
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			#暂无
+
+			#产出
+			goods_output_services_add = 50						#服务
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_laborers_add = 50				#劳工
+			building_employment_clerks_add = 50				#职员
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_minting_add = 100							#铸币
+			country_influence_add = 0.40						#影响力
+		}
+	}
+}
+
+#固定式肉便器公服务法案
+mh_pm_succubus_red_light_district_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_red_light_district_3.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗街~
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			#暂无
+
+			#产出
+			goods_output_services_add = 75						#服务
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_laborers_add = 50				#劳工
+			building_employment_clerks_add = 50				#职员
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_minting_add = 150							#铸币
+			country_influence_add = 0.60						#影响力
+		}
+	}
+}
+
+##魅魔圣欲堂
+#全裸土下座
+mh_pm_succubus_temple_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_temple_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = {
+	#	
+	#}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		#workforce_scaled = { }
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clergymen_add = 10			#教士
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_assimilation_mult = 0.03						#人口同化
+			state_conversion_mult = 0.03						#信仰皈依
+		}
+	}
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_max_add = 0.10			#最大创新力投入
+			country_authority_add = 0.20						#权威力
+		}
+	}
+}
+
+#穿戴触手装
+mh_pm_succubus_temple_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_temple_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_construct_red_light_district				#魅魔风俗产业建设
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		#workforce_scaled = { }
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clergymen_add = 10			#教士
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_assimilation_mult = 0.06						#人口同化
+			state_conversion_mult = 0.06						#信仰皈依
+		}
+	}
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_max_add = 0.20			#最大创新力投入
+			country_authority_add = 0.40						#权威力
+		}
+	}
+}
+
+#沐浴扶她精子
+mh_pm_succubus_temple_3 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_temple_3.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		MH_succubus_having_a_city_red_light_district			#拥有城市的魅魔风俗街
+	}
+
+	#每级建筑等级带来的效果
+	building_modifiers = {
+		#商品产出与投入
+		#workforce_scaled = { }
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_clergymen_add = 10			#教士
+		}
+	}
+
+	#每级建筑带来的地区影响
+	state_modifiers = {
+		workforce_scaled = {
+			state_assimilation_mult = 0.09						#人口同化
+			state_conversion_mult = 0.09						#信仰皈依
+		}
+	}
+
+	#每级建筑带来的国家影响
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_max_add = 0.30			#最大创新力投入
+			country_authority_add = 0.60						#权威力
+		}
+	}
+}

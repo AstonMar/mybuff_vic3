@@ -1,0 +1,164 @@
+﻿#为了防止魅魔科技被解锁特定的修改
+effect_starting_technology_tier_1_tech = {
+	#add_era_researched = era_1
+	# Economic
+	add_technology_researched = sericulture
+	add_technology_researched = enclosure
+	add_technology_researched = manufacturies
+	add_technology_researched = shaft_mining
+	add_technology_researched = cotton_gin
+	add_technology_researched = lathe
+	add_technology_researched = distillation
+	add_technology_researched = steelworking
+	add_technology_researched = prospecting
+
+	# Military	
+	add_technology_researched = standing_army
+	add_technology_researched = navigation
+	add_technology_researched = drydocks
+	add_technology_researched = mandatory_service
+	add_technology_researched = gunsmithing
+	add_technology_researched = artillery
+	add_technology_researched = military_drill
+	add_technology_researched = napoleonic_warfare
+	add_technology_researched = admiralty
+	add_technology_researched = army_reserves
+	add_technology_researched = line_infantry
+	add_technology_researched = paddle_steamer
+
+	# Cultural
+	add_technology_researched = urbanization
+	add_technology_researched = urban_planning
+	add_technology_researched = rationalism
+	add_technology_researched = tech_bureaucracy
+	add_technology_researched = currency_standards
+	add_technology_researched = democracy
+	add_technology_researched = romanticism
+	add_technology_researched = international_trade
+	add_technology_researched = centralization
+	add_technology_researched = corporate_charters
+	add_technology_researched = banking
+	add_technology_researched = academia
+	add_technology_researched = colonization
+	add_technology_researched = international_relations
+	add_technology_researched = law_enforcement
+	add_technology_researched = stock_exchange
+	add_technology_researched = medical_degrees
+	add_technology_researched = mass_communication
+	add_technology_researched = empiricism
+
+	# Economic
+	add_technology_researched = railways
+	add_technology_researched = intensive_agriculture
+	add_technology_researched = mechanical_tools
+	add_technology_researched = atmospheric_engine
+
+	# Military	
+	add_technology_researched = screw_frigate
+	add_technology_researched = general_staff
+	add_technology_researched = percussion_cap
+	add_technology_researched = power_of_the_purse
+
+	# Cultural
+	add_technology_researched = dialectics
+	add_technology_researched = central_archives
+	add_technology_researched = central_banking
+	add_technology_researched = egalitarianism
+}
+
+# Starting techs for advanced European and American powers - Austria, Prussia, Sweden etc
+
+effect_starting_technology_tier_2_tech = {
+	#add_era_researched = era_1
+	# Economic
+	add_technology_researched = sericulture
+	add_technology_researched = enclosure
+	add_technology_researched = manufacturies
+	add_technology_researched = shaft_mining
+	add_technology_researched = cotton_gin
+	add_technology_researched = lathe
+	add_technology_researched = distillation
+	add_technology_researched = steelworking
+	add_technology_researched = prospecting
+
+	# Military	
+	add_technology_researched = standing_army
+	add_technology_researched = navigation
+	add_technology_researched = drydocks
+	add_technology_researched = mandatory_service
+	add_technology_researched = gunsmithing
+	add_technology_researched = artillery
+	add_technology_researched = military_drill
+	add_technology_researched = napoleonic_warfare
+	add_technology_researched = admiralty
+	add_technology_researched = army_reserves
+	add_technology_researched = line_infantry
+	add_technology_researched = paddle_steamer
+
+	# Cultural
+	add_technology_researched = urbanization
+	add_technology_researched = urban_planning
+	add_technology_researched = rationalism
+	add_technology_researched = tech_bureaucracy
+	add_technology_researched = currency_standards
+	add_technology_researched = democracy
+	add_technology_researched = romanticism
+	add_technology_researched = international_trade
+	add_technology_researched = centralization
+	add_technology_researched = corporate_charters
+	add_technology_researched = banking
+	add_technology_researched = academia
+	add_technology_researched = colonization
+	add_technology_researched = international_relations
+	add_technology_researched = law_enforcement
+	add_technology_researched = stock_exchange
+	add_technology_researched = medical_degrees
+	add_technology_researched = mass_communication
+	add_technology_researched = empiricism
+}
+
+#解锁全部魅魔科技
+MH_succubus_unlock_all_technologies = {
+	#社会科技
+	add_technology_researched = MH_succubus_social_structure							#拥有科技：社会结构魅魔化
+	add_technology_researched = MH_succubus_plan_red_light_district						#拥有科技：规划魅魔风俗区
+	add_technology_researched = MH_succubus_construct_red_light_district				#拥有科技：建设魅魔风俗产业
+	add_technology_researched = MH_succubus_expand_red_light_district					#拥有科技：扩建魅魔风俗街
+	add_technology_researched = MH_succubus_having_a_city_red_light_district			#拥有科技：拥有城市的魅魔风俗区
+	add_technology_researched = MH_succubus_city_full_of_desires						#拥有科技：魅魔淫欲之城
+	add_technology_researched = MH_succubus_world_full_of_lust							#拥有科技：魅魔狂淫世界
+	add_technology_researched = MH_succubus_human_reservations							#拥有科技：人类保留地
+	add_technology_researched = MH_succubus_pornographic_functionary					#拥有科技：情趣公务员
+	add_technology_researched = MH_succubus_compulsory_sexual_services					#拥有科技：义务化侍奉
+	add_technology_researched = MH_succubus_sexual_services_administration_center		#拥有科技：魅魔性爱行政中心
+	add_technology_researched = MH_succubus_public_security								#拥有科技：推行魅魔治安
+	add_technology_researched = MH_succubus_to_extract_semen_military_police			#拥有科技：魅魔榨精宪兵
+	add_technology_researched = MH_succubus_nymphomaniac_patrolman						#拥有科技：魅魔痴女巡警
+	add_technology_researched = MH_succubus_analysis_of_sexual_value					#拥有科技：性能力量化分析
+	add_technology_researched = MH_succubus_sexual_loan									#拥有科技：以性贷款
+	add_technology_researched = MH_succubus_sex_value_bank								#拥有科技：欲望银行
+	add_technology_researched = MH_succubus_sexual_love_economic_oriented				#拥有科技：性力本位制
+	add_technology_researched = MH_succubus_allocation_of_mating_rights					#拥有科技：欲能分配
+	add_technology_researched = MH_succubus_state_run_sex_slave							#拥有科技：国营性奴
+	add_technology_researched = MH_succubus_private_sex_slave							#拥有科技：私营性奴
+	add_technology_researched = MH_succubus_confirm_existence							#拥有科技：确认魅魔的存在
+	add_technology_researched = MH_succubus_status_abroad								#拥有科技：境外魅魔公民地位
+	add_technology_researched = MH_succubus_domestic_racial_division					#拥有科技：境内非魅魔公民地位
+	add_technology_researched = MH_succubus_concession									#拥有科技：魅魔租界
+	add_technology_researched = MH_succubus_plucking_population							#拥有科技：掠夺人类
+	add_technology_researched = MH_succubus_slack_season_engage_in_prostitution			#拥有科技：农闲卖春
+	add_technology_researched = MH_succubus_religion									#拥有科技：魅魔宗教
+	add_technology_researched = MH_succubus_faith_ceremony								#拥有科技：仪式化魅魔信仰
+	add_technology_researched = MH_succubus_lust_crusaders								#拥有科技：欲望十字军
+	add_technology_researched = MH_succubus_philanthropy								#拥有科技：魅魔博爱主义
+	add_technology_researched = MH_succubus_irrationalism								#拥有科技：非理性主义
+	add_technology_researched = MH_succubus_lust_compulsory_education					#拥有科技：淫欲义务教育
+	add_technology_researched = MH_succubus_moaning_drowned_out_the_sound				#拥有科技：呻吟盖过声音
+	add_technology_researched = MH_succubus_writing_history								#拥有科技：撰写魅魔们的历史
+	add_technology_researched = MH_succubus_nationalism									#拥有科技：魅魔民族主义
+	add_technology_researched = MH_succubus_love_liquid_pharmaceutical_industry			#拥有科技：爱液制药
+	add_technology_researched = MH_succubus_lust_wind_blows_through_the_world			#拥有科技：淫风吹拂世界
+	add_technology_researched = MH_succubus_output_pornography							#拥有科技：规划魅魔风俗区
+	add_technology_researched = MH_succubus_maid_doctrine								#拥有科技：女仆主义
+
+}

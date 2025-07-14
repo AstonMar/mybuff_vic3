@@ -1,0 +1,9 @@
+﻿#梦回酱の魅魔欢愉之地
+MH_succubus_joyful_traits = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	modifier = {
+		building_throughput_add = 0.50							#吞吐量
+		state_infrastructure_add = 40							#基础设施
+		state_tax_capacity_add = 200							#征税能力
+	}
+}

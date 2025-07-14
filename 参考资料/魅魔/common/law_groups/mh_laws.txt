@@ -1,0 +1,22 @@
+﻿###法律类别
+#魅魔降临
+lawgroup_succubus_come = {
+	#法律种类划分：人权
+	law_group_category = human_rights
+
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#	#拥有变量标记：魅魔降临
+	#	has_variable = MH_succubus_come_flag
+	#}
+
+	#颁布所需时间
+	base_enactment_days = 150
+
+	#受政权更迭影响
+	affected_by_regime_change = yes
+
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}

@@ -1,0 +1,522 @@
+﻿#一级魅魔科技带来的同化速度加成：1‰
+MH_succubus_culture_belief_assimilation_speed_1 = {
+	#判定
+	if = {
+		#条件
+		limit = {
+			#拥有国家修正：人类魅魔化转换~
+			has_modifier = MH_succubus_conversion
+		}
+		#人口同化：魅魔文化
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 0.001
+			}
+		}
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 0.001
+			}
+		}
+	}
+}
+
+#二级魅魔科技带来的同化速度加成：2‰
+MH_succubus_culture_belief_assimilation_speed_2 = {
+	#判定
+	if = {
+		#条件
+		limit = {
+			#拥有国家修正：人类魅魔化转换~
+			has_modifier = MH_succubus_conversion
+		}
+		#人口同化：魅魔文化
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 0.002
+			}
+		}
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 0.002
+			}
+		}
+	}
+}
+
+#三级魅魔科技带来的同化速度加成：3‰
+MH_succubus_culture_belief_assimilation_speed_3 = {
+	#判定
+	if = {
+		#条件
+		limit = {
+			#拥有国家修正：人类魅魔化转换~
+			has_modifier = MH_succubus_conversion
+		}
+		#人口同化：魅魔文化
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 0.003
+			}
+		}
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 0.003
+			}
+		}
+	}
+}
+
+#四级魅魔科技带来的同化速度加成：4‰
+MH_succubus_culture_belief_assimilation_speed_4 = {
+	#判定
+	if = {
+		#条件
+		limit = {
+			#拥有国家修正：人类魅魔化转换~
+			has_modifier = MH_succubus_conversion
+		}
+		#人口同化：魅魔文化
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 0.004
+			}
+		}
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 0.004
+			}
+		}
+	}
+}
+
+#五级魅魔科技带来的同化速度加成：5‰
+MH_succubus_culture_belief_assimilation_speed_5 = {
+	#判定
+	if = {
+		#条件
+		limit = {
+			#拥有国家修正：人类魅魔化转换~
+			has_modifier = MH_succubus_conversion
+		}
+		#人口同化：魅魔文化
+		every_scope_pop = {
+			change_pop_culture = {
+				#文化：魅魔文化
+				target = cu:mh_succubus_culture
+				#同化比例
+				value = 0.005
+			}
+		}
+		#皈依信仰：魅魔欢愉天
+		every_scope_state = {
+			convert_population = {
+				#信仰：魅魔欢愉天
+				target = rel:mh_succubus_lust_heaven
+				#皈依比例
+				value = 0.005
+			}
+		}
+	}
+}
+
+#科技文化同化加速判定
+MH_succubus_culture_belief_assimilation_speed = {
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_social_structure							#拥有科技：社会结构魅魔化
+		}
+		set_variable = MH_succubus_social_structure_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_5 = yes									#5级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_plan_red_light_district						#拥有科技：规划魅魔风俗区
+		}
+		set_variable = MH_succubus_plan_red_light_district_flag									#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_1 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_construct_red_light_district				#拥有科技：建设魅魔风俗产业
+		}
+		set_variable = MH_succubus_construct_red_light_district_flag							#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_1 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_expand_red_light_district					#拥有科技：扩建魅魔风俗街
+		}
+		set_variable = MH_succubus_expand_red_light_district_flag								#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_having_a_city_red_light_district			#拥有科技：拥有城市的魅魔风俗区
+		}
+		set_variable = MH_succubus_having_a_city_red_light_district_flag						#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_city_full_of_desires						#拥有科技：魅魔淫欲之城
+		}
+		set_variable = MH_succubus_city_full_of_desires_flag									#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_4 = yes									#4级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_world_full_of_lust							#拥有科技：魅魔狂淫世界
+		}
+		set_variable = MH_succubus_world_full_of_lust_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_5 = yes									#5级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_human_reservations							#拥有科技：人类保留地
+		}
+		set_variable = MH_succubus_human_reservations_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_5 = yes									#5级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_pornographic_functionary					#拥有科技：情趣公务员
+		}
+		set_variable = MH_succubus_pornographic_functionary_flag								#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_1 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_compulsory_sexual_services					#拥有科技：义务化侍奉
+		}
+		set_variable = MH_succubus_compulsory_sexual_services_flag								#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_sexual_services_administration_center		#拥有科技：魅魔性爱行政中心
+		}
+		set_variable = MH_succubus_sexual_services_administration_center_flag					#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_public_security								#拥有科技：推行魅魔治安
+		}
+		set_variable = MH_succubus_public_security_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_1 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_to_extract_semen_military_police			#拥有科技：魅魔榨精宪兵
+		}
+		set_variable = MH_succubus_to_extract_semen_military_police_flag						#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_nymphomaniac_patrolman						#拥有科技：魅魔痴女巡警
+		}
+		set_variable = MH_succubus_nymphomaniac_patrolman_flag									#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_analysis_of_sexual_value					#拥有科技：性能力量化分析
+		}
+		set_variable = MH_succubus_analysis_of_sexual_value_flag								#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_sexual_loan									#拥有科技：以性贷款
+		}
+		set_variable = MH_succubus_sexual_loan_flag												#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_sex_value_bank								#拥有科技：欲望银行
+		}
+		set_variable = MH_succubus_sex_value_bank_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_sexual_love_economic_oriented				#拥有科技：性力本位制
+		}
+		set_variable = MH_succubus_sexual_love_economic_oriented_flag							#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_allocation_of_mating_rights					#拥有科技：欲能分配
+		}
+		set_variable = MH_succubus_allocation_of_mating_rights_flag								#欲能分配
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_state_run_sex_slave							#拥有科技：国营性奴
+		}
+		set_variable = MH_succubus_state_run_sex_slave_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_4 = yes									#4级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_private_sex_slave							#拥有科技：私营性奴
+		}
+		set_variable = MH_succubus_private_sex_slave_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_4 = yes									#4级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_confirm_existence							#拥有科技：确认魅魔的存在
+		}
+		set_variable = MH_succubus_confirm_existence_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_status_abroad								#拥有科技：境外魅魔公民地位
+		}
+		set_variable = MH_succubus_status_abroad_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_domestic_racial_division					#拥有科技：境内非魅魔公民地位
+		}
+		set_variable = MH_succubus_domestic_racial_division_flag								#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_concession									#拥有科技：魅魔租界
+		}
+		set_variable = MH_succubus_concession_flag												#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_plucking_population							#拥有科技：掠夺人类
+		}
+		set_variable = MH_succubus_plucking_population_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_slack_season_engage_in_prostitution			#拥有科技：农闲卖春
+		}
+		set_variable = MH_succubus_slack_season_engage_in_prostitution_flag						#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_religion									#拥有科技：魅魔宗教
+		}
+		set_variable = MH_succubus_religion_flag												#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_faith_ceremony								#拥有科技：仪式化魅魔信仰
+		}
+		set_variable = MH_succubus_faith_ceremony_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_lust_crusaders								#拥有科技：欲望十字军
+		}
+		set_variable = MH_succubus_lust_crusaders_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_philanthropy								#拥有科技：魅魔博爱主义
+		}
+		set_variable = MH_succubus_philanthropy_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_irrationalism								#拥有科技：非理性主义
+		}
+		set_variable = MH_succubus_irrationalism_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_1 = yes									#1级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_lust_compulsory_education					#拥有科技：淫欲义务教育
+		}
+		set_variable = MH_succubus_lust_compulsory_education_flag								#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_moaning_drowned_out_the_sound				#拥有科技：呻吟盖过声音
+		}
+		set_variable = MH_succubus_moaning_drowned_out_the_sound_flag							#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_writing_history								#拥有科技：撰写魅魔们的历史
+		}
+		set_variable = MH_succubus_writing_history_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_nationalism									#拥有科技：魅魔民族主义
+		}
+		set_variable = MH_succubus_nationalism_flag												#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_love_liquid_pharmaceutical_industry			#拥有科技：爱液制药
+		}
+		set_variable = MH_succubus_love_liquid_pharmaceutical_industry_flag						#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_lust_wind_blows_through_the_world			#拥有科技：淫风吹拂世界
+		}
+		set_variable = MH_succubus_lust_wind_blows_through_the_world_flag						#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_2 = yes									#2级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_output_pornography							#拥有科技：规划魅魔风俗区
+		}
+		set_variable = MH_succubus_output_pornography_flag										#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_technology_researched = MH_succubus_maid_doctrine								#拥有科技：女仆主义
+		}
+		set_variable = MH_succubus_maid_doctrine_flag											#添加变量标记
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+
+	#判定
+	if = {
+		#条件
+		limit = {
+			has_variable = MH_succubus_universal_random_2_flag									#拥有变量条目
+		}
+		MH_succubus_culture_belief_assimilation_speed_3 = yes									#3级科技同化
+	}
+}

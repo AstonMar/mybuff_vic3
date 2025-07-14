@@ -1,0 +1,304 @@
+﻿###人类魅魔化转换~
+MH_succubus_conversion_journal_entries = {
+
+	#事件图片
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	#分类：国内事务
+	group = je_group_internal_affairs
+
+    #决策存在时间
+	#timeout = 3650
+
+	#触发器
+	#启用人类魅魔化~
+	scripted_button = MH_succubus_ban_conversion_button
+	#停止人类魅魔化~
+	scripted_button = MH_succubus_unban_conversion_button
+
+	#启用人类本土文化清除计划~
+	scripted_button = MH_succubus_ban_erasure_homeland_culture_button
+	#停止人类本土文化清除计划~
+	scripted_button = MH_succubus_unban_erasure_homeland_culture_button
+
+	#让魅魔们进入主流文化圈~
+	scripted_button = MH_succubus_primary_culture_button
+	#魅魔文化是唯一的主流文化~
+	scripted_button = MH_succubus_only_primary_culture_button
+
+	#魅魔们的绝对真信~
+	scripted_button = MH_succubus_true_faith_button
+
+	#告知世界魅魔们的存在~
+	scripted_button = MH_succubus_declare_exist_button
+	#隐匿魅魔们的存在~
+	scripted_button = MH_succubus_conceal_exist_button
+
+	#让梦回酱成为这个国家的女帝~
+	scripted_button = MH_succubus_menghuijiang_ruler_button
+
+	#宣扬魅魔大姐姐优越论~
+	scripted_button = MH_succubus_superiority_theory_button
+	#向魅魔大姐姐们的小穴献上热吻~
+	scripted_button = MH_succubus_fanatical_followers_button
+
+	#脚本读条
+	scripted_progress_bar = MH_succubus_monthly_culture_assimilation_speed
+	scripted_progress_bar = MH_succubus_monthly_belief_assimilation_speed
+
+	#激活时每月判定
+	on_monthly_pulse = {
+		#随机触发事件
+		#random_events = {
+		#	100 = 0
+		#	#20 = 0
+		#	#20 = 0
+		#	#20 = 0
+		#	#20 = 0
+		#}
+		#效果
+		effect = {
+			MH_succubus_culture_belief_assimilation_speed = yes			#来自魅魔科技的同化加速
+
+#############
+			#多个if可以同时判定且生效~
+			if = {
+				#条件
+				limit = {
+					#拥有国家修正：魅魔初临~
+					has_modifier = MH_succubus_population_1
+					#魅魔文化人口占据总人口的22.5%
+					culture_percent_country = {
+						target = cu:mh_succubus_culture
+						value >= 0.225
+					}
+				}
+
+				#移除国家修正：魅魔初临~
+				remove_modifier = MH_succubus_population_1
+
+				#获得国家修正：魅魔少数族裔~
+				add_modifier = {
+					name = MH_succubus_population_2
+				}
+			}
+
+			#多个if可以同时判定且生效~
+			if = {
+				#条件
+				limit = {
+					#拥有国家修正：魅魔少数族裔~
+					has_modifier = MH_succubus_population_2
+					#魅魔文化人口占据总人口的45%
+					culture_percent_country = {
+						target = cu:mh_succubus_culture
+						value >= 0.45
+					}
+				}
+
+				#移除国家修正：魅魔少数族裔~
+				remove_modifier = MH_succubus_population_2
+
+				#获得国家修正：魅魔族裔~
+				add_modifier = {
+					name = MH_succubus_population_3
+				}
+			}
+
+			#多个if可以同时判定且生效~
+			if = {
+				#条件
+				limit = {
+					#拥有国家修正：魅魔族裔~
+					has_modifier = MH_succubus_population_3
+					#魅魔文化人口占据总人口的67.5%
+					culture_percent_country = {
+						target = cu:mh_succubus_culture
+						value >= 0.675
+					}
+				}
+
+				#移除国家修正：魅魔族裔~
+				remove_modifier = MH_succubus_population_3
+
+				#获得国家修正：魅魔主体国家~
+				add_modifier = {
+					name = MH_succubus_population_4
+				}
+			}
+
+			#多个if可以同时判定且生效~
+			if = {
+				#条件
+				limit = {
+					#拥有国家修正：魅魔主体国家
+					has_modifier = MH_succubus_population_4
+					#魅魔文化人口占据总人口的90%
+					culture_percent_country = {
+						target = cu:mh_succubus_culture
+						value >= 0.90
+					}
+				}
+
+				#移除国家修正：魅魔主体国家~
+				remove_modifier = MH_succubus_population_4
+
+				#获得国家修正：纯粹的魅魔国家~
+				add_modifier = {
+					name = MH_succubus_population_5
+				}
+			}
+#############
+			#多个if可以同时判定且生效~
+			if = {
+				#全世界所有地区
+				every_scope_state = {
+					limit = {
+						#魅魔文化人口占据地区人口的35%
+						culture_percent_state = {
+							target = cu:mh_succubus_culture
+							value >= 0.35
+						}
+					}
+					state_region = {
+						#地区添加本土文化：魅魔文化
+						add_homeland = cu:mh_succubus_culture
+					}
+				}
+			}
+
+			#多个if可以同时判定且生效~
+			if = {
+				limit = {
+					#拥有国家修正：进行人类本土文化清除计划中~
+					has_modifier = MH_succubus_perform_erasure_homeland_culture
+				}
+				#全世界所有地区
+				every_scope_state = {
+					limit = {
+						#魅魔文化人口占据地区人口的90%
+						culture_percent_state = {
+							target = cu:mh_succubus_culture
+							value >= 0.90
+						}
+						#拥有法令：魅魔大姐姐们の人类本土文化清除计划~
+						has_decree = MH_succubus_erasure_homeland_culture
+					}
+					state_region = {
+						#移除全部非魅魔的本土文化
+						MH_succubus_remove_homeland = yes
+					}
+				}
+			}
+
+		}
+	}
+
+	#完成条件
+	complete = {
+		#始终为非
+		always = no
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：空一行
+			text = MH_succubus_NOT
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：当地区内魅魔大姐姐的数量达到地区总人口的90%，且被法令【魅魔大姐姐们の人类本土文化清除计划~】所标记，那么过月结算时，地区内的非魅魔本土文化则会被彻底移除~
+			text = MH_succubus_conversion_journal_entries_erasure_homeland_culture_tt
+			#拥有国家修正：进行人类本土文化清除计划中~
+			has_modifier = MH_succubus_perform_erasure_homeland_culture
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：空一行
+			text = MH_succubus_NOT
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：当启用人类魅魔化时，每月全国0.75%的人群会被同化成为新的魅魔大姐姐，当魅魔大姐姐们的人口占比达到一定数比例时，魅魔大姐姐们会一步步的成为这个国家的绝对主体~
+			text = MH_succubus_conversion_journal_entries_1_tt
+			#魅魔文化人口占据总人口的90%
+			culture_percent_country = {
+				target = cu:mh_succubus_culture
+				value >= 0.90
+			}
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：空一行
+			text = MH_succubus_NOT
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：当国内魅魔大姐姐的数量达到全国总人口的22.5%时，魅魔大姐姐们会成为这个国家的少数族裔哦~
+			text = MH_succubus_conversion_journal_entries_2_tt
+			#魅魔文化人口占据总人口的22.5%
+			culture_percent_country = {
+				target = cu:mh_succubus_culture
+				value >= 0.225
+			}
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：空一行
+			text = MH_succubus_NOT
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：当国内魅魔大姐姐的数量达到全国总人口的45%时，魅魔大姐姐们会成为这个国家的普遍族裔哦~
+			text = MH_succubus_conversion_journal_entries_3_tt
+			#魅魔文化人口占据总人口的45%
+			culture_percent_country = {
+				target = cu:mh_succubus_culture
+				value >= 0.450
+			}
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：空一行
+			text = MH_succubus_NOT
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：当国内魅魔大姐姐的数量达到全国总人口的67.5%时，魅魔大姐姐们会成为这个国家的主体族裔哦~
+			text = MH_succubus_conversion_journal_entries_4_tt
+			#魅魔文化人口占据总人口的67.5%
+			culture_percent_country = {
+				target = cu:mh_succubus_culture
+				value >= 0.675
+			}
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：空一行
+			text = MH_succubus_NOT
+		}
+
+		#自定义提示工具
+		custom_tooltip = {
+			#插入文本：当国内魅魔大姐姐的数量达到全国总人口的90%时，魅魔大姐姐们会成为这个国家的绝对主体哦~
+			text = MH_succubus_conversion_journal_entries_5_tt
+			#魅魔文化人口占据总人口的90%
+			culture_percent_country = {
+				target = cu:mh_succubus_culture
+				value >= 0.90
+			}
+		}
+	}
+
+	#完成效果
+	#on_complete = {}
+}

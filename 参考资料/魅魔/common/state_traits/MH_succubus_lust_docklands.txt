@@ -1,0 +1,26 @@
+﻿#梦回酱の魅魔纵欲港区
+MH_succubus_lust_docklands = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.30						#造船厂建筑吞吐量
+		building_military_shipyards_throughput_add = 0.30				#军用建筑吞吐量
+		state_building_naval_base_max_level_add = 30					#海军基地最大等级
+	}
+}
+
+#联动天朝上国
+#地大物博
+state_trait_mh_DiDaWuBo = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		state_infrastructure_add = 75									#基础设施
+		state_tax_capacity_add = 75										#征税能力
+		building_subsistence_farms_throughput_add = 0.15				#自给农场吞吐量
+
+		state_building_construction_sector_max_level_add = 15			#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 15				#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 15			#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 15			#魅魔生态园区最大等级
+	}
+}

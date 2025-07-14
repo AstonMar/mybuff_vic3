@@ -1,0 +1,23 @@
+﻿#暂不清楚，勉强知道和文化人群的生活水平有关（正）
+mh_succubus_culture_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_mh_succubus_culture_standard_of_living_add = 1
+}
+
+#暂不清楚，勉强知道和文化人群的生活水平有关（负）
+mh_succubus_culture_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_mh_succubus_culture_standard_of_living_add = 1
+}
+
+#暂不清楚，勉强知道和宗教人群的生活水平有关（正）
+mh_succubus_lust_heaven_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_mh_succubus_lust_heaven_standard_of_living_add = 1
+}
+
+#暂不清楚，勉强知道和宗教人群的生活水平有关（负）
+mh_succubus_lust_heaven_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_mh_succubus_lust_heaven_standard_of_living_add = 1
+}
