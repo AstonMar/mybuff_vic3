@@ -1,0 +1,133 @@
+﻿#魅惑淫术
+mh_succubus_charm_lust_art = {
+	#可用
+	groups= {
+		general
+	}
+
+	#地图上显示
+	show_in_lens = no
+
+	#图标
+	texture = "gfx/interface/icons/diplomatic_action_icons/force_become_subject.dds"
+
+	#启用条件
+	selectable = {
+		#是国家集团领袖
+		is_power_bloc_leader = yes
+		#可以施展魅惑淫术
+		power_bloc ?= {
+			modifier:power_bloc_leader_can_mh_succubus_display_charm_lust_art = yes
+		}		
+	}
+
+	#作用范围
+	potential = {
+		#国家类型不是松散部落
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+		}
+	}
+
+	#目标国家所需达成条件
+	possible = { }
+
+	#效果
+	pact = {
+		#影响力花费
+		cost = 200
+
+		#这是一个双边协议：否
+		is_two_sided_pact = no
+		#在外交行动中显示
+		show_in_outliner = yes
+
+		#可以作为战争种的拉拢条件
+		#can_be_used_in_sway_offers = yes
+		#sway_maneuvers_cost = 10
+
+		#改善关系（每日关系进展，满100提升1点关系）
+		relations_progress_per_day = 10
+		relations_improvement_max = 100
+
+		#来自外交条约的影响产生
+		second_modifier = {
+			country_pact_leverage_generation_add = 400
+		}
+
+		#每周效果
+		weekly_effect = {
+			#目标国家
+			scope:target_country = {
+				#自定义提示工具
+				custom_tooltip = {
+					#插入文本
+					text = mh_succubus_charm_lust_art_pop_tt
+				}
+
+				#判定
+				if = {
+					#条件
+					limit = {
+						#魅魔文化人口占据总人口的50%
+						culture_percent_country = {
+							target = cu:mh_succubus_culture
+							value >= 0.50
+						}
+					}
+
+					#添加主流文化：魅魔文化
+					add_primary_culture = cu:mh_succubus_culture
+				}
+
+				#判定
+				if = {
+					#条件
+					limit = {
+						#魅魔信仰人口占据总人口的75%
+						religion_percent_country = {
+							target = rel:mh_succubus_lust_heaven
+							value >= 0.75
+						}
+					}
+
+					#更换国教：魅魔文化
+					set_state_religion = rel:mh_succubus_lust_heaven
+				}
+			}
+			#隐藏效果
+			hidden_effect = {
+				#目标国家
+				scope:target_country = {
+					#人口同化：魅魔文化
+						every_scope_pop = {
+						change_pop_culture = {
+							#文化：魅魔文化
+							target = cu:mh_succubus_culture
+							#同化比例
+							value = 0.001
+						}
+					}
+
+					#皈依信仰：魅魔欢愉天
+					every_scope_state = {
+						convert_population = {
+							#信仰：魅魔欢愉天
+							target = rel:mh_succubus_lust_heaven
+							#皈依比例
+							value = 0.001
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	#AI使用可能性：0
+	ai = {
+		evaluation_chance = {
+			value = 0
+		}
+	}
+}

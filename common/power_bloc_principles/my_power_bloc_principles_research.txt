@@ -1,0 +1,161 @@
+﻿###梦回酱の爱欲之约系列原则~###
+#梦回酱の爱欲之约I~
+MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_1 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+		
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		country_institution_size_change_speed_institution_schools_mult = 0.50			#教育机构规模变更速度
+	}
+
+	institution = institution_schools
+
+	#为“教育”机构提供
+	institution_modifier = {
+		state_education_access_add = 0.2												#受教育機會
+		country_tech_research_speed_mult=0.1 											#科技研究速度
+	}
+
+	institution = institution_health_system
+
+	#为“卫生”机构提供
+	institution_modifier = {
+		state_mortality_wealth_mult=-0.1 													#每级财富的死亡率
+	}
+	
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+#梦回酱の爱欲之约II~
+MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_2 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes		#对集团成员强制施行相同的教育体制法律
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+		
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+        #促进研究
+		country_institution_size_change_speed_institution_schools_mult = 0.50			#教育机构规模变更速度
+		country_institution_cost_institution_schools_mult = -0.50						#教育行政力花费
+		#country_disallow_law_no_schools_bool = yes										#禁止无学校
+	}
+
+	institution = institution_schools
+
+	#为“教育”机构提供
+	institution_modifier = {
+		state_education_access_add = 0.2												#受教育機會
+		country_tech_research_speed_mult=0.1 											#科技研究速度
+		country_weekly_innovation_max_add = 10											#最大创新力投入
+	}
+
+	institution = institution_health_system
+
+	#为“卫生”机构提供
+	institution_modifier = {
+		state_mortality_turmoil_mult=-0.1 													#每级动乱的死亡率
+		state_mortality_wealth_mult=-0.1 													#每级财富的死亡率
+	}
+	
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+#梦回酱の爱欲之约III~
+MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_3 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes		#对集团成员强制施行相同的教育体制法律
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+		
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+        #促进研究
+        technology_invention_cost_mult = -0.2											#科技花费
+		country_institution_size_change_speed_institution_schools_mult = 0.50			#教育机构规模变更速度
+		country_institution_cost_institution_schools_mult = -0.50						#教育行政力花费
+		#country_disallow_law_no_schools_bool = yes										#禁止无学校
+	}
+
+	institution = institution_schools
+
+	#为“教育”机构提供
+	institution_modifier = {
+		state_education_access_add = 0.2												#受教育機會
+		country_tech_research_speed_mult=0.1 											#科技研究速度
+		country_tech_spread_add=10 														#科技扩散
+		country_tech_spread_mult = 0.05													#科技扩散
+		country_ahead_of_time_research_penalty_mult = -0.05								#超越时代惩罚
+		country_weekly_innovation_max_add = 10											#最大创新力投入
+	}
+
+	institution = institution_health_system
+
+	#为“卫生”机构提供
+	institution_modifier = {
+		state_mortality_mult=-0.1 															#死亡率
+		state_mortality_turmoil_mult=-0.1 													#每级动乱的死亡率
+		state_mortality_wealth_mult=-0.1 													#每级财富的死亡率
+	}
+	
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}

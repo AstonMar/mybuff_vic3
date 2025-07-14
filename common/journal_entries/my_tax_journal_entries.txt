@@ -1,0 +1,25 @@
+﻿###人类魅魔化转换~
+MH_succubus_conversion_journal_entries = {
+
+	#事件图片
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	#分类：国内事务
+	group = je_group_internal_affairs
+
+	#触发器
+	#增加人均税收
+	scripted_button = my_add_tax_per_capita_button
+	#减少人均税收
+	scripted_button = my_reduce_tax_per_capita_button
+
+	#完成条件
+	complete = {
+		#始终为非
+		always = no
+	}
+
+	possible = {
+		is_player = yes
+	}
+}

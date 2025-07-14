@@ -1,0 +1,92 @@
+add_my_buff_decision = {
+	is_shown = {
+		NOT = {
+			has_modifier = my_buff
+		}
+		is_player = yes
+	}
+	when_taken = {
+		add_modifier = {
+			name = my_buff
+		}
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+
+remove_my_buff_decision = {
+	is_shown = {
+		has_modifier = my_buff
+		is_player = yes
+	}
+	when_taken = {
+		remove_modifier = my_buff
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+
+#add_my_id_decision = {
+#	is_shown = {
+#		#NOT = {
+#		#	has_modifier = my_add_id
+#		#}
+#		is_player = yes
+#	}
+
+#	#this is effect
+#	when_taken = {
+#		#添加意识形态
+#		ig:ig_intelligentsia = { add_ideology = law_succubus_superiority_theory }			#为【知识分子】添加魅魔大姐姐优越论意识形态
+#		ig:ig_rural_folk = { add_ideology = law_succubus_superiority_theory }				#为【乡村民众】添加魅魔大姐姐优越论意识形态
+#		ig:ig_devout = { add_ideology = law_succubus_superiority_theory }					#为【虔信者】添加魅魔大姐姐优越论意识形态
+#		ig:ig_industrialists = { add_ideology = law_succubus_superiority_theory }			#为【实业家】添加魅魔大姐姐优越论意识形态
+#		ig:ig_petty_bourgeoisie = { add_ideology = law_succubus_superiority_theory }		#为【小市民】添加魅魔大姐姐优越论意识形态
+#		ig:ig_landowners = { add_ideology = law_succubus_superiority_theory }				#为【地主】添加魅魔大姐姐优越论意识形态
+#		ig:ig_armed_forces = { add_ideology = law_succubus_superiority_theory }				#为【军队】添加魅魔大姐姐优越论意识形态
+#		ig:ig_trade_unions = { add_ideology = law_succubus_superiority_theory }				#为【工会】添加魅魔大姐姐优越论意识形态
+#	}
+
+#	#effect = {
+#	#	#添加意识形态
+#	#	ig:ig_intelligentsia = { add_ideology = law_succubus_superiority_theory }			#为【知识分子】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_rural_folk = { add_ideology = law_succubus_superiority_theory }				#为【乡村民众】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_devout = { add_ideology = law_succubus_superiority_theory }					#为【虔信者】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_industrialists = { add_ideology = law_succubus_superiority_theory }			#为【实业家】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_petty_bourgeoisie = { add_ideology = law_succubus_superiority_theory }		#为【小市民】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_landowners = { add_ideology = law_succubus_superiority_theory }				#为【地主】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_armed_forces = { add_ideology = law_succubus_superiority_theory }				#为【军队】添加魅魔大姐姐优越论意识形态
+#	#	ig:ig_trade_unions = { add_ideology = law_succubus_superiority_theory }				#为【工会】添加魅魔大姐姐优越论意识形态
+#	#}
+#	ai_chance = {
+#		base = 0
+#	}
+#}
+
+#remove_my_id_decision = {
+#	is_shown = {
+#		#NOT = {
+#		#	has_modifier = my_remove_id
+#		#}
+		
+#		is_player = yes
+#	}
+#	when_taken = {
+#		#移除意识形态
+#		ig:ig_intelligentsia = { remove_ideology = law_succubus_superiority_theory }		#为【知识分子】移除魅魔大姐姐优越论意识形态
+#		ig:ig_rural_folk = { remove_ideology = law_succubus_superiority_theory }			#为【乡村民众】移除魅魔大姐姐优越论意识形态
+#		ig:ig_devout = { remove_ideology = law_succubus_superiority_theory }				#为【虔信者】移除魅魔大姐姐优越论意识形态
+#		ig:ig_industrialists = { remove_ideology = law_succubus_superiority_theory }		#为【实业家】移除魅魔大姐姐优越论意识形态
+#		ig:ig_petty_bourgeoisie = { remove_ideology = law_succubus_superiority_theory }		#为【小市民】移除魅魔大姐姐优越论意识形态
+#		ig:ig_landowners = { remove_ideology = law_succubus_superiority_theory }			#为【地主】移除魅魔大姐姐优越论意识形态
+#		ig:ig_armed_forces = { remove_ideology = law_succubus_superiority_theory }			#为【军队】移除魅魔大姐姐优越论意识形态
+#		ig:ig_trade_unions = { remove_ideology = law_succubus_superiority_theory }			#为【工会】移除魅魔大姐姐优越论意识形态
+#	}
+
+#	ai_chance = {
+#		base = 0
+#	}
+#}
+

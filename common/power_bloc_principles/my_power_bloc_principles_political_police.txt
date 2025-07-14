@@ -1,0 +1,244 @@
+﻿###梦回酱の溺欲之契系列原则~###
+#梦回酱の溺欲之契I~
+MH_principle_succubus_contract_to_indulge_in_lust_1 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+        power_bloc_leader_can_add_wargoal_bool = yes #允许免费战争目标
+
+        # 国家恶名生成倍率减少0.15
+        country_infamy_generation_mult = -0.15
+
+		country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool=yes 		#对集团成员强制施行相同的教会与国家法律
+		country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool=yes 	#对集团成员强制施行相同的权力分配法律
+		country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool=yes 	#对集团成员强制施行相同的治理原则法律
+		country_can_impose_same_lawgroup_policing_in_power_bloc_bool=yes 				#对集团成员强制施行相同的警察机构法律
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		country_authority_mult = 0.2													#权威力
+		country_influence_mult = 0.2													#影响力
+
+		#附庸
+		country_authority_per_subject_add = 25											#权威力（每个附属国）
+
+		#意识形态真理
+		country_bolster_cost_mult = -0.25												#扶持花费
+		country_suppression_cost_mult = -0.25											#打压花费
+
+		#神圣经济学
+		state_trade_advantage_same_religion_add = 50									#与教友的贸易优势
+
+        #警察合作
+		country_institution_size_change_speed_institution_police_mult = 0.50			#执法机构规模变更速度
+
+		#创意立法
+		country_law_enactment_stall_mult = -0.33										#立法停滞率
+	}
+
+	#对“国家集团”影响：
+	power_bloc_modifier = {
+		#防务合作
+        power_bloc_leader_can_assistance = yes 											#权力集团的领导者可以提供援助
+	}
+	
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+#梦回酱の溺欲之契II~
+MH_principle_succubus_contract_to_indulge_in_lust_2 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+        power_bloc_leader_can_add_wargoal_bool = yes #允许免费战争目标
+		power_bloc_leader_can_force_state_religion_bool = yes #允许强制推行国教
+		power_bloc_leader_can_regime_change_bool = yes #允许强迫政权更迭
+
+        # 国家恶名生成倍率减少0.15
+        country_infamy_generation_mult = -0.15
+
+		country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool=yes 		#对集团成员强制施行相同的教会与国家法律
+		country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool=yes 	#对集团成员强制施行相同的权力分配法律
+		country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool=yes 	#对集团成员强制施行相同的治理原则法律
+		country_can_impose_same_lawgroup_policing_in_power_bloc_bool=yes 				#对集团成员强制施行相同的警察机构法律
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+        state_turmoil_mult = -0.15 # 州动荡倍率减少0.05
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		country_authority_mult = 0.2													#权威力
+		country_influence_mult = 0.2													#影响力
+		state_tax_capacity_add= 10 #征税能力
+		state_tax_capacity_mult= 0.2 #征税能力
+
+
+		#附庸
+		country_authority_per_subject_add = 25											#权威力（每个附属国）
+		country_subject_income_transfer_mult = 0.25										#附属国收入转移
+
+		#意识形态真理
+		country_bolster_cost_mult = -0.25												#扶持花费
+		country_suppression_cost_mult = -0.25											#打压花费
+		country_party_whip_impact_mult = 0.2											#党鞭对意识形态差异的影响
+
+		#神圣经济学
+		state_trade_advantage_same_religion_add = 50									#与教友的贸易优势
+		country_subject_income_transfer_heathen_mult = 0.5								#异教附属国收入转移
+
+        #警察合作
+		country_institution_size_change_speed_institution_police_mult = 0.50			#执法机构规模变更速度
+		country_institution_cost_institution_police_mult = -0.50						#执法机构行政力花费
+
+		#创意立法
+		country_law_enactment_stall_mult = -0.33										#立法停滞率
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25			#制定反对的法律提高的政治运动活跃度
+		political_movement_radicalism_from_enactment_approval_mult = 0.25				#制定支持的法律降低的政治运动活跃度
+	}
+
+	#对“国家集团”影响：
+	power_bloc_modifier = {
+		#防务合作
+        power_bloc_leader_can_assistance = yes 											#权力集团的领导者可以提供援助
+	}
+
+	institution = institution_police
+
+	#为“警察”机构提供
+	institution_modifier = {
+		political_movement_radicalism_add = -0.05										#政治运动活跃度
+	}
+	
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+#梦回酱の溺欲之契III~
+MH_principle_succubus_contract_to_indulge_in_lust_3 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+        power_bloc_leader_can_make_subjects_bool = yes # 权力集团的领导者可以将其他国家变为附属国
+        power_bloc_leader_can_add_wargoal_bool = yes #允许免费战争目标
+		power_bloc_leader_can_force_state_religion_bool = yes #允许强制推行国教
+		power_bloc_leader_can_make_subjects_bool = yes #可以降服国家集团成员
+		power_bloc_leader_can_regime_change_bool = yes #允许强迫政权更迭
+
+        # 国家恶名生成倍率减少0.15
+        country_infamy_generation_mult = -0.15
+
+		country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool=yes 		#对集团成员强制施行相同的教会与国家法律
+		country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool=yes 	#对集团成员强制施行相同的权力分配法律
+		country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool=yes 	#对集团成员强制施行相同的治理原则法律
+		country_can_impose_same_lawgroup_policing_in_power_bloc_bool=yes 				#对集团成员强制施行相同的警察机构法律
+
+		power_bloc_invite_acceptance_add = 50 #国家集团邀请接受概率
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+        state_turmoil_mult = -0.15 # 州动荡倍率减少0.05
+        power_bloc_income_transfer_to_leader_factor = 1000 #给国家集团领袖的收入转移
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		country_authority_mult = 0.2													#权威力
+		country_influence_mult = 0.2													#影响力
+		state_tax_capacity_add=10 #征税能力
+		state_tax_capacity_mult=0.2 #征税能力
+		state_tax_collection_mult=0.2 #税收
+		state_tax_waste_add=-10 #税收浪费
+
+
+		#附庸
+		country_authority_per_subject_add = 25											#权威力（每个附属国）
+		country_subject_income_transfer_mult = 0.25										#附属国收入转移
+		country_allow_enacting_decrees_in_subject_bool = yes							#允许在附属国地区颁布法令
+
+		#意识形态真理
+		country_bolster_cost_mult = -0.25												#扶持花费
+		country_suppression_cost_mult = -0.25											#打压花费
+		country_party_whip_impact_mult = 0.2											#党鞭对意识形态差异的影响
+		interest_group_in_opposition_agitator_popularity_add = -33						#在野鼓动者的人气
+
+		#神圣经济学
+		state_trade_advantage_same_religion_add = 50									#与教友的贸易优势
+		country_subject_income_transfer_heathen_mult = 0.5								#异教附属国收入转移
+        country_improve_relations_speed_mult = 0.30										#国家改善关系速度倍率增加0.30
+
+        #警察合作
+		country_institution_size_change_speed_institution_police_mult = 0.50			#执法机构规模变更速度
+		country_institution_cost_institution_police_mult = -0.50						#执法机构行政力花费
+		state_mortality_turmoil_mult=-0.5 #每级动乱的死亡率
+		#country_disallow_law_no_police_bool = yes										#禁止无警察
+
+		#创意立法
+		country_law_enactment_stall_mult = -0.33										#立法停滞率
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25			#制定反对的法律提高的政治运动活跃度
+		political_movement_radicalism_from_enactment_approval_mult = 0.25				#制定支持的法律降低的政治运动活跃度
+		country_law_enactment_max_setbacks_add = 1										#立法受挫上限
+	}
+
+	#对“国家集团”影响：
+	power_bloc_modifier = {
+		#防务合作
+        power_bloc_leader_can_assistance = yes 											#权力集团的领导者可以提供援助
+		power_bloc_disallow_war_bool = yes												#“国家集团”成员间不能进行战争
+	}
+
+	institution = institution_police
+
+	#为“警察”机构提供
+	institution_modifier = {
+		political_movement_radicalism_add = -0.05										#政治运动活跃度
+	}
+
+	#ai启用倾向
+	ai_weight = {
+		value = 0
+	}
+}

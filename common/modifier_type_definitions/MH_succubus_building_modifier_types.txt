@@ -1,0 +1,167 @@
+﻿###商品定义
+#淫欲结晶产出定义
+goods_output_mh_succubus_lust_crystal_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+#淫欲结晶投入定义
+goods_input_mh_succubus_lust_crystal_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+###建筑最大等级定义
+#魅魔城市群最大等级定义
+state_mh_succubus_city_clusters_max_level_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔炼金工坊最大等级定义
+state_mh_succubus_alchemy_workshop_max_level_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔魅魔生态园区最大等级定义
+state_mh_succubus_ecological_park_max_level_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+###建筑吞吐量定义
+#魅魔城市群
+mh_succubus_city_clusters_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔炼金工坊
+mh_succubus_alchemy_workshop_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔生态园区
+mh_succubus_ecological_park_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔基础工业园区
+mh_succubus_basic_industry_industrial_park_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔民用工业园区
+mh_succubus_civilian_industry_industrial_park_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔军用工业园区
+mh_succubus_military_industry_industrial_park_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔重工业园区
+mh_succubus_heavy_industry_park_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅魔奢侈品工业园区
+mh_succubus_luxury_goods_industrial_park_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+###国家集团定义
+#睡服淫行定义
+power_bloc_leader_can_mh_succubus_sleep_and_sex_bool={
+	decimals=1
+	color=neutral
+	boolean=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#魅惑淫术定义
+power_bloc_leader_can_mh_succubus_display_charm_lust_art={
+	decimals=1
+	color=neutral
+	boolean=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+###文化与宗教定义
+#暂不清楚，勉强知道和文化人群的生活水平有关
+state_mh_succubus_culture_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+#暂不清楚，勉强知道和宗教人群的生活水平有关
+state_mh_succubus_lust_heaven_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

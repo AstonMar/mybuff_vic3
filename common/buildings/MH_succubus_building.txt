@@ -1,0 +1,357 @@
+﻿###魅魔建筑系列
+#魅魔城市群
+mh_succubus_city_clusters = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_city_clusters.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	##建筑类型：基础设施
+	#building_group = bg_infrastructure
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：城市
+	city_type = city
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_administration_center			#魅魔行政中心
+		mh_pmg_succubus_lust_circle						#魅魔色欲法阵
+		mh_pmg_succubus_red_light_district				#魅魔风俗街
+		mh_pmg_succubus_temple							#魅魔圣欲堂
+	}
+}
+
+#魅魔炼金工坊
+mh_succubus_alchemy_workshop = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	##建筑类型：基础设施
+	#building_group = bg_infrastructure
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：资源
+	city_type = wood
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_alchemy_workshop_metal			#淫欲冶金术
+		mh_pmg_succubus_alchemy_workshop_coal			#淫欲碳化术
+		mh_pmg_succubus_alchemy_workshop_lead			#淫欲铅化术
+		mh_pmg_succubus_alchemy_workshop_sulfur			#淫欲硫化术
+	}
+}
+
+#魅魔生态园区
+mh_succubus_ecological_park = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_ecological_park.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	##建筑类型：基础设施
+	#building_group = bg_infrastructure
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：资源
+	city_type = wood
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_ecological_park_forest			#淫欲林木培育
+		mh_pmg_succubus_ecological_park_flesh_worm		#织物淫虫培育
+		mh_pmg_succubus_ecological_park_slime			#史莱姆培育区
+	}
+}
+
+#魅魔基础工业园区
+mh_succubus_basic_industry_industrial_park = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	#has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：城市
+	city_type = city
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_tooling_workshops				#工艺装备生产区
+		mh_pmg_succubus_steel_mills						#炼钢产业区
+		mh_pmg_succubus_motor_industry					#动力机械设备产区
+		mh_pmg_succubus_explosives_factory				#炸药产区
+	}
+}
+
+#魅魔民用工业园区
+mh_succubus_civilian_industry_industrial_park = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	#has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：城市
+	city_type = city
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_furniture_manufacturies			#家具制造产业区
+		mh_pmg_succubus_textile_mills					#纺织产业区
+		mh_pmg_succubus_paper_mills						#造纸产业区
+		mh_pmg_succubus_food_industry					#食品产业区
+	}
+}
+
+#魅魔军用工业园区
+mh_succubus_military_industry_industrial_park = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	#has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：城市
+	city_type = city
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_arms_industry					#武器产业区
+		mh_pmg_succubus_munition_plants					#弹药产业区
+		mh_pmg_succubus_artillery_foundries				#火炮铸造产业区
+		mh_pmg_succubus_automobile_production			#汽车生产产业区
+	}
+}
+
+#魅魔重工业园区
+mh_succubus_heavy_industry_park = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	#has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：城市
+	city_type = city
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_artillery						#飞机产业区
+		mh_pmg_succubus_tanks							#坦克产业区
+		mh_pmg_succubus_base_building_shipyards			#民用造船厂产业区
+		mh_pmg_succubus_military_base					#军用造船厂产业区
+	}
+}
+
+#魅魔奢侈品工业园区
+mh_succubus_luxury_goods_industrial_park = {
+	#建筑事件背景图片
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	#建筑图片
+	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+
+	#解锁所需前置科技：社会结构魅魔化
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#具有等级限制，需要其他关联代码来解锁等级上限
+	#has_max_level = yes
+
+	#建设成本：高
+	required_construction = construction_cost_high
+
+	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
+	levels_per_mesh = 35
+
+	#建筑类型：轻工业
+	building_group = bg_light_industry
+
+	#建筑区域：城市
+	city_type = city
+
+	#建筑所有权:建造方
+	ownership_type = self
+
+	##私有化：始终为非（NO）
+	#can_build_private = {
+	#	always = no
+	#}
+
+	#建筑生产方式
+	production_method_groups = {
+		mh_pmg_succubus_luxury_textile_mills			#高档衣物产业区
+		mh_pmg_succubus_luxury_furniture_manufacturies	#高档家具产业区
+		mh_pmg_succubus_glassworks						#瓷器产业区
+		mh_pmg_succubus_distillery						#酿酒产业区
+	}
+}

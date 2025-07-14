@@ -1,0 +1,330 @@
+﻿#####魅魔奢侈品工业园区#####
+###高档衣物产业区
+#未启用
+mh_pm_succubus_luxury_textile_mills_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/mh_succubus_not_enabled.dds"
+}
+#工匠缝纫
+mh_pm_succubus_luxury_textile_mills_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_luxury_textile_mills_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = { }
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_fabric_add = 8							#布料投入
+			goods_input_dye_add = 4								#染料投入
+			goods_input_silk_add = 24							#丝绸投入
+
+			#产出
+			goods_output_luxury_clothes_add = 72				#高档衣物产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 800			#店主
+			building_employment_machinists_add = 400			#技工
+			building_employment_laborers_add = 3200				#劳工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+#弹性织物
+mh_pm_succubus_luxury_textile_mills_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_luxury_textile_mills_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		vulcanization											#硫化
+	}
+
+	#地区可以获得：电力
+	required_input_goods = electricity
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_dye_add = 16							#染料投入
+			goods_input_tools_add = 12							#工具投入
+			goods_input_electricity_add = 16					#电力投入
+			goods_input_rubber_add = 8							#橡胶投入
+			goods_input_silk_add = 56							#丝绸投入
+
+			#产出
+			goods_output_luxury_clothes_add = 168				#高档衣物产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 1200			#店主
+			building_employment_machinists_add = 800			#技工
+			building_employment_engineers_add = 400				#工程师
+			building_employment_laborers_add = 400				#劳工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+###高档家具产业区
+#未启用
+mh_pm_succubus_luxury_furniture_manufacturies_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/mh_succubus_not_enabled.dds"
+}
+#高档家具生产
+mh_pm_succubus_luxury_furniture_manufacturies_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_luxury_furniture_manufacturies_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = { }
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_hardwood_add = 24						#硬木投入
+			goods_input_fabric_add = 8							#布料投入
+			goods_input_tools_add = 8							#工具投入
+			goods_input_coal_add = 8							#煤炭投入
+
+			#产出
+			goods_output_luxury_furniture_add = 70				#高档家具产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 800			#店主
+			building_employment_laborers_add = 2400				#劳工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+#精密工具
+mh_pm_succubus_luxury_furniture_manufacturies_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_luxury_furniture_manufacturies_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		mechanical_tools										#硫化
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_wood_add = 40							#木材投入
+			goods_input_fabric_add = 8							#布料投入
+			goods_input_tools_add = 20							#工具投入
+			goods_input_oil_add = 4								#油投入
+			goods_input_electricity_add = 4						#电力投入
+
+			#产出
+			goods_output_luxury_furniture_add = 132				#高档家具产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 1600			#店主
+			building_employment_machinists_add = 1000			#技工
+			building_employment_engineers_add = 600				#工程师
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+###瓷器产业区
+#未启用
+mh_pm_succubus_glassworks_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/mh_succubus_not_enabled.dds"
+}
+#陶瓷
+mh_pm_succubus_glassworks_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_glassworks_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = { }
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_dye_add = 16							#染料投入
+			goods_input_wood_add = 16							#木材投入
+			goods_input_lead_add = 8							#铅投入
+
+			#产出
+			goods_output_porcelain_add = 48						#瓷器产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 600			#店主
+			building_employment_machinists_add = 400			#技工
+			building_employment_laborers_add = 3200				#劳工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+#骨瓷
+mh_pm_succubus_glassworks_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_glassworks_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		chemical_bleaching										#化学漂白
+	}
+
+	#地区可以获得：电力
+	required_input_goods = electricity
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_oil_add = 20							#油投入
+			goods_input_lead_add = 24							#铅投入
+			goods_input_dye_add = 40							#染料投入
+			goods_input_tools_add = 2							#工具投入
+			goods_input_engines_add = 2							#发动机投入
+
+			#产出
+			goods_output_porcelain_add = 180					#瓷器产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 600			#店主
+			building_employment_machinists_add = 1000			#技工
+			building_employment_engineers_add = 600				#工程师
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+
+###酿酒产业区
+#未启用
+mh_pm_succubus_distillery_0 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/mh_succubus_not_enabled.dds"
+}
+#罐式蒸馏器
+mh_pm_succubus_distillery_1 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_distillery_1.dds"
+
+	#启用生产方式所需前置科技
+	#unlocking_technologies = { }
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_iron_add = 15							#铁投入
+			goods_input_sugar_add = 55							#糖投入
+			goods_input_grain_add = 80							#谷物投入
+
+			#产出
+			goods_output_liquor_add = 228						#烈酒产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 560			#店主
+			building_employment_machinists_add = 1360			#技工
+			building_employment_laborers_add = 3200				#劳工
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}
+#连续式蒸馏器
+mh_pm_succubus_distillery_2 = {
+	#生产方式图片
+	texture = "gfx/interface/icons/mh_succubus_building/MH_pm_succubus_distillery_2.dds"
+
+	#启用生产方式所需前置科技
+	unlocking_technologies = {
+		chemical_bleaching										#化学漂白
+	}
+
+	#每级建筑所需的工作人员与带来的商品产出
+	building_modifiers = {
+		#商品产出与投入
+		workforce_scaled = {
+			#投入
+			goods_input_grain_add = 200							#谷物投入
+			goods_input_sugar_add = 125							#糖投入
+			goods_input_iron_add = 15							#铁投入
+			goods_input_glass_add = 30							#玻璃投入
+
+			#产出
+			goods_output_liquor_add = 540						#烈酒产出
+		}
+
+		#每级需求的各类工作人员
+		level_scaled = {
+			building_employment_shopkeepers_add = 880			#店主
+			building_employment_machinists_add = 2200			#技工
+			building_employment_engineers_add = 840				#工程师
+		}
+	}
+
+	#每级建筑带来的地区影响
+	#state_modifiers = { }
+
+	#每级建筑带来的国家影响
+	#country_modifiers = { }
+}

@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ #####魅魔建筑系列
+ 
+ ###魅魔风俗街
+ mh_succubus_lust_crystal: "淫欲结晶"
+ goods_output_mh_succubus_lust_crystal_add: "@mh_succubus_lust_crystal!淫欲结晶产出"
+ goods_output_mh_succubus_lust_crystal_add_desc: "建筑产出的@mh_succubus_lust_crystal!淫欲结晶数量"
+ 
+ goods_input_mh_succubus_lust_crystal_add: "@mh_succubus_lust_crystal!淫欲结晶投入"
+ goods_input_mh_succubus_lust_crystal_add_desc: "建筑消费的@mh_succubus_lust_crystal!淫欲结晶数量"
+ 
+ goods_mh_succubus_lust_crystal_output_mult: "$mh_succubus_lust_crystal$商品产出。"
+ goods_mh_succubus_lust_crystal_output_mult_desc: "对$mh_succubus_lust_crystal$生产的增益或惩罚。"
+ 
+ trade_route_import_lens_option_mh_succubus_lust_crystal_tooltip: "建立一条进口$mh_succubus_lust_crystal$的贸易路线"
+ trade_route_export_lens_option_mh_succubus_lust_crystal_tooltip: "建立一条出口$mh_succubus_lust_crystal$的贸易路线"

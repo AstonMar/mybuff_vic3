@@ -1,0 +1,38 @@
+﻿l_simp_chinese:
+ add_my_buff_decision:0 "添加主角光环"
+ add_my_buff_decision_desc:0 "您就是天选之子，这部史诗大戏将由您主导"
+ remove_my_buff_decision:0 "移除主角光环"
+ remove_my_buff_decision_desc:0 "自我奋斗"
+ my_buff:0 "主角光环"
+
+ add_my_id_decision:0 "添加意识形态"
+ add_my_id_decision_desc:0 "添加自定义意识形态"
+ remove_my_id_decision:0 "移除意识形态"
+ remove_my_id_decision_desc:0 "移除自定义意识形态"
+ my_add_id:0 "意识形态"
+
+ my_buff_super_company:0 "超级BUFF公司"
+
+ my_pm: "魅魔运动"
+ my_pm_name: "$my_pm$"
+
+ MH_succubus_love_affection_liquid_reward: "魅魔大姐姐们の体液赏赐法案~"
+ MH_succubus_love_affection_liquid_reward_desc: "魅魔大姐姐们の爱液、母乳乃至汗液等等都拥有着令人着魔的恐怖功效，于人它们可以是延年益寿，养颜驻容和包治百病的灵丹妙药，于工这些魅魔大姐姐们の体液有着极其强大能量的工业液体，以炸药为例，只需要以1/100左右炸药质量的爱液混入其中，就可以使其发挥出相当于原本数倍的爆炸威力，因此用魅魔大姐姐们の爱液在当地建立起一套完善的赏罚制度，应该可以十分有效的增加人们的工作效率吧~"
+ 
+ MH_succubus_erasure_homeland_culture: "魅魔大姐姐们の人类清除计划~"
+ MH_succubus_erasure_homeland_culture_desc: "选择榨干噢~"
+
+ MH_succubus_birth: "魅魔大姐姐们の多生孩子计划"
+ MH_succubus_birth_desc: "取下套套吧~"
+
+ MH_succubus_migration: "魅魔大姐姐们の站街"
+ MH_succubus_migration_desc: "快进来看看吧~"
+
+ MH_succubus_work: "魅魔大姐姐们の鞭策"
+ MH_succubus_work_desc: "快动起来啊~"
+
+ my_add_tax_per_capita:0 "加0.01人均税"
+ my_add_tax_per_capita_desc:0 "加0.01人均税"
+
+ my_reduce_tax_per_capita:0 "减0.01人均税"
+ my_reduce_tax_per_capita_desc:0 "减0.01人均税"

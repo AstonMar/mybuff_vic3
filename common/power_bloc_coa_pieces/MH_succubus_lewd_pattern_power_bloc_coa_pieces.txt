@@ -1,0 +1,28 @@
+﻿MH_succubus_lewd_pattern_1.dds = {
+    colors = 1
+    piece = center
+}
+MH_succubus_lewd_pattern_2.dds = {
+    colors = 1
+    piece = center
+}
+MH_succubus_lewd_pattern_3.dds = {
+    colors = 1
+    piece = center
+}
+MH_succubus_lewd_pattern_4.dds = {
+    colors = 1
+    piece = center
+}
+MH_succubus_lewd_pattern_5.dds = {
+    colors = 1
+    piece = center
+}
+MH_succubus_lewd_pattern_6.dds = {
+    colors = 1
+    piece = center
+}
+MH_succubus_lewd_pattern_7.dds = {
+    colors = 1
+    piece = center
+}

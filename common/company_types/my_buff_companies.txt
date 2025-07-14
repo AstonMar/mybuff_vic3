@@ -1,0 +1,208 @@
+#超级公司
+my_buff_super_company = {
+	#公司图标路径，用于在公司列表、界面提示等位置显示公司标识
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/MH_succubus_company_basic_industry_industrial_park.dds"
+
+	#公司背景图路径，通常用于公司详情页或特殊界面的装饰性背景
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	#是否为特色公司（历史特定公司或地区专属公司）
+    #特色公司通常有独特的图标、名称和特殊加成
+	flavored_company = yes
+
+	#是否使用动态命名系统（由游戏根据文化自动生成公司名称）
+    #若为 no，则需在本地化文件中手动定义公司名称
+    uses_dynamic_naming = no
+
+    #动态命名的备选词库（游戏会随机组合这些词生成公司名称）
+    #dynamic_company_type_names = {
+    #    "dynamic_company_type_company"      #通用后缀：公司
+    #    "dynamic_company_type_consortium"   #通用后缀：联盟
+    #    "dynamic_company_type_corporation"  #通用后缀：集团
+    #    "dynamic_company_type_conglomerate" #通用后缀：联合企业
+    #    "dynamic_company_type_syndicate"    #通用后缀：辛迪加
+    #    "dynamic_company_type_combine"      #通用后缀：联合公司
+    #}
+
+    #公司主营的建筑类型（决定公司的核心产业属性）
+    building_types = {
+    	#mh_succubus_city_clusters
+    	building_coal_mine #煤矿
+    }
+
+    #扩展投资建筑类型
+    extension_building_types = {
+    	#mh_succubus_ecological_park
+    	#mh_succubus_alchemy_workshop
+        #mh_succubus_basic_industry_industrial_park #魅魔基础工业园区
+        #mh_succubus_heavy_industry_park #魅魔重型工业园区
+        #mh_succubus_civilian_industry_industrial_park #魅魔民用工业园区
+        #mh_succubus_luxury_goods_industrial_park											#魅魔奢侈品工业园区
+        #mh_succubus_military_industry_industrial_park										#魅魔军用工业园区
+
+        building_coal_mine
+        building_lead_mine
+        building_sulfur_mine
+		building_gold_mine
+        building_oil_rig
+        building_iron_mine
+
+        building_textile_mills
+		building_paper_mills
+		building_chemical_plants
+		building_explosives_factory
+		building_furniture_manufacturies
+		building_synthetics_plants
+		building_glassworks
+
+		building_tooling_workshops
+		building_steel_mills
+		building_motor_industry
+		building_power_plant
+		building_electrics_industry
+		building_railway
+
+		building_arms_industry
+        building_artillery_foundries
+		building_munition_plants
+		building_automotive_industry
+		building_railway
+
+		building_military_shipyards
+		building_shipyards
+		building_fishing_wharf
+		building_whaling_station
+
+		building_wheat_farm
+		building_rye_farm
+		building_rice_farm
+		building_millet_farm
+		building_maize_farm
+		building_livestock_ranch
+		building_sugar_plantation
+		building_banana_plantation
+		building_food_industry
+    }
+
+    #名贵商品
+	possible_prestige_goods = {
+		MH_succubus_prestige_good_tools														#淫能工具
+		MH_succubus_prestige_good_steel														#淫能特种钢
+		MH_succubus_prestige_good_engines													#淫能发动机
+		MH_succubus_prestige_good_explosives												#淫能炸药
+		MH_succubus_prestige_good_furniture													#情趣家具
+		MH_succubus_prestige_good_clothes													#情趣衣物
+		MH_succubus_prestige_good_paper														#淫能纸张
+		MH_succubus_prestige_good_groceries													#爱液食品
+		MH_succubus_prestige_good_small_arms												#淫能轻武器
+		MH_succubus_prestige_good_ammunition												#淫能弹药
+		MH_succubus_prestige_good_artillery													#淫能火炮
+		MH_succubus_prestige_good_automobiles												#淫能汽车
+		MH_succubus_prestige_good_aeroplanes												#淫能飞机
+		MH_succubus_prestige_good_tanks														#淫能坦克
+		MH_succubus_prestige_good_clippers													#淫能帆船
+		MH_succubus_prestige_good_steamers													#淫能蒸汽船
+		MH_succubus_prestige_good_manowars													#淫能风帆战舰
+		MH_succubus_prestige_good_ironclads													#淫能铁甲舰
+		MH_succubus_prestige_good_luxury_clothes											#触手衣物
+		MH_succubus_prestige_good_luxury_furniture											#触手家具
+		MH_succubus_prestige_good_porcelain													#色欲瓷器
+		MH_succubus_prestige_good_liquor													#爱液烈酒
+	}
+
+	#显示条件
+	potential = {
+		#has_variable = MH_succubus_come_flag												#拥有变量标记
+		always = yes
+	}
+
+	#启用条件
+	attainable = {
+		#has_variable = MH_succubus_come_flag												#拥有变量标记
+		always = yes
+	}
+
+	#启用条件
+	possible = {
+		#has_variable = MH_succubus_come_flag												#拥有变量标记
+		always = yes
+	}
+
+	#繁荣效果
+	prosperity_modifier = {
+		#魅魔基础工业园区公司专属效果
+		state_infrastructure_from_population_add = 5										#每100k人口产生的基础设施
+		state_infrastructure_from_population_max_add = 100									#来自人口的基础设施上限
+		#mh_succubus_basic_industry_industrial_park_throughput_add = 0.35					#魅魔基础工业园区吞吐量
+		
+		#所有魅魔公司固定效果
+		country_max_companies_add = 10														#公司上限
+		country_free_charters_add = 10														#免费公司特许
+
+		country_tech_spread_mult = 0.5														#科技扩撒
+		country_weekly_innovation_add = 10													#创新
+		state_education_access_add = 0.2													#受教育機會
+
+		#state_migration_pull_mult = 2														#移民吸引力
+
+		state_trade_capacity_add=100 														#贸易能力
+		state_trade_capacity_mult = 0.25													#贸易能力
+		state_trade_advantage_mult = 0.25													#贸易优势
+		country_no_advantage_loss_from_lack_of_interest_bool = yes							#无视来自利益的贸易优势惩罚
+
+		#state_building_construction_sector_max_level_add = 25								#建造部门最大等级
+		#state_mh_succubus_city_clusters_max_level_add = 25									#魅魔城市群最大等级
+		#state_mh_succubus_alchemy_workshop_max_level_add = 25								#魅魔炼金工坊最大等级
+		#state_mh_succubus_ecological_park_max_level_add = 25								#魅魔生态园区最大等级
+
+    	#state_birth_rate_mult = 1 # 提高所在州的出生率
+    	#state_working_adult_ratio_add = 0.5 # 增加所在州的成年劳动力比例
+    	interest_group_approval_add = 5 # 增加利益集团的支持率
+
+	    ## 增加发电厂的吞吐量
+	    #building_power_plant_throughput_add = 0.5
+	    ## 增加石油开采建筑组的吞吐量
+	    #building_group_bg_oil_extraction_throughput_add = 0.5
+	    ## 增加采矿建筑组的吞吐量
+	    #building_group_bg_mining_throughput_add  = 0.5
+	    ## 增加重工业建筑组的吞吐量
+    	#building_group_bg_heavy_industry_throughput_add = 0.5
+    	## 增加农业建筑组的吞吐量
+	    #building_group_bg_agriculture_throughput_add = 0.5
+	    ## 增加牧场建筑组的吞吐量
+	    #building_group_bg_ranching_throughput_add = 0.5
+	    ## 增加造纸厂的吞吐量
+	    #building_paper_mills_throughput_add = 0.5
+	    ## 增加电气工业建筑的吞吐量
+	    #building_electrics_industry_throughput_add = 0.5
+	    ## 增加钢铁厂的吞吐量
+    	#building_steel_mills_throughput_add = 0.5
+	    ## 增加捕鲸站的吞吐量
+	    #building_whaling_station_throughput_add = 0.5
+	    ## 增加渔港的吞吐量
+	    #building_fishing_wharf_throughput_add = 0.5
+	    ## 增加轻工业建筑组的吞吐量
+    	#building_group_bg_light_industry_throughput_add = 0.5
+
+    	building_group_bg_agriculture_throughput_add = 0.5								#农业吞吐量
+		building_group_bg_service_throughput_add = 0.5 									#服务业吞吐量
+		building_group_bg_manufacturing_throughput_add = 0.5 							#制造业吞吐量
+
+		country_military_goods_cost_mult=-0.5 											#军用商品花费
+
+    	
+    	country_no_advantage_loss_from_lack_of_interest_bool = yes 						# 国家不会因缺乏兴趣而失去贸易优势
+
+    	building_construction_speed_mult = 0.5  										# 按比例增加20%的建造速度（乘法效果）
+    	country_max_weekly_construction_progress_add = 10 								#增加最大建造力上限
+
+    	country_law_enactment_imposition_success_add =0.1 								#强制立法制定成功率
+    	country_law_enactment_success_add =	0.1 										#立法成功率
+	}
+
+	#AI成立倾向
+	ai_weight = {
+		value = 0
+	}
+
+}

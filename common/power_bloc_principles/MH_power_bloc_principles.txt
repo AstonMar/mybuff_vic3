@@ -1,0 +1,857 @@
+﻿#####原则的具体属性数值
+####梦回酱の溺欲之契系列原则~###
+##梦回酱の溺欲之契I~
+#MH_principle_succubus_contract_to_indulge_in_lust_1 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_authority_mult = 0.2												#权威力
+#		# 权力集团的领导者可以将其他国家变为附属国
+#        power_bloc_leader_can_make_subjects_bool = yes
+
+#        # 国家恶名生成倍率减少0.05
+#        country_infamy_generation_mult = -0.05
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+#		country_authority_mult = -0.2												#权威力
+#		# 州动荡倍率减少0.05
+#        state_turmoil_mult = -0.05
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#内部贸易
+#		state_infrastructure_mult = 0.1												#基础设施
+
+#		#意识形态真理
+#		country_bolster_cost_mult = -0.25											#扶持花费
+#		country_suppression_cost_mult = -0.25										#打压花费
+#		interest_group_in_opposition_agitator_popularity_add = -33					#在野鼓动者的人气
+
+#		#扩张性合作
+#		country_initiator_war_goal_maneuver_cost_mult = -0.3						#外交博弈发起者的战争目标博弈行动力花费
+
+#		#神圣经济学
+#		state_trade_advantage_same_religion_add = 50								#与教友的贸易优势
+#		country_subject_income_transfer_heathen_mult = 0.5							#异教附属国收入转移
+
+#		# 国家改善关系速度倍率增加0.10
+#        country_improve_relations_speed_mult = 0.10
+#	}
+
+#	#对“国家集团”影响：
+#	power_bloc_modifier = { 
+#		# 权力集团的领导者可以提供援助
+#        power_bloc_leader_can_assistance = yes
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の溺欲之契II~
+#MH_principle_succubus_contract_to_indulge_in_lust_2 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_authority_mult = 0.2												#权威力
+#		country_influence_mult = 0.2												#影响力
+#		# 权力集团的领导者可以将其他国家变为附属国
+#        power_bloc_leader_can_make_subjects_bool = yes
+
+#        # 国家恶名生成倍率减少0.10
+#        country_infamy_generation_mult = -0.10
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+#		country_authority_mult = -0.2												#权威力
+#		country_influence_mult = -0.2												#影响力
+
+#		# 州出生率倍率增加0.05
+#        state_birth_rate_mult = 0.05
+
+#		# 州动荡倍率减少0.05
+#        state_turmoil_mult = -0.1
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#内部贸易
+#		state_infrastructure_mult = 0.1												#基础设施
+#		country_convoy_contribution_to_market_owner_add = 0.3						#对市场所有者的商船贡献
+
+#		#意识形态真理
+#		country_bolster_cost_mult = -0.25											#扶持花费
+#		country_suppression_cost_mult = -0.25										#打压花费
+#		country_party_whip_impact_mult = 0.2										#党鞭对意识形态差异的影响
+#		interest_group_in_opposition_agitator_popularity_add = -33					#在野鼓动者的人气
+
+#		#扩张性合作
+#		country_initiator_war_goal_maneuver_cost_mult = -0.3						#外交博弈发起者的战争目标博弈行动力花费
+#		country_war_exhaustion_casualties_mult = -0.15								#伤亡产生的厌战度
+
+#		#神圣经济学
+#		state_trade_advantage_same_religion_add = 50								#与教友的贸易优势
+#		country_subject_income_transfer_heathen_mult = 0.5							#异教附属国收入转移
+
+#		# 国家改善关系速度倍率增加0.20
+#        country_improve_relations_speed_mult = 0.20
+#	}
+
+#	#对“国家集团”影响：
+#	power_bloc_modifier = {
+
+#		# 权力集团的领导者可以提供援助
+#        power_bloc_leader_can_assistance = yes
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の溺欲之契III~
+#MH_principle_succubus_contract_to_indulge_in_lust_3 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_authority_mult = 0.2													#权威力
+#		country_influence_mult = 0.2													#影响力
+#		# 权力集团的领导者可以将其他国家变为附属国
+#        power_bloc_leader_can_make_subjects_bool = yes
+
+#        # 国家恶名生成倍率减少0.15
+#        country_infamy_generation_mult = -0.15
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+#		country_authority_mult = -0.2													#权威力
+#		country_influence_mult = -0.2													#影响力
+
+#		# 州出生率倍率增加0.05
+#        state_birth_rate_mult = 0.1
+
+#		# 州动荡倍率减少0.05
+#        state_turmoil_mult = -0.15
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#内部贸易
+#		state_infrastructure_mult = 0.1													#基础设施
+#		country_convoy_contribution_to_market_owner_add = 0.4							#对市场所有者的商船贡献
+#		country_company_throughput_bonus_add = 0.05										#公司吞吐量增益
+#		country_port_connection_cost_mult = -0.25										#港口连接的商船花费
+
+#		#意识形态真理
+#		country_bolster_cost_mult = -0.25												#扶持花费
+#		country_suppression_cost_mult = -0.25											#打压花费
+#		country_party_whip_impact_mult = 0.2											#党鞭对意识形态差异的影响
+#		interest_group_in_opposition_agitator_popularity_add = -33						#在野鼓动者的人气
+
+#		#扩张性合作
+#		country_initiator_war_goal_maneuver_cost_mult = -0.3							#外交博弈发起者的战争目标博弈行动力花费
+#		country_war_exhaustion_casualties_mult = -0.15									#伤亡产生的厌战度
+#		country_join_power_bloc_member_in_plays_bool = yes								#可以在所有“外交博弈中”使用“召唤盟友”拉拢“召唤国家集团成员”
+
+#		#神圣经济学
+#		state_trade_advantage_same_religion_add = 50									#与教友的贸易优势
+#		country_subject_income_transfer_heathen_mult = 0.5								#异教附属国收入转移
+#		country_state_religion_wages_mult = 0.25										#国教人群的工资
+
+#		# 国家改善关系速度倍率增加0.30
+#        country_improve_relations_speed_mult = 0.30
+#	}
+
+#	#对“国家集团”影响：
+#	power_bloc_modifier = {
+#		# 权力集团的领导者可以提供援助
+#        power_bloc_leader_can_assistance = yes
+#	}
+
+#	#ai启用倾向
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+####梦回酱の爱欲之约系列原则~###
+##梦回酱の爱欲之约I~
+#MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_1 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+		
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#对外贸易
+#		state_trade_capacity_mult = 0.25												#贸易能力
+#		state_trade_advantage_mult = 0.25												#贸易优势
+
+#		#附庸
+#		country_authority_per_subject_add = 25											#权威力（每个附属国）
+
+#		#创意立法
+#		country_law_enactment_stall_mult = -0.33										#立法停滞率
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+#		#防务合作
+#		power_bloc_disallow_war_bool = yes												#“国家集团”成员间不能进行战争
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の爱欲之约II~
+#MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_2 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes			#对集团成员强制施行相同的军队类型法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#对外贸易
+#		state_trade_capacity_mult = 0.25												#贸易能力
+#		state_trade_advantage_mult = 0.25												#贸易优势
+
+#		#附庸
+#		country_authority_per_subject_add = 25											#权威力（每个附属国）
+#		country_subject_income_transfer_mult = 0.25										#附属国收入转移
+
+#		#创意立法
+#		country_law_enactment_stall_mult = -0.33										#立法停滞率
+#		political_movement_radicalism_from_enactment_disapproval_mult = -0.25			#制定反对的法律提高的政治运动活跃度
+#		political_movement_radicalism_from_enactment_approval_mult = 0.25				#制定支持的法律降低的政治运动活跃度
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+#		#防务合作
+#		power_bloc_target_sway_cost_mult = -0.5											#外交博弈目标的拉拢博弈行动力花费
+#		power_bloc_disallow_war_bool = yes												#“国家集团”成员间不能进行战争
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の爱欲之约III~
+#MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_3 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes			#对集团成员强制施行相同的军队类型法律
+
+#		country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool = yes		#对集团成员强制施行相同的教会与国家法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#对外贸易
+#		state_trade_capacity_mult = 0.25												#贸易能力
+#		state_trade_advantage_mult = 0.25												#贸易优势
+#		country_no_advantage_loss_from_lack_of_interest_bool = yes						#无视来自利益的贸易优势惩罚
+
+#		#附庸
+#		country_authority_per_subject_add = 25											#权威力（每个附属国）
+#		country_subject_income_transfer_mult = 0.25										#附属国收入转移
+#		country_allow_enacting_decrees_in_subject_bool = yes							#允许在附属国地区颁布法令
+
+#		#创意立法
+#		country_law_enactment_stall_mult = -0.33										#立法停滞率
+#		political_movement_radicalism_from_enactment_disapproval_mult = -0.25			#制定反对的法律提高的政治运动活跃度
+#		political_movement_radicalism_from_enactment_approval_mult = 0.25				#制定支持的法律降低的政治运动活跃度
+#		country_law_enactment_max_setbacks_add = 1										#立法受挫上限
+
+#		#防务合作
+#		country_join_power_bloc_member_in_defensive_plays_bool = yes					#可以在防御性外交博弈中使用召唤盟友拉拢召唤“国家集团”成员
+
+#		# 国家法律颁布最大挫折数增加1
+#        country_law_enactment_max_setbacks_add = 1
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+#		#防务合作
+#		power_bloc_target_sway_cost_mult = -0.5											#外交博弈目标的拉拢博弈行动力花费
+#		power_bloc_disallow_war_bool = yes												#“国家集团”成员间不能进行战争
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+####梦回酱の醉欲梦淫系列原则~###
+##梦回酱の醉欲梦淫I~
+#MH_principle_succubus_sexual_intercourse_in_a_drunken_dream_1 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes			#对集团成员强制施行相同的殖民机构法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#食品标准化
+#		building_group_bg_agriculture_throughput_add = 0.1								#农业吞吐量
+#		# 农业建筑组的吞吐量增加0.05
+#        building_group_bg_agriculture_throughput_add = 0.05
+#        # 种植园建筑组的吞吐量增加0.05
+#        building_group_bg_plantations_throughput_add = 0.05
+#        # 牧场建筑组的吞吐量增加0.05
+#        building_group_bg_ranching_throughput_add = 0.05
+
+#        # 建筑工作条件倍率减少0.05
+#        building_working_conditions_mult = -0.05
+#        # 矿业建筑组的吞吐量增加0.05
+#        building_group_bg_mining_throughput_add = 0.05
+#        # 伐木建筑组的吞吐量增加0.05
+#        building_group_bg_logging_throughput_add = 0.05
+
+#        # 州贸易优势倍率增加0.10
+#        state_trade_advantage_mult = 0.10
+#        # 制造业建筑组的吞吐量增加0.05
+#        building_group_bg_manufacturing_throughput_add = 0.05
+#        # 服务业建筑组的吞吐量增加0.05
+#        building_group_bg_service_throughput_add = 0.05
+
+#		#殖民部
+#		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.25	#殖民事务机构规模变更速度
+#		country_institution_cost_institution_colonial_affairs_mult = -0.10				#殖民事务机构行政力花费
+#		#country_disallow_law_no_colonial_affairs_bool = yes							#禁止无殖民事务
+
+#		#外国投资
+#		country_higher_leverage_from_economic_dependence_bool = yes						#提高来自经济依赖的影响
+
+#		#迁徙自由
+#		state_migration_quota_mult = 0.25												#移民限额
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+#		power_bloc_disallow_embargo_bool = yes											#不能禁运其他“国家集团”成员
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の醉欲梦淫II~
+#MH_principle_succubus_sexual_intercourse_in_a_drunken_dream_2 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes			#对集团成员强制施行相同的殖民机构法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#食品标准化
+#		building_group_bg_agriculture_throughput_add = 0.1								#农业吞吐量
+#		state_mortality_mult = -0.1														#死亡率
+#		# 农业建筑组的吞吐量增加0.10
+#        building_group_bg_agriculture_throughput_add = 0.10
+#        # 种植园建筑组的吞吐量增加0.10
+#        building_group_bg_plantations_throughput_add = 0.10
+#        # 牧场建筑组的吞吐量增加0.10
+#        building_group_bg_ranching_throughput_add = 0.10
+
+#        # 建筑工作条件倍率减少0.10
+#        building_working_conditions_mult = -0.10
+#        # 矿业建筑组的吞吐量增加0.10
+#        building_group_bg_mining_throughput_add = 0.10
+#        # 伐木建筑组的吞吐量增加0.10
+#        building_group_bg_logging_throughput_add = 0.10
+#        # 渔业建筑组的吞吐量增加0.05
+#        building_group_bg_fishing_throughput_add = 0.05
+#        # 捕鲸建筑组的吞吐量增加0.05
+#        building_group_bg_whaling_throughput_add = 0.05
+
+#        # 州贸易优势倍率增加0.10
+#        state_trade_advantage_mult = 0.10
+#        # 制造业建筑组的吞吐量增加0.10
+#        building_group_bg_manufacturing_throughput_add = 0.10
+#        # 服务业建筑组的吞吐量增加0.10
+#        building_group_bg_service_throughput_add = 0.10
+
+#		#殖民部
+#		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.40	#殖民事务机构规模变更速度
+#		country_institution_cost_institution_colonial_affairs_mult = -0.25				#殖民事务机构行政力花费
+#		#country_disallow_law_no_colonial_affairs_bool = yes							#禁止无殖民事务
+
+#		#外国投资
+#		country_nationalization_cost_non_members_mult = -0.5							#国有化花费
+#		country_higher_leverage_from_economic_dependence_bool = yes						#提高来自经济依赖的影响
+
+#		#迁徙自由
+#		state_migration_quota_mult = 0.5												#移民限额
+#		country_mass_migration_attraction_mult = 0.5									#大规模移民吸引力
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+#		power_bloc_disallow_embargo_bool = yes											#不能禁运其他“国家集团”成员
+#	}
+
+#	#为“殖民事物”机构提供
+#	institution_modifier = {
+#		state_colony_growth_creation_factor = 0.25										#殖民地增长产生
+#	}
+
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の醉欲梦淫III~
+#MH_principle_succubus_sexual_intercourse_in_a_drunken_dream_3 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes			#对集团成员强制施行相同的殖民机构法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#食品标准化
+#		building_group_bg_agriculture_throughput_add = 0.1								#农业吞吐量
+#		state_mortality_mult = -0.1														#死亡率
+#		state_standard_of_living_add = 1												#生活水平
+#		# 农业建筑组的吞吐量增加0.10
+#        building_group_bg_agriculture_throughput_add = 0.15
+#        # 种植园建筑组的吞吐量增加0.10
+#        building_group_bg_plantations_throughput_add = 0.15
+#        # 牧场建筑组的吞吐量增加0.10
+#        building_group_bg_ranching_throughput_add = 0.15
+
+#        # 建筑工作条件倍率减少0.15
+#        building_working_conditions_mult = -0.15
+#        # 矿业建筑组的吞吐量增加0.10
+#        building_group_bg_mining_throughput_add = 0.10
+#        # 伐木建筑组的吞吐量增加0.10
+#        building_group_bg_logging_throughput_add = 0.10
+#        # 渔业建筑组的吞吐量增加0.10
+#        building_group_bg_fishing_throughput_add = 0.10
+#        # 捕鲸建筑组的吞吐量增加0.10
+#        building_group_bg_whaling_throughput_add = 0.10
+#        # 石油开采建筑组的吞吐量增加0.10
+#        building_group_bg_oil_extraction_throughput_add = 0.10
+#        # 橡胶建筑组的吞吐量增加0.10
+#        building_group_bg_rubber_throughput_add = 0.10
+
+#         # 州贸易优势倍率增加0.10
+#        state_trade_advantage_mult = 0.10
+#        # 制造业建筑组的吞吐量增加0.10
+#        building_group_bg_manufacturing_throughput_add = 0.10
+#        # 服务业建筑组的吞吐量增加0.10
+#        building_group_bg_service_throughput_add = 0.10
+#        # 艺术学院建筑的吞吐量增加0.10
+#        building_arts_academy_throughput_add = 0.10
+#        # 发电厂建筑的吞吐量增加0.10
+#        building_power_plant_throughput_add = 0.10
+#        # 国家最大公司数量增加1
+#        country_max_companies_add = 1
+
+#		#殖民部
+#		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.50	#殖民事务机构规模变更速度
+#		country_institution_cost_institution_colonial_affairs_mult = -0.50				#殖民事务机构行政力花费
+#		#country_disallow_law_no_colonial_affairs_bool = yes							#禁止无殖民事务
+
+#		#外国投资
+#		country_nationalization_cost_non_members_mult = -0.5							#国有化花费
+#		country_higher_leverage_from_economic_dependence_bool = yes						#提高来自经济依赖的影响
+
+#		#迁徙自由
+#		state_migration_quota_mult = 1												#移民限额
+#		country_mass_migration_attraction_mult = 0.5									#大规模移民吸引力
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+#		power_bloc_disallow_embargo_bool = yes											#不能禁运其他“国家集团”成员
+#		power_bloc_customs_union_bool = yes												#关税同盟
+
+#		#外国投资
+#		power_bloc_allow_foreign_investment_lower_rank_bool = yes						#对国际地位较低的国家集团成员的外国投资权
+
+#		power_bloc_allow_wider_migration_area_bool = yes								#允许国家集团内移民
+#	}
+
+#	#为“殖民事物”机构提供
+#	institution_modifier = {
+#		state_colony_growth_creation_factor = 0.25										#殖民地增长产生
+#		country_infamy_generation_against_unrecognized_mult = -0.15						#对未受认可国家的恶名产生
+#	}
+
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+####梦回酱の铸城宣淫系列原则~###
+##梦回酱の铸城宣淫I~~
+#MH_principle_succubus_casting_a_city_for_sexual_intercourse_1 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes		#对集团成员强制施行相同的教育体制法律
+
+#		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes				#对集团成员强制施行相同的警察机构法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#建设
+#		state_construction_mult = 0.1													#地区建造率效率
+
+#		#促进研究
+#		country_institution_size_change_speed_institution_schools_mult = 0.25			#教育机构规模变更速度
+#		country_institution_cost_institution_schools_mult = -0.1						#教育行政力花费
+#		#country_disallow_law_no_schools_bool = yes										#禁止无学校
+
+#		#警察合作
+#		country_institution_size_change_speed_institution_police_mult = 0.25			#执法机构规模变更速度
+#		country_institution_cost_institution_police_mult = -0.1							#执法机构行政力花费
+#		#country_disallow_law_no_police_bool = yes										#禁止无警察
+
+#		#交通基础设施
+#		state_infrastructure_from_population_mult = 0.33								#每100K人口产生的基础设施
+#		state_infrastructure_from_population_max_mult = 0.33 							#来自人口的基础设施上限
+
+#		#军工业
+#		building_automotive_industry_throughput_add = 0.1 								#汽车工业吞吐量
+#		building_arms_industry_throughput_add = 0.1 									#武器厂吞吐量
+#		building_artillery_foundries_throughput_add = 0.1 								#火炮铸造厂吞吐量
+#		building_military_shipyards_throughput_add = 0.1 								#军用造船厂吞吐量
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+		
+#	}
+
+#	#为教育机构提供
+#	institution_modifier = {
+#		country_tech_spread_mult = 0.05													#科技扩散
+#	}
+	
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の醉欲梦淫II~
+#MH_principle_succubus_casting_a_city_for_sexual_intercourse_2 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes		#对集团成员强制施行相同的教育体制法律
+
+#		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes				#对集团成员强制施行相同的警察机构法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#建设
+#		state_construction_mult = 0.1													#地区建造率效率
+#		building_group_bg_construction_infrastructure_usage_mult = -0.75				#建造部门建筑基础设施使用量
+
+#		#促进研究
+#		country_institution_size_change_speed_institution_schools_mult = 0.40			#教育机构规模变更速度
+#		country_institution_cost_institution_schools_mult = -0.25						#教育行政力花费
+#		#country_disallow_law_no_schools_bool = yes										#禁止无学校
+
+#		#警察合作
+#		country_institution_size_change_speed_institution_police_mult = 0.40			#执法机构规模变更速度
+#		country_institution_cost_institution_police_mult = -0.25						#执法机构行政力花费
+#		#country_disallow_law_no_police_bool = yes										#禁止无警察
+
+#		#交通基础设施
+#		state_infrastructure_from_population_mult = 0.33								#每100K人口产生的基础设施
+#		state_infrastructure_from_population_max_mult = 0.33 							#来自人口的基础设施上限
+#		building_port_throughput_add = 0.2 												#港口建筑吞吐量
+
+#		#军工业
+#		building_automotive_industry_throughput_add = 0.1 								#汽车工业吞吐量
+#		building_arms_industry_throughput_add = 0.1 									#武器厂吞吐量
+#		building_artillery_foundries_throughput_add = 0.1 								#火炮铸造厂吞吐量
+#		building_military_shipyards_throughput_add = 0.1 								#军用造船厂吞吐量
+#		country_military_goods_cost_mult = -0.15 										#军用商品花费
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+		
+#	}
+
+#	#为“教育”机构提供
+#	institution_modifier = {
+#		country_tech_spread_mult = 0.05													#科技扩散
+#		country_ahead_of_time_research_penalty_mult = -0.05								#超越时代惩罚
+#	}
+
+#	#为“警察”机构提供
+#	institution_modifier = {
+#		political_movement_radicalism_add = -0.05										#政治运动活跃度
+#	}
+
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}
+
+##梦回酱の醉欲梦淫III~
+#MH_principle_succubus_casting_a_city_for_sexual_intercourse_3 = {
+#	#图标内容
+#	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+#	#图标边框
+#	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+#	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+
+#	#对“国家集团”领袖效果
+#	leader_modifier = {
+#		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes		#对集团成员强制施行相同的教育体制法律
+
+#		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes				#对集团成员强制施行相同的警察机构法律
+#	}
+
+#	#对非领袖“集团成员”效果
+#	non_leader_modifier = {
+		
+#	}
+
+#	#对所有“集团成员”效果
+#	member_modifier = {
+#		#建设
+#		state_construction_mult = 0.1													#地区建造率效率
+#		building_group_bg_construction_infrastructure_usage_mult = -0.75				#建造部门建筑基础设施使用量
+
+#		#促进研究
+#		country_institution_size_change_speed_institution_schools_mult = 0.50			#教育机构规模变更速度
+#		country_institution_cost_institution_schools_mult = -0.50						#教育行政力花费
+#		#country_disallow_law_no_schools_bool = yes										#禁止无学校
+
+#		#警察合作
+#		country_institution_size_change_speed_institution_police_mult = 0.50			#执法机构规模变更速度
+#		country_institution_cost_institution_police_mult = -0.50						#执法机构行政力花费
+#		#country_disallow_law_no_police_bool = yes										#禁止无警察
+
+#		#交通基础设施
+#		state_infrastructure_from_population_mult = 0.33								#每100K人口产生的基础设施
+#		state_infrastructure_from_population_max_mult = 0.33 							#来自人口的基础设施上限
+#		building_port_throughput_add = 0.2 												#港口建筑吞吐量
+#		building_economy_of_scale_level_cap_add = 10									#建筑规模经济等级上限
+
+#		#军工业
+#		building_automotive_industry_throughput_add = 0.1 								#汽车工业吞吐量
+#		building_arms_industry_throughput_add = 0.1 									#武器厂吞吐量
+#		building_artillery_foundries_throughput_add = 0.1 								#火炮铸造厂吞吐量
+#		building_military_shipyards_throughput_add = 0.1 								#军用造船厂吞吐量
+#		country_military_goods_cost_mult = -0.15 										#军用商品花费
+#		character_supply_route_cost_mult = -0.33 										#补给线花费
+#	}
+
+#	#对“国家集团”影响
+#	power_bloc_modifier = {
+		
+#	}
+
+#	#为“教育”机构提供
+#	institution_modifier = {
+#		country_tech_spread_mult = 0.05													#科技扩散
+#		country_ahead_of_time_research_penalty_mult = -0.05								#超越时代惩罚
+#		country_weekly_innovation_max_add = 10											#最大创新力投入
+#	}
+
+#	#为“警察”机构提供
+#	institution_modifier = {
+#		country_authority_add = 50														#权威力
+#		political_movement_radicalism_add = -0.05										#政治运动活跃度
+#	}
+
+#	#AI启用原则的权重
+#	ai_weight = {
+#		value = 0
+#	}
+#}

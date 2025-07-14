@@ -1,0 +1,161 @@
+﻿my_pm = {
+	#意识形态运动
+	category = my_movement_category_ideological
+
+	#支持的意识形态
+	ideology = law_succubus_superiority_theory
+
+	#消失条件
+	disband_trigger = {
+		#has_law = law_type:law_slavery_banned
+		#has_law = law_succubus_army
+	}
+
+	#创建条件
+	creation_trigger = {
+		#NOT = { has_law = law_type:law_slavery_banned }
+		#has_technology_researched = empiricism
+		NOt = {
+			has_law = law_type:law_succubus_welfare_act
+		}
+	}
+
+	#创建权重
+	creation_weight = {
+		value = 100
+	}
+
+	#创建时
+	on_created = {
+		add_movement_enthusiasm_modifier = yes  # 添加运动热情修饰符
+        
+        # 设置高点的初始活跃度（0-1范围）
+        #set_movement_activity = 0.75  # 初始活跃度设为75%
+        #add_radicalism = 50  # 初始激进主义设为50（假设范围0-100）
+        #political_movement_radicalism_add = 50
+        #political_movement_support_add = 50
+
+		# 为不同群体设置高点的初始支持度
+        # Root = political movement
+        # scope:country = 运动所在的国家
+		#set_support = {
+        #    # 所有利益集团的初始支持度
+        #    target = scope:country.interest_groups
+        #    value = 0.65  # 初始支持度设为65%
+        #}
+
+        # # 为特定利益集团设置更高的支持度（可选）
+        #set_support = {
+        #    limit = {
+        #        has_interest_group_type = interest_group_type_labor  # 例如，劳工利益集团
+        #    }
+        #    target = scope:country.interest_groups
+        #    value = 0.85  # 劳工利益集团的初始支持度设为85%
+        #}
+        
+        ## 为所有人口设置初始支持度
+        #set_pop_support = {
+        #    value = 0.60  # 所有人口的初始支持度设为60%
+        #}
+        
+        ## 为特定类型的人口设置更高的支持度（可选）
+        #set_pop_support = {
+        #    limit = {
+        #        is_pop_type = pop_type_urban_workers  # 例如，城市工人
+        #    }
+        #    value = 0.80  # 城市工人的初始支持度设为80%
+        #}
+
+        # 根据国家科技水平设置不同的初始活跃度
+	    #if = {
+	    #    limit = {
+	    #        has_technology_researched = technology_social_media  # 如果国家拥有社交媒体技术
+	    #    }
+	    #    set_movement_activity = 0.85  # 初始活跃度设为85%
+	    #}
+	    #else = {
+	    #    set_movement_activity = 0.65  # 否则设为65%
+	    #}
+	    
+	    ## 根据国家稳定度设置不同的初始支持度
+	    #if = {
+	    #    limit = {
+	    #        stability < 0  # 如果国家稳定度为负
+	    #    }
+	    #    set_support = {
+	    #        target = scope:country.interest_groups
+	    #        value = 0.75  # 高支持度
+	    #    }
+	    #}
+	    #else = {
+	    #    set_support = {
+	    #        target = scope:country.interest_groups
+	    #        value = 0.55  # 较低支持度
+	    #    }
+	    #}
+	}
+
+    character_ideologies = {
+        law_succubus_superiority_theory
+    }
+
+	# 关键修改：所有利益集团都能被施加压力
+    # Root = interest group
+    can_pressure_interest_group = {
+        always = yes  # 所有利益集团都能被施压
+    }
+
+    # 所有人口都有较高的权重支持此运动
+    pop_support_weight = {
+        value = 200  # 高权重确保广泛支持
+    }
+
+    # 关键修改：让所有人口都能支持该运动
+    # Root = pop
+    pop_support_trigger = {
+        always = yes  # 所有人口都满足支持条件
+    }
+
+    # 所有角色都有较高的权重支持此运动
+    character_support_weight = {
+        value = 300  # 高权重确保广泛支持
+    }
+
+    # 关键修改：让所有角色都能支持该运动
+    # Root = character
+    character_support_trigger = {
+        always = yes  # 所有角色都满足支持条件
+    }
+
+    # 数据部分，定义该运动类型可以发起的内战类型
+    revolution = {
+        possible = {
+            #political_movement_support >= 0.3  # 需要较高的支持率才能发动革命
+            always = no
+        }
+
+        weight = {
+            value = 0  # 适中的权重
+        }
+    }
+
+    # 数据部分，定义该运动类型可以发起的分裂类型
+    secession = {
+        possible = {
+            #political_movement_support >= 0.2  # 需要一定的支持率才能分裂
+            ## 增加一个条件，防止过度分裂
+            #country_size >= 30  
+            always = no
+        }
+
+        weight = {
+            value = 0  # 较低的权重，减少分裂可能性
+        }
+    }
+
+    additional_radicalism_factors = {
+        #NOt = {
+        #    has_law = law_type:law_succubus_army
+        #}
+    }
+}

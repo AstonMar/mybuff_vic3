@@ -1,0 +1,203 @@
+﻿###梦回酱の铸城宣淫系列原则~###
+#梦回酱の铸城宣淫I~~
+MH_principle_succubus_casting_a_city_for_sexual_intercourse_1 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+		
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		#军工业
+		building_automotive_industry_throughput_add = 0.1 								#汽车工业吞吐量
+		building_arms_industry_throughput_add = 0.1 									#武器厂吞吐量
+
+		#殖民部
+		country_tension_decay_mult = 1000 												#紧张度
+
+		state_migration_pull_unincorporated_mult=0.5 									#未整合地区的移民吸引力
+
+		#扩张性合作
+		country_initiator_war_goal_maneuver_cost_mult = -0.3							#外交博弈发起者的战争目标博弈行动力花费
+	}
+
+	#对“国家集团”影响
+	power_bloc_modifier = {
+		
+	}
+	
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+#梦回酱の醉欲梦淫II~
+MH_principle_succubus_casting_a_city_for_sexual_intercourse_2 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes			#对集团成员强制施行相同的殖民机构法律
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+		
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		#军工业
+		building_automotive_industry_throughput_add = 0.1 								#汽车工业吞吐量
+		building_arms_industry_throughput_add = 0.1 									#武器厂吞吐量
+		building_artillery_foundries_throughput_add = 0.1 								#火炮铸造厂吞吐量
+		building_military_shipyards_throughput_add = 0.1 								#军用造船厂吞吐量
+
+		#殖民部
+		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.50	#殖民事务机构规模变更速度
+		country_tension_decay_mult = 1000 												#紧张度
+
+		state_migration_pull_unincorporated_mult=0.5 									#未整合地区的移民吸引力
+		state_unincorporated_starting_wages_mult=0 										#未整合地区的最低工资
+
+		#迁徙自由
+		state_migration_quota_mult = 1													#移民限额
+
+		#扩张性合作
+		country_initiator_war_goal_maneuver_cost_mult = -0.3							#外交博弈发起者的战争目标博弈行动力花费
+		country_war_exhaustion_casualties_mult = -0.15									#伤亡产生的厌战度
+	}
+
+	#对“国家集团”影响
+	power_bloc_modifier = {
+		power_bloc_allow_wider_migration_area_bool = yes								#允许国家集团内移民
+	}
+
+	institution = institution_colonial_affairs
+
+	#为“殖民事物”机构提供
+	institution_modifier = {
+		state_colony_growth_creation_factor = 0.25										#殖民地增长产生
+		country_infamy_generation_against_unrecognized_mult = -0.15						#对未受认可国家的恶名产生
+	}
+
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
+
+#梦回酱の醉欲梦淫III~
+MH_principle_succubus_casting_a_city_for_sexual_intercourse_3 = {
+	#图标内容
+	icon = "gfx/interface/icons/principles_icons/MH_principle_succubus_contract_to_indulge_in_lust_icon.png"
+
+	#图标边框
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	#显示条件：拥有1.7版本发布的DLC【Sphere of Influence（利益之手）】
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	#对“国家集团”领袖效果
+	leader_modifier = {
+		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes			#对集团成员强制施行相同的殖民机构法律
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool=yes 				#对集团成员强制施行相同的军队类型法律
+		
+		country_leverage_generation_add=200 #影响产生
+		country_leverage_generation_mult=1 #影响产生
+		#country_leverage_resistance_add=-200 #影响抗性
+		#country_leverage_resistance_mult=-1 #影响抗性
+		power_bloc_mandate_progress_mult=1 #每周授权进度
+		#power_bloc_leverage_generation_mult=2 #影响产生
+		#power_bloc_invite_acceptance_add=200 #国家集团邀请接受概率
+		#power_bloc_allow_wider_migration_area_bool=1 #允许国家集团内移民
+		#power_bloc_customs_union_bool=1 #关税同盟
+		#power_bloc_trade_advantage_add=100 #国家集团内的贸易优势
+	}
+
+	#对非领袖“集团成员”效果
+	non_leader_modifier = {
+		
+	}
+
+	#对所有“集团成员”效果
+	member_modifier = {
+		#军工业
+		building_automotive_industry_throughput_add = 0.1 								#汽车工业吞吐量
+		building_arms_industry_throughput_add = 0.1 									#武器厂吞吐量
+		building_artillery_foundries_throughput_add = 0.1 								#火炮铸造厂吞吐量
+		building_military_shipyards_throughput_add = 0.1 								#军用造船厂吞吐量
+		country_military_goods_cost_mult = -0.15 										#军用商品花费
+		character_supply_route_cost_mult = -0.33 										#补给线花费
+
+		#殖民部
+		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.50	#殖民事务机构规模变更速度
+		country_institution_cost_institution_colonial_affairs_mult = -0.50				#殖民事务机构行政力花费
+		#country_disallow_law_no_colonial_affairs_bool = yes							#禁止无殖民事务
+		country_tension_decay_mult = 1000 												#紧张度
+
+		state_migration_pull_unincorporated_mult=0.5 									#未整合地区的移民吸引力
+		state_unincorporated_starting_wages_mult=0 										#未整合地区的最低工资
+		building_unincorporated_throughput_add=0.5 										#未整合地区的吞吐量
+
+		#building_group_bg_logging_unincorporated_throughput_add=0.50				 	#未整合地区的林业吞吐量
+		#building_group_bg_manufacturing_unincorporated_throughput_add=0 				#未整合地区的制造业吞吐量
+		#building_group_bg_mining_unincorporated_throughput_add=0 						#未整合地区的矿井吞吐量
+		#building_group_bg_plantations_unincorporated_throughput_add=0 					#未整合地区的种植园吞吐量
+		#building_group_bg_rubber_unincorporated_throughput_add=0 						#未整合地区的橡胶种植园吞吐量
+
+		#迁徙自由
+		state_migration_quota_mult = 1													#移民限额
+		country_mass_migration_attraction_mult = 0.5									#大规模移民吸引力
+
+		#扩张性合作
+		country_initiator_war_goal_maneuver_cost_mult = -0.3							#外交博弈发起者的战争目标博弈行动力花费
+		country_war_exhaustion_casualties_mult = -0.15									#伤亡产生的厌战度
+		country_join_power_bloc_member_in_plays_bool = yes								#可以在所有“外交博弈中”使用“召唤盟友”拉拢“召唤国家集团成员”
+	}
+
+	#对“国家集团”影响
+	power_bloc_modifier = {
+		power_bloc_allow_wider_migration_area_bool = yes								#允许国家集团内移民
+	}
+
+	institution = institution_colonial_affairs
+
+	#为“殖民事物”机构提供
+	institution_modifier = {
+		state_colony_growth_creation_factor = 0.25										#殖民地增长产生
+		country_infamy_generation_against_unrecognized_mult = -0.15						#对未受认可国家的恶名产生
+	}
+
+	#AI启用原则的权重
+	ai_weight = {
+		value = 0
+	}
+}
