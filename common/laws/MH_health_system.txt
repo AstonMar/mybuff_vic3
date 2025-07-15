@@ -34,7 +34,7 @@ law_succubus_medical_system = {
 		state_mortality_wealth_mult = -0.002							#每级财富的死亡率
 		state_food_security_add = 0.02									#粮食安全
 		
-		state_standard_of_living_add = 0.5								#生活水平
+		# state_standard_of_living_add = 0.5								#生活水平
 		#state_lower_strata_standard_of_living_add=0.5 					#下等阶层的生活水平
 	    #state_middle_strata_standard_of_living_add=0.5 				#中等阶层的生活水平
 	    #state_upper_strata_standard_of_living_add=0.5 					#上等阶层的生活水平
