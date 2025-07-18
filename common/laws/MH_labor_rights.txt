@@ -29,9 +29,9 @@ law_succubus_labor_law={
 	#每一级为社会保障提供的属性（额外）
 	institution_modifier = {
 		building_minimum_wage_mult = 0.15							#等级增加的最低工资
-		state_lower_strata_standard_of_living_add = 1.0					#下等阶层的生活水平
-		state_middle_strata_standard_of_living_add = 0.6				#中等阶层的生活水平
-		state_upper_strata_standard_of_living_add = 0.2					#上等阶层的生活水平
+		# state_lower_strata_standard_of_living_add = 1.0					#下等阶层的生活水平
+		# state_middle_strata_standard_of_living_add = 0.6				#中等阶层的生活水平
+		# state_upper_strata_standard_of_living_add = 0.2					#上等阶层的生活水平
 	}
 
 	#AI是否会启用该法律
