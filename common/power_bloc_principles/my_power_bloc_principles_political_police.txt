@@ -175,7 +175,7 @@ MH_principle_succubus_contract_to_indulge_in_lust_3 = {
 		country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool=yes 	#对集团成员强制施行相同的治理原则法律
 		country_can_impose_same_lawgroup_policing_in_power_bloc_bool=yes 				#对集团成员强制施行相同的警察机构法律
 
-		power_bloc_invite_acceptance_add = 50 #国家集团邀请接受概率
+		# power_bloc_invite_acceptance_add = 50 #国家集团邀请接受概率
 	}
 
 	#对非领袖“集团成员”效果

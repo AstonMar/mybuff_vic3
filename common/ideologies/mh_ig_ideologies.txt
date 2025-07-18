@@ -5,24 +5,24 @@ law_succubus_superiority_theory = {
 	#权重：高权重的意识形态会覆盖低权重的意识形态的法律倾向
 	#priority = -100
 
-	lawgroup_taxation = { law_succubus_revenue = approve     }										#支持：梦回酱の魅魔税收法~
-	lawgroup_bureaucracy = { law_succubus_bureaucrats = approve     }								#支持：梦回酱の魅魔官僚制~
-	lawgroup_free_speech = { law_succubus_forbidden_language = approve     }						#支持：梦回酱の魅魔禁语法~
-	lawgroup_trade_policy = { law_succubus_commerce_and_trade = approve     }						#支持：梦回酱の魅魔商贸法~
-	lawgroup_citizenship = { law_succubus_supreme = approve     }									#支持：梦回酱の魅魔至上法~
-	lawgroup_church_and_state = { law_succubus_true_faith = approve     }							#支持：梦回酱の魅魔真信法~
-	lawgroup_education_system = { law_succubus_education = approve     }							#支持：梦回酱の魅魔教育法~
-	lawgroup_health_system = { law_succubus_medical_system = approve     }							#支持：梦回酱の魅魔医疗体系~
-	lawgroup_rights_of_women = { law_succubus_professional = approve     }							#支持：梦回酱の魅魔工作法案~
-	lawgroup_army_model = { law_succubus_army = approve     }										#支持：梦回酱の魅魔大姐姐军队~
-	lawgroup_policing = { law_succubus_police_force = approve     }									#支持：梦回酱の魅魔警察部队~
-	lawgroup_internal_security = { law_succubus_public_security = approve     }						#支持：梦回酱の魅魔治安法~
-	lawgroup_colonization = { law_succubus_colonial_colonization = approve     }					#支持：梦回酱の魅魔殖民法案~
-	lawgroup_childrens_rights = { law_succubus_maid_education = approve     }						#支持：梦回酱の魅魔女仆教育~
-	lawgroup_economic_system = { law_succubus_economic_system = approve     }						#支持：梦回酱の魅魔经济体制~
-	lawgroup_welfare = { law_succubus_welfare_act = approve     }									#支持：梦回酱の魅魔福利法案~
-	lawgroup_land_reform = { law_succubus_slack_season_prostitution = approve     }					#支持：梦回酱の农闲卖春法案~
-	lawgroup_labor_rights = { law_succubus_labor_law = approve     }								#支持：梦回酱の魅魔劳动法~
+	my_tax_group = { law_succubus_revenue = approve     }										#支持：梦回酱の魅魔税收法~
+	my_bureaucrats_group = { law_succubus_bureaucrats = approve     }								#支持：梦回酱の魅魔官僚制~
+	my_free_speech_group = { law_succubus_forbidden_language = approve     }						#支持：梦回酱の魅魔禁语法~
+	my_trade_group = { law_succubus_commerce_and_trade = approve     }						#支持：梦回酱の魅魔商贸法~
+	my_citizen_group = { law_succubus_supreme = approve     }									#支持：梦回酱の魅魔至上法~
+	my_true_faith_group = { law_succubus_true_faith = approve     }							#支持：梦回酱の魅魔真信法~
+	my_education_group = { law_succubus_education = approve     }							#支持：梦回酱の魅魔教育法~
+	my_health_group = { law_succubus_medical_system = approve     }							#支持：梦回酱の魅魔医疗体系~
+	my_women_rights_group = { law_succubus_professional = approve     }							#支持：梦回酱の魅魔工作法案~
+	my_army_group = { law_succubus_army = approve     }										#支持：梦回酱の魅魔大姐姐军队~
+	my_police_group = { law_succubus_police_force = approve     }									#支持：梦回酱の魅魔警察部队~
+	my_public_security_group = { law_succubus_public_security = approve     }						#支持：梦回酱の魅魔治安法~
+	my_colonial_colonization_group = { law_succubus_colonial_colonization = approve     }					#支持：梦回酱の魅魔殖民法案~
+	my_childrens_rights_group = { law_succubus_maid_education = approve     }						#支持：梦回酱の魅魔女仆教育~
+	my_economy_group = { law_succubus_economic_system = approve     }						#支持：梦回酱の魅魔经济体制~
+	my_welfare_group = { law_succubus_welfare_act = approve     }									#支持：梦回酱の魅魔福利法案~
+	my_land_group = { law_succubus_slack_season_prostitution = approve     }					#支持：梦回酱の农闲卖春法案~
+	my_workers_rights_group = { law_succubus_labor_law = approve     }								#支持：梦回酱の魅魔劳动法~
 }
 
 ##魅魔们的狂热追随者

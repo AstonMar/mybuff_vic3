@@ -1,0 +1,83 @@
+﻿my_citizen_group = {
+	law_group_category = human_rights
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_free_speech_group = {
+	law_group_category = human_rights
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_childrens_rights_group = {
+	law_group_category = human_rights
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_workers_rights_group = {
+	law_group_category = human_rights
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_women_rights_group = {
+	law_group_category = human_rights
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_welfare_group = {
+	law_group_category = human_rights
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}

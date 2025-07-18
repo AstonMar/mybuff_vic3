@@ -1,0 +1,55 @@
+﻿my_army_group = {
+	law_group_category = power_structure
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_bureaucrats_group = {
+	law_group_category = power_structure
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_true_faith_group = {
+	law_group_category = power_structure
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
+
+my_public_security_group = {
+	law_group_category = power_structure
+	#启用法律分类条件
+	#linked_social_hierarchy = {
+	#}
+	#颁布所需时间
+	base_enactment_days = 150
+	#受政权更迭影响
+	affected_by_regime_change = no
+	#法律政治运动可能性
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0
+}
