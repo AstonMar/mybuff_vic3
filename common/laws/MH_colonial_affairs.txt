@@ -38,7 +38,7 @@ law_succubus_colonial_colonization = {
 	}
 	#每一级为殖民事务提供的属性（额外）
 	institution_modifier = {
-		state_colony_growth_creation_factor = 0.9		#殖民地增长产生
+		state_colony_growth_creation_factor = 1		#殖民地增长产生
 	}
 	#AI是否会启用该法律
 	ai_will_do = {

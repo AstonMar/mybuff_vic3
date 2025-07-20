@@ -65,14 +65,14 @@ law_succubus_supreme = {
 		#country_radicalism_increases_second_rate_citizen_mult = -0.1	#【二等公民】地位的激进度提高
 		#country_radicalism_increases_full_acceptance_mult = -0.2		#【完全接纳】地位的激进度提高
 
-		country_loyalism_increases_second_rate_citizen_mult = 0.2		#【二等公民】地位的忠诚度提高
-		country_loyalism_increases_full_acceptance_mult = 0.33			#【完全接纳】地位的忠诚度提高
+		# country_loyalism_increases_second_rate_citizen_mult = 0.2		#【二等公民】地位的忠诚度提高
+		# country_loyalism_increases_full_acceptance_mult = 0.33			#【完全接纳】地位的忠诚度提高
 
-		country_allow_voting_violent_hostility_bool = no				#给予【暴力对抗】地位投票权
-		country_allow_voting_cultural_erasure_bool = no					#给予【文化抹除】地位投票权
-		country_allow_voting_open_prejudice_bool = no					#给予【公开歧视】地位投票权
-		country_allow_voting_second_rate_citizen_bool = no				#给予【二等公民】地位投票权
-		country_allow_voting_full_acceptance_bool = yes					#给予【完全接纳】地位投票权
+		# country_allow_voting_violent_hostility_bool = no				#给予【暴力对抗】地位投票权
+		# country_allow_voting_cultural_erasure_bool = no					#给予【文化抹除】地位投票权
+		# country_allow_voting_open_prejudice_bool = no					#给予【公开歧视】地位投票权
+		# country_allow_voting_second_rate_citizen_bool = no				#给予【二等公民】地位投票权
+		# country_allow_voting_full_acceptance_bool = yes					#给予【完全接纳】地位投票权
 
 		#无投票权，所以注释掉此条目
 		#country_voting_power_second_rate_citizen_mult = -0.5			#【二等公民】地位投票的政治力量贡献
@@ -86,11 +86,11 @@ law_succubus_supreme = {
 		country_assimilation_cultural_erasure_mult = 0.05				#【文化抹除】地位同化
 		country_assimilation_open_prejudice_mult = 0.15					#【公开歧视】地位同化
 
-		country_political_strength_violent_hostility_mult = -0.5		#【暴力对抗】地位的政治力量
-		country_political_strength_cultural_erasure_mult = -0.4			#【文化抹除】地位的政治力量
-		country_political_strength_open_prejudice_mult = -0.3			#【公开歧视】地位的政治力量
-		country_political_strength_second_rate_citizen_mult = -0.15		#【二等公民】地位的政治力量
-		country_political_strength_full_acceptance_mult = 0.25			#【完全接纳】地位的政治力量
+		# country_political_strength_violent_hostility_mult = -0.5		#【暴力对抗】地位的政治力量
+		# country_political_strength_cultural_erasure_mult = -0.4			#【文化抹除】地位的政治力量
+		# country_political_strength_open_prejudice_mult = -0.3			#【公开歧视】地位的政治力量
+		# country_political_strength_second_rate_citizen_mult = -0.15		#【二等公民】地位的政治力量
+		# country_political_strength_full_acceptance_mult = 0.25			#【完全接纳】地位的政治力量
 
 		#工资全部注释掉，因为工资过少会直接导致生活水平下降，导致激进度暴涨
 		#country_wage_violent_hostility_mult = -0.5						#【暴力对抗】地位的工资

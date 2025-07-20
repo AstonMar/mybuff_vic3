@@ -50,7 +50,7 @@ MH_succubus_love_affection_liquid_reward = {
 
 		#取自弘扬国家价值
 		state_assimilation_mult = 1										#人口同化
-		state_conversion_mult = 1										#信仰皈依
+		# state_conversion_mult = 1										#信仰皈依
 
 		#取自鼓励制造业
 		building_group_bg_manufacturing_throughput_add = 0.2			#制造业吞吐量

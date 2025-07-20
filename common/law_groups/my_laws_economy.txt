@@ -9,7 +9,7 @@
 #	#	has_variable = MH_succubus_come_flag
 #	#}
 #	#颁布所需时间
-#	base_enactment_days = 150
+#	base_enactment_days = 50
 #	#受政权更迭影响
 #	affected_by_regime_change = yes
 #	#法律政治运动可能性
@@ -24,7 +24,7 @@ my_colonial_colonization_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -38,7 +38,7 @@ my_tax_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -52,7 +52,7 @@ my_economy_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -66,7 +66,7 @@ my_education_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -80,7 +80,7 @@ my_health_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -94,7 +94,7 @@ my_land_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -108,7 +108,7 @@ my_police_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -122,7 +122,7 @@ my_trade_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性

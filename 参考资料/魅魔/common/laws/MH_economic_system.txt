@@ -69,7 +69,7 @@ law_succubus_economic_system = {
 		#country_disable_privatization_bool = yes										#禁用私有化
 		#country_force_privatization_bool = yes											#强制私有化
 		#country_force_collectivization_bool = yes										#强制集体化
-		#country_disable_investment_pool_bool = yes										#禁用投资池（公司除外）
+		country_disable_investment_pool_bool = yes										#禁用投资池（公司除外）
 		#country_disable_nationalization_without_compensation_bool = yes				#禁用无补偿国有化
 
 	}

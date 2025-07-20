@@ -338,8 +338,14 @@
  mh_pm_succubus_glassworks_2: "骨瓷"
  
  ##酿酒产业区
- mh_pmg_succubus_distillery: "酿酒产业区"
- mh_pm_succubus_distillery_0: "未启用"
- mh_pm_succubus_distillery_1: "罐式蒸馏器"
- mh_pm_succubus_distillery_2: "连续式蒸馏器"
+ mh_pmg_art: "艺术品产区"
+ mh_pm_art_0: "未启用"
+ mh_pm_art_1: "传统艺术"
+ mh_pm_art_2: "现实主义艺术"
+ mh_pm_art_3: "摄影艺术"
+ mh_pm_art_4: "电影艺术"
  
+ #mh_pmg_succubus_distillery: "酿酒产业区"
+ #mh_pm_succubus_distillery_0: "未启用"
+ #mh_pm_succubus_distillery_1: "罐式蒸馏器"
+ #mh_pm_succubus_distillery_2: "连续式蒸馏器"

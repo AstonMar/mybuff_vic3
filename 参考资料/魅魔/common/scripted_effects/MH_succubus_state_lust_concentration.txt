@@ -1,0 +1,225 @@
+﻿#地区淫欲浓度结算
+MH_succubus_state_lust_concentration = {
+	#判定
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的99%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.99
+				}
+				#拥有地区特质：地区淫欲浓度：IX级
+				has_modifier = MH_succubus_state_lust_concentration_9
+			}
+			#添加地区特质：地区淫欲浓度：X级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_10
+			}
+			#移除地区特质：地区淫欲浓度：VIII级
+			remove_modifier = MH_succubus_state_lust_concentration_9
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的89%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.89
+				}
+				#拥有地区特质：地区淫欲浓度：VIII级
+				has_modifier = MH_succubus_state_lust_concentration_8
+			}
+			#添加地区特质：地区淫欲浓度：IX级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_9
+			}
+			#移除地区特质：地区淫欲浓度：VIII级
+			remove_modifier = MH_succubus_state_lust_concentration_8
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的79%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.79
+				}
+				#拥有地区特质：地区淫欲浓度：VII级
+				has_modifier = MH_succubus_state_lust_concentration_7
+			}
+			#添加地区特质：地区淫欲浓度：VIII级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_8
+			}
+			#移除地区特质：地区淫欲浓度：VII级
+			remove_modifier = MH_succubus_state_lust_concentration_7
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的69%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.69
+				}
+				#拥有地区特质：地区淫欲浓度：VI级
+				has_modifier = MH_succubus_state_lust_concentration_6
+			}
+			#添加地区特质：地区淫欲浓度：VII级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_7
+			}
+			#移除地区特质：地区淫欲浓度：VI级
+			remove_modifier = MH_succubus_state_lust_concentration_6
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的59%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.59
+				}
+				#拥有地区特质：地区淫欲浓度：V级
+				has_modifier = MH_succubus_state_lust_concentration_5
+			}
+			#添加地区特质：地区淫欲浓度：VI级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_6
+			}
+			#移除地区特质：地区淫欲浓度：V级
+			remove_modifier = MH_succubus_state_lust_concentration_5
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的49%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.49
+				}
+				#拥有地区特质：地区淫欲浓度：IV级
+				has_modifier = MH_succubus_state_lust_concentration_4
+			}
+			#添加地区特质：地区淫欲浓度：V级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_5
+			}
+			#移除地区特质：地区淫欲浓度：IV级
+			remove_modifier = MH_succubus_state_lust_concentration_4
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的39%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.39
+				}
+				#拥有地区特质：地区淫欲浓度：III级
+				has_modifier = MH_succubus_state_lust_concentration_3
+			}
+			#添加地区特质：地区淫欲浓度：IV级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_4
+			}
+			#移除地区特质：地区淫欲浓度：III级
+			remove_modifier = MH_succubus_state_lust_concentration_3
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的29%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.29
+				}
+				#拥有地区特质：地区淫欲浓度：II级
+				has_modifier = MH_succubus_state_lust_concentration_2
+			}
+			#添加地区特质：地区淫欲浓度：III级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_3
+			}
+			#移除地区特质：地区淫欲浓度：II级
+			remove_modifier = MH_succubus_state_lust_concentration_2
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的19%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.19
+				}
+				#拥有地区特质：地区淫欲浓度：I级
+				has_modifier = MH_succubus_state_lust_concentration_1
+			}
+			#添加地区特质：地区淫欲浓度：II级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_2
+			}
+			#移除地区特质：地区淫欲浓度：I级
+			remove_modifier = MH_succubus_state_lust_concentration_1
+		}
+	}
+	#顺序判定，判定成功一次后不再继续向下判定~
+	if = {
+		#全世界所有地区
+		every_scope_state = {
+			limit = {
+				#魅魔文化人口占据地区人口的9%
+				culture_percent_state = {
+					target = cu:mh_succubus_culture
+					value >= 0.09
+				}
+				#我拥有
+				NOT = {
+					#其中之一
+					OR = {
+						has_modifier = MH_succubus_state_lust_concentration_1
+						has_modifier = MH_succubus_state_lust_concentration_2
+						has_modifier = MH_succubus_state_lust_concentration_3
+						has_modifier = MH_succubus_state_lust_concentration_4
+						has_modifier = MH_succubus_state_lust_concentration_5
+						has_modifier = MH_succubus_state_lust_concentration_6
+						has_modifier = MH_succubus_state_lust_concentration_7
+						has_modifier = MH_succubus_state_lust_concentration_8
+						has_modifier = MH_succubus_state_lust_concentration_9
+						has_modifier = MH_succubus_state_lust_concentration_10
+					}
+				}
+			}
+			#添加地区特质：地区淫欲浓度：I级
+			add_modifier = {
+				name = MH_succubus_state_lust_concentration_1
+			}
+		}
+	}
+}

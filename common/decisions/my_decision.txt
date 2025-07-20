@@ -9,6 +9,9 @@ add_my_buff_decision = {
 		add_modifier = {
 			name = my_buff
 		}
+		add_journal_entry = {
+			type = MH_succubus_conversion_journal_entries
+		}
 	}
 	ai_chance = {
 		base = 0

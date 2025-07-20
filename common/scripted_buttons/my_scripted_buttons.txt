@@ -45,3 +45,47 @@ my_reduce_tax_per_capita_button = {
 		value = 0
 	}
 }
+
+my_add_tax_tax_dividends_add_button = {
+	name = "my_add_tax_tax_dividends_add"
+	desc = "my_add_tax_tax_dividends_add_desc"
+	#显示条件
+	visible = {
+		always = yes
+	}
+	#启用条件
+	possible = {
+		#始终
+		always = yes
+	}
+	#启用效果
+	effect = {
+		tax_tax_dividends_add = 0.01
+	}
+	#AI点击概率
+	ai_chance = {
+		value = 0
+	}
+}
+
+my_reduce_tax_tax_dividends_add_button = {
+	name = "my_reduce_tax_tax_dividends_add"
+	desc = "my_reduce_tax_tax_dividends_add_desc"
+	#显示条件
+	visible = {
+		always = yes
+	}
+	#启用条件
+	possible = {
+		#始终
+		always = yes
+	}
+	#启用效果
+	effect = {
+		tax_tax_dividends_add = -0.01
+	}
+	#AI点击概率
+	ai_chance = {
+		value = 0
+	}
+}

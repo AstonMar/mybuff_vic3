@@ -47,7 +47,7 @@ law_succubus_true_faith = {
 		country_authority_add = 200											#权威力
 		country_influence_add = 200											#影响力
 
-		state_conversion_mult = 0.25										#皈依
+		# state_conversion_mult = 0.25										#皈依
 
 		country_acceptance_state_religion_add = 25							#来自国教的接纳度
 		country_acceptance_religion_base_add = 15							#来自宗教的接纳度

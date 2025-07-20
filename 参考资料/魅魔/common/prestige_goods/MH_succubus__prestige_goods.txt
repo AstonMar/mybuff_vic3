@@ -214,12 +214,22 @@ MH_succubus_prestige_good_porcelain = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_porcelain.dds"
 }
 
-#爱液烈酒
-MH_succubus_prestige_good_liquor = {
+#魅魔本子
+MH_succubus_prestige_good_fine_art = {
 	#商品原型：烈酒
-	base_good = liquor
+	base_good = fine_art
 	#名望奖励
 	prestige_bonus = 0.2
 	#商品图标
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_liquor.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_fine_art.dds"
 }
+
+#爱液烈酒
+#MH_succubus_prestige_good_liquor = {
+#	#商品原型：烈酒
+#	base_good = liquor
+#	#名望奖励
+#	prestige_bonus = 0.2
+#	#商品图标
+#	texture = "gfx/interface/icons/goods_icons/prestige_goods/MH_succubus_prestige_good_liquor.dds"
+#}

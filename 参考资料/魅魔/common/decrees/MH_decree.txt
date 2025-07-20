@@ -41,7 +41,7 @@ MH_succubus_love_affection_liquid_reward = {
 		#取自紧急救济
 		#state_tax_collection_mult = -0.5								#税收
 		state_infrastructure_mult = 0.1									#基础设施
-		state_market_access_price_impact = 0.05							#市场接入度的价格影响
+		state_market_access_price_impact = 0.15							#市场接入度的价格影响（0.05提升至0.15）
 		state_food_security_add = 0.05									#粮食安全
 
 		#取自促进社会流动
@@ -53,21 +53,21 @@ MH_succubus_love_affection_liquid_reward = {
 		state_conversion_mult = 1										#信仰皈依
 
 		#取自鼓励制造业
-		building_group_bg_manufacturing_throughput_add = 0.2			#制造业吞吐量
-		building_group_bg_service_throughput_add = 0.2					#服务业吞吐量
+		#building_group_bg_manufacturing_throughput_add = 0.2			#制造业吞吐量
+		#building_group_bg_service_throughput_add = 0.2					#服务业吞吐量
 		
 		#取自鼓励农业
-		building_group_bg_ranching_throughput_add = 0.2					#牧场吞吐量
-		building_group_bg_agriculture_throughput_add = 0.2				#农业吞吐量
-		building_group_bg_plantations_throughput_add = 0.2				#种植园吞吐量
+		#building_group_bg_ranching_throughput_add = 0.2				#牧场吞吐量
+		#building_group_bg_agriculture_throughput_add = 0.2				#农业吞吐量
+		#building_group_bg_plantations_throughput_add = 0.2				#种植园吞吐量
 
 		#取自鼓励资源产业
-		building_group_bg_rubber_throughput_add = 0.2					#橡胶种植园吞吐量
-		building_group_bg_mining_throughput_add = 0.2					#矿井吞吐量
-		building_group_bg_logging_throughput_add = 0.2					#林业吞吐量
-		building_group_bg_fishing_throughput_add = 0.2					#渔业吞吐量
-		building_group_bg_whaling_throughput_add = 0.2					#捕鲸业吞吐量
-		building_group_bg_oil_extraction_throughput_add = 0.2			#石油精炼厂吞吐量
+		#building_group_bg_rubber_throughput_add = 0.2					#橡胶种植园吞吐量
+		#building_group_bg_mining_throughput_add = 0.2					#矿井吞吐量
+		#building_group_bg_logging_throughput_add = 0.2					#林业吞吐量
+		#building_group_bg_fishing_throughput_add = 0.2					#渔业吞吐量
+		#building_group_bg_whaling_throughput_add = 0.2					#捕鲸业吞吐量
+		#building_group_bg_oil_extraction_throughput_add = 0.2			#石油精炼厂吞吐量
 
 		#取自青草运动
 		state_migration_pull_add = 20									#移民吸引力
@@ -76,6 +76,97 @@ MH_succubus_love_affection_liquid_reward = {
 		#取自鼓励征兵
 		state_conscription_rate_add = 0.05								#征兵率
 		building_training_rate_mult = 0.25								#训练率
+
+		#合并所有吞吐量效果
+		building_throughput_add = 0.20									#吞吐量
+	}
+
+	#AI使用概率
+	ai_weight = {
+		value = 0
+	}
+}
+
+#魅魔大姐姐们の永生繁育~
+MH_succubus_immortal_reproduction = {
+	texture = "gfx/interface/icons/decree/MH_succubus_immortal_reproduction_icon.png"
+
+	#需要权威力
+	cost = 35
+
+	#启用需要解锁的科技
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#启用条件
+	state_trigger = {
+		#没有以下情况
+		NOR = { 
+			has_decree = MH_succubus_decease_without_offspring			#魅魔大姐姐们の永眠绝嗣~
+		}
+	}
+
+	#固定效果
+	modifier = {
+		state_birth_rate_mult = 1.00									#出生率
+		state_mortality_mult = -1.00									#死亡率
+	}
+
+	#AI使用概率
+	ai_weight = {
+		value = 0
+	}
+}
+
+#魅魔大姐姐们の永眠绝嗣~
+MH_succubus_decease_without_offspring = {
+	texture = "gfx/interface/icons/decree/MH_succubus_decease_without_offspring_icon.png"
+
+	#需要权威力
+	cost = 35
+
+	#启用需要解锁的科技
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#启用条件
+	state_trigger = {
+		#没有以下情况
+		NOR = { 
+			has_decree = MH_succubus_immortal_reproduction				#魅魔大姐姐们の永生繁育~
+		}
+	}
+
+	#固定效果
+	modifier = {
+		state_birth_rate_mult = -1.00									#出生率
+		state_mortality_mult = 1.00										#死亡率
+	}
+
+	#AI使用概率
+	ai_weight = {
+		value = 0
+	}
+}
+
+#魅魔大姐姐们の摄心迷情~
+MH_succubus_place_that_is_crazily_coveted = {
+	texture = "gfx/interface/icons/decree/MH_succubus_place_that_is_crazily_coveted_icon.png"
+
+	#需要权威力
+	cost = 35
+
+	#启用需要解锁的科技
+	unlocking_technologies = {
+		MH_succubus_social_structure
+	}
+
+	#固定效果
+	modifier = {
+		state_migration_pull_add = 100									#移民吸引力
+		state_migration_pull_mult = 1.00								#移民吸引力（百分比）
 	}
 
 	#AI使用概率
@@ -86,7 +177,7 @@ MH_succubus_love_affection_liquid_reward = {
 
 #魅魔大姐姐们の人类本土文化清除计划~
 MH_succubus_erasure_homeland_culture = {
-	texture = "gfx/interface/icons/decree/MH_succubus_love_affection_liquid_reward_icon.png"
+	texture = "gfx/interface/icons/decree/MH_succubus_erasure_homeland_culture_icon.png"
 
 	#需要权威力
 	cost = 0
@@ -97,9 +188,7 @@ MH_succubus_erasure_homeland_culture = {
 	}
 
 	#固定效果
-	modifier = {
-		state_birth_rate_mult = -1.00						#出生率
-	}
+	modifier = { }
 
 	#AI使用概率
 	ai_weight = {

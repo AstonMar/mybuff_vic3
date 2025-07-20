@@ -37,7 +37,7 @@ law_succubus_forbidden_language = {
 		country_bolster_attraction_factor = 0.8				#扶持对政治运动吸引力的影响
 		country_suppression_attraction_factor = -0.8		#打压对政治运动吸引力的影响
 		country_tech_spread_mult = 0.25						#科技扩撒
-		country_leverage_resistance_mult = 0.5				#影响抗性
+		# country_leverage_resistance_mult = 0.5				#影响抗性
 	}
 
 	#AI是否会启用该法律

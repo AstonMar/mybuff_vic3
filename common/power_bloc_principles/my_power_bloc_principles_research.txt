@@ -26,20 +26,20 @@ MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_1 = {
 		country_institution_size_change_speed_institution_schools_mult = 0.50			#教育机构规模变更速度
 	}
 
-	institution = institution_schools
+	# institution = institution_schools
 
-	#为“教育”机构提供
-	institution_modifier = {
-		state_education_access_add = 0.2												#受教育機會
-		country_tech_research_speed_mult=0.1 											#科技研究速度
-	}
+	# #为“教育”机构提供
+	# institution_modifier = {
+	# 	state_education_access_add = 0.2												#受教育機會
+	# 	country_tech_research_speed_mult=0.1 											#科技研究速度
+	# }
 
-	institution = institution_health_system
+	# institution = institution_health_system
 
-	#为“卫生”机构提供
-	institution_modifier = {
-		state_mortality_wealth_mult=-0.1 													#每级财富的死亡率
-	}
+	# #为“卫生”机构提供
+	# institution_modifier = {
+	# 	state_mortality_wealth_mult=-0.1 													#每级财富的死亡率
+	# }
 	
 	#AI启用原则的权重
 	ai_weight = {
@@ -84,7 +84,7 @@ MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_2 = {
 	institution_modifier = {
 		state_education_access_add = 0.2												#受教育機會
 		country_tech_research_speed_mult=0.1 											#科技研究速度
-		country_weekly_innovation_max_add = 10											#最大创新力投入
+		country_weekly_innovation_max_add = 1											#最大创新力投入
 	}
 
 	institution = institution_health_system
@@ -139,10 +139,10 @@ MH_principle_succubus_the_agreement_to_satisfy_the_desire_for_sex_3 = {
 	institution_modifier = {
 		state_education_access_add = 0.2												#受教育機會
 		country_tech_research_speed_mult=0.1 											#科技研究速度
-		country_tech_spread_add=10 														#科技扩散
+		country_tech_spread_add=1 														#科技扩散
 		country_tech_spread_mult = 0.05													#科技扩散
 		country_ahead_of_time_research_penalty_mult = -0.05								#超越时代惩罚
-		country_weekly_innovation_max_add = 10											#最大创新力投入
+		country_weekly_innovation_max_add = 1											#最大创新力投入
 	}
 
 	institution = institution_health_system

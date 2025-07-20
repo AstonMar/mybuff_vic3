@@ -1,0 +1,301 @@
+﻿###地区淫欲度系统
+##对地区影响
+#地区淫欲浓度：I级
+MH_succubus_state_lust_concentration_1 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.10													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.10												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.10												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.10											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.10									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.10								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.10								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.10								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 3											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 3												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 3											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 3												#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：II
+MH_succubus_state_lust_concentration_2 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.20													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.20												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.20												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.20											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.20									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.20								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.20								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.20								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 6											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 6												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 6											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 6												#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：III
+MH_succubus_state_lust_concentration_3 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.30													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.30												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.30												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.30											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.30									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.30								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.30								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.30								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 9											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 9												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 9											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 9												#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：IV
+MH_succubus_state_lust_concentration_4 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.40													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.40												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.40												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.40											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.40									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.40								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.40								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.40								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 12											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 12												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 12											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 12											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：V
+MH_succubus_state_lust_concentration_5 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.50													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.50												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.50												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.50											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.50									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.50								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.50								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.50								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 15											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 15												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 15											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 15											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：VI
+MH_succubus_state_lust_concentration_6 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.60													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.60												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.60												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.60											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.60									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.60								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.60								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.60								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 18											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 18												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 18											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 18											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：VII
+MH_succubus_state_lust_concentration_7 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.70													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.70												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.70												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.70											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.70									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.70								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.70								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.70								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 21											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 21												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 21											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 21											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：VIII
+MH_succubus_state_lust_concentration_8 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.80													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.80												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.80												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.80											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.80									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.80								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.80								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.80								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 24											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 24												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 24											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 24											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：IX
+MH_succubus_state_lust_concentration_9 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 0.90													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 0.90												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 0.90												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 0.90											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 0.90									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 0.90								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 0.90								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 0.90								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 27											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 27												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 27											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 27											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：X
+MH_succubus_state_lust_concentration_10 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		#魅魔建筑吞吐量
+		mh_succubus_city_clusters_throughput_add = 1.00													#魅魔城市群吞吐量
+		mh_succubus_ecological_park_throughput_add = 1.00												#魅魔生态园区吞吐量
+		mh_succubus_alchemy_workshop_throughput_add = 1.00												#魅魔炼金工坊吞吐量
+		mh_succubus_heavy_industry_park_throughput_add = 1.00											#魅魔重工业园区吞吐量
+		mh_succubus_luxury_goods_industrial_park_throughput_add = 1.00									#魅魔奢侈品工业园区吞吐量
+		mh_succubus_basic_industry_industrial_park_throughput_add = 1.00								#魅魔基础工业园区吞吐量
+		mh_succubus_civilian_industry_industrial_park_throughput_add = 1.00								#魅魔民用工业园区吞吐量
+		mh_succubus_military_industry_industrial_park_throughput_add = 1.00								#魅魔军用工业园区吞吐量
+
+		#建筑等级上限
+		state_building_construction_sector_max_level_add = 30											#建造部门最大等级
+		state_mh_succubus_city_clusters_max_level_add = 30												#魅魔城市群最大等级
+		state_mh_succubus_alchemy_workshop_max_level_add = 30											#魅魔炼金工坊最大等级
+		state_mh_succubus_ecological_park_max_level_add = 30											#魅魔生态园区最大等级
+	}
+}
+
+#地区淫欲浓度等级：I
+MH_succubus_state_lust_concentration_building_1 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.05																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：II
+MH_succubus_state_lust_concentration_building_2 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.10																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：III
+MH_succubus_state_lust_concentration_building_3 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.15																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：IV
+MH_succubus_state_lust_concentration_building_4 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.20																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：V
+MH_succubus_state_lust_concentration_building_5 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.25																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：VI
+MH_succubus_state_lust_concentration_building_6 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.30																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：VII
+MH_succubus_state_lust_concentration_building_7 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.35																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：VIII
+MH_succubus_state_lust_concentration_building_8 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.40																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：IX
+MH_succubus_state_lust_concentration_building_9 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.45																#商品投入
+	}
+}
+
+#地区淫欲浓度等级：X
+MH_succubus_state_lust_concentration_building_10 = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		building_goods_input_mult = -0.50																#商品投入
+	}
+}

@@ -25,6 +25,8 @@ mh_pm_succubus_administration_center_1 = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_tax_capacity_add = 35							#征税能力
+			state_education_access_add = 0.005					#受教育机会
+			state_pop_qualifications_mult = 0.005				#资质
 		}
 	}
 
@@ -61,6 +63,8 @@ mh_pm_succubus_administration_center_2 = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_tax_capacity_add = 70							#征税能力
+			state_education_access_add = 0.010					#受教育机会
+			state_pop_qualifications_mult = 0.010				#资质
 		}
 	}
 
@@ -97,6 +101,8 @@ mh_pm_succubus_administration_center_3 = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_tax_capacity_add = 105						#征税能力
+			state_education_access_add = 0.015					#受教育机会
+			state_pop_qualifications_mult = 0.015				#资质
 		}
 	}
 
@@ -127,9 +133,9 @@ mh_pm_succubus_lust_circle_1 = {
 			#暂无
 
 			#产出
-			goods_output_mh_succubus_lust_crystal_add = 35		#淫欲结晶
+			goods_output_mh_succubus_lust_crystal_add = 50		#淫欲结晶
 			goods_output_electricity_add = 25					#电力产出
-			goods_output_transportation_add = 20				#运力
+			goods_output_transportation_add = 50				#运力
 		}
 
 		#每级需求的各类工作人员
@@ -167,9 +173,9 @@ mh_pm_succubus_lust_circle_2 = {
 			#暂无
 
 			#产出
-			goods_output_mh_succubus_lust_crystal_add = 70		#淫欲结晶
+			goods_output_mh_succubus_lust_crystal_add = 100		#淫欲结晶
 			goods_output_electricity_add = 50					#电力产出
-			goods_output_transportation_add = 40				#运力
+			goods_output_transportation_add = 100				#运力
 		}
 
 		#每级需求的各类工作人员
@@ -207,9 +213,9 @@ mh_pm_succubus_lust_circle_3 = {
 			#暂无
 
 			#产出
-			goods_output_mh_succubus_lust_crystal_add = 105		#淫欲结晶
+			goods_output_mh_succubus_lust_crystal_add = 150		#淫欲结晶
 			goods_output_electricity_add = 75					#电力产出
-			goods_output_transportation_add = 60				#运力
+			goods_output_transportation_add = 150				#运力
 		}
 
 		#每级需求的各类工作人员
@@ -248,7 +254,7 @@ mh_pm_succubus_red_light_district_1 = {
 			#暂无
 
 			#产出
-			goods_output_services_add = 25						#服务
+			goods_output_services_add = 50						#服务
 		}
 
 		#每级需求的各类工作人员
@@ -288,7 +294,7 @@ mh_pm_succubus_red_light_district_2 = {
 			#暂无
 
 			#产出
-			goods_output_services_add = 50						#服务
+			goods_output_services_add = 100						#服务
 		}
 
 		#每级需求的各类工作人员
@@ -328,7 +334,7 @@ mh_pm_succubus_red_light_district_3 = {
 			#暂无
 
 			#产出
-			goods_output_services_add = 75						#服务
+			goods_output_services_add = 150						#服务
 		}
 
 		#每级需求的各类工作人员

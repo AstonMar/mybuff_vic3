@@ -360,13 +360,15 @@ mh_pmg_succubus_glassworks = {
 	}
 }
 
-#酿酒产业区
-mh_pmg_succubus_distillery = {
+#艺术品产区
+mh_pmg_art = {
 	#图片
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		mh_pm_succubus_distillery_0							#未启用
-		mh_pm_succubus_distillery_1							#罐式蒸馏器
-		mh_pm_succubus_distillery_2							#连续式蒸馏器
+		mh_pm_art_0											#未启用
+		mh_pm_art_1											#传统艺术
+		mh_pm_art_2											#现实主义艺术
+		mh_pm_art_3											#摄影艺术
+		mh_pm_art_4											#电影艺术
 	}
 }

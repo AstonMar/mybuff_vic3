@@ -135,7 +135,7 @@ mh_succubus_basic_industry_industrial_park = {
 	#建筑事件背景图片
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 	#建筑图片
-	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+	icon = "gfx/interface/icons/mh_succubus_building/mh_succubus_basic_industry_industrial_park.dds"
 
 	#解锁所需前置科技：社会结构魅魔化
 	unlocking_technologies = {
@@ -161,9 +161,9 @@ mh_succubus_basic_industry_industrial_park = {
 	ownership_type = self
 
 	#私有化：始终为非（NO）
-	can_build_private = {
-		always = no
-	}
+	#can_build_private = {
+	#	always = no
+	#}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -172,6 +172,11 @@ mh_succubus_basic_industry_industrial_park = {
 		mh_pmg_succubus_motor_industry					#动力机械设备产区
 		mh_pmg_succubus_explosives_factory				#炸药产区
 	}
+
+	#AI建造倾向？
+	ai_value = {
+		value = -10000
+	}
 }
 
 #魅魔民用工业园区
@@ -179,7 +184,7 @@ mh_succubus_civilian_industry_industrial_park = {
 	#建筑事件背景图片
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 	#建筑图片
-	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+	icon = "gfx/interface/icons/mh_succubus_building/mh_succubus_civilian_industry_industrial_park.dds"
 
 	#解锁所需前置科技：社会结构魅魔化
 	unlocking_technologies = {
@@ -205,9 +210,9 @@ mh_succubus_civilian_industry_industrial_park = {
 	ownership_type = self
 
 	#私有化：始终为非（NO）
-	can_build_private = {
-		always = no
-	}
+	#can_build_private = {
+	#	always = no
+	#}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -216,6 +221,11 @@ mh_succubus_civilian_industry_industrial_park = {
 		mh_pmg_succubus_paper_mills						#造纸产业区
 		mh_pmg_succubus_food_industry					#食品产业区
 	}
+
+	#AI建造倾向？
+	ai_value = {
+		value = -10000
+	}
 }
 
 #魅魔军用工业园区
@@ -223,7 +233,7 @@ mh_succubus_military_industry_industrial_park = {
 	#建筑事件背景图片
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 	#建筑图片
-	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+	icon = "gfx/interface/icons/mh_succubus_building/mh_succubus_military_industry_industrial_park.dds"
 
 	#解锁所需前置科技：社会结构魅魔化
 	unlocking_technologies = {
@@ -249,9 +259,9 @@ mh_succubus_military_industry_industrial_park = {
 	ownership_type = self
 
 	#私有化：始终为非（NO）
-	can_build_private = {
-		always = no
-	}
+	#can_build_private = {
+	#	always = no
+	#}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -260,6 +270,11 @@ mh_succubus_military_industry_industrial_park = {
 		mh_pmg_succubus_artillery_foundries				#火炮铸造产业区
 		mh_pmg_succubus_automobile_production			#汽车生产产业区
 	}
+
+	#AI建造倾向？
+	ai_value = {
+		value = -10000
+	}
 }
 
 #魅魔重工业园区
@@ -267,7 +282,7 @@ mh_succubus_heavy_industry_park = {
 	#建筑事件背景图片
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 	#建筑图片
-	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+	icon = "gfx/interface/icons/mh_succubus_building/mh_succubus_heavy_industry_park.dds"
 
 	#解锁所需前置科技：社会结构魅魔化
 	unlocking_technologies = {
@@ -293,9 +308,9 @@ mh_succubus_heavy_industry_park = {
 	ownership_type = self
 
 	#私有化：始终为非（NO）
-	can_build_private = {
-		always = no
-	}
+	#can_build_private = {
+	#	always = no
+	#}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -304,6 +319,11 @@ mh_succubus_heavy_industry_park = {
 		mh_pmg_succubus_base_building_shipyards			#民用造船厂产业区
 		mh_pmg_succubus_military_base					#军用造船厂产业区
 	}
+
+	#AI建造倾向？
+	ai_value = {
+		value = -10000
+	}
 }
 
 #魅魔奢侈品工业园区
@@ -311,7 +331,7 @@ mh_succubus_luxury_goods_industrial_park = {
 	#建筑事件背景图片
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 	#建筑图片
-	icon = "gfx/interface/icons/mh_succubus_building/MH_succubus_alchemy_workshop.dds"
+	icon = "gfx/interface/icons/mh_succubus_building/mh_succubus_luxury_goods_industrial_park.dds"
 
 	#解锁所需前置科技：社会结构魅魔化
 	unlocking_technologies = {
@@ -337,15 +357,20 @@ mh_succubus_luxury_goods_industrial_park = {
 	ownership_type = self
 
 	#私有化：始终为非（NO）
-	can_build_private = {
-		always = no
-	}
+	#can_build_private = {
+	#	always = no
+	#}
 
 	#建筑生产方式
 	production_method_groups = {
 		mh_pmg_succubus_luxury_textile_mills			#高档衣物产业区
 		mh_pmg_succubus_luxury_furniture_manufacturies	#高档家具产业区
 		mh_pmg_succubus_glassworks						#瓷器产业区
-		mh_pmg_succubus_distillery						#酿酒产业区
+		mh_pmg_art										#艺术品产区
+	}
+
+	#AI建造倾向？
+	ai_value = {
+		value = -10000
 	}
 }

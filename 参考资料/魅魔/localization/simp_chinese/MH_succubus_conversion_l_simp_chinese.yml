@@ -67,6 +67,37 @@
  MH_succubus_population_4: "魅魔主体国家~"
  MH_succubus_population_5: "纯粹的魅魔国度~"
  
+ #地区淫欲浓度
+ MH_succubus_state_lust_concentration_1: "地区淫欲浓度等级：I"
+ MH_succubus_state_lust_concentration_building_1: "地区淫欲浓度等级：I"
+ 
+ MH_succubus_state_lust_concentration_2: "地区淫欲浓度等级：II"
+ MH_succubus_state_lust_concentration_building_2: "地区淫欲浓度等级：II"
+ 
+ MH_succubus_state_lust_concentration_3: "地区淫欲浓度等级：III"
+ MH_succubus_state_lust_concentration_building_3: "地区淫欲浓度等级：III"
+ 
+ MH_succubus_state_lust_concentration_4: "地区淫欲浓度等级：IV"
+ MH_succubus_state_lust_concentration_building_4: "地区淫欲浓度等级：IV"
+ 
+ MH_succubus_state_lust_concentration_5: "地区淫欲浓度等级：V"
+ MH_succubus_state_lust_concentration_building_5: "地区淫欲浓度等级：V"
+ 
+ MH_succubus_state_lust_concentration_6: "地区淫欲浓度等级：VI"
+ MH_succubus_state_lust_concentration_building_6: "地区淫欲浓度等级：VI"
+ 
+ MH_succubus_state_lust_concentration_7: "地区淫欲浓度等级：VII"
+ MH_succubus_state_lust_concentration_building_7: "地区淫欲浓度等级：VII"
+ 
+ MH_succubus_state_lust_concentration_8: "地区淫欲浓度等级：VIII"
+ MH_succubus_state_lust_concentration_building_8: "地区淫欲浓度等级：VIII"
+ 
+ MH_succubus_state_lust_concentration_9: "地区淫欲浓度等级：IX"
+ MH_succubus_state_lust_concentration_building_9: "地区淫欲浓度等级：IX"
+ 
+ MH_succubus_state_lust_concentration_10: "地区淫欲浓度等级：X"
+ MH_succubus_state_lust_concentration_building_10: "地区淫欲浓度等级：X"
+ 
  #一些文本
  MH_succubus_remove_primary_culture_tt: "删除所有非魅魔文化"
  MH_succubus_unlock_all_technologies_tt: "解锁全部魅魔科技"

@@ -1,0 +1,17 @@
+﻿#每月结算
+on_monthly_pulse_state = {
+	#魅魔MOD每月结算
+	on_actions = {
+		MH_succubus_on_monthly_pulse_state
+	}
+}
+
+#魅魔MOD每月结算
+MH_succubus_on_monthly_pulse_state = {
+	effect = {
+		#地区淫欲浓度结算
+		#MH_succubus_state_lust_concentration = yes
+		#魅魔建筑受地区淫欲浓度影响结算
+		#MH_succubus_state_lust_concentration_building = yes
+	}
+}

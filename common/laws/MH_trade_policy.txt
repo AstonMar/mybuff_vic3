@@ -45,8 +45,8 @@ law_succubus_commerce_and_trade = {
 		state_subvention_export_add = 1						#最大出口关税
 		state_subvention_import_add = 1						#最大进口进口
 
-		state_export_advantage_mult = 0.25						#出口贸易优势
-		state_trade_advantage_mult = 0.5						#贸易优势
+		state_export_advantage_mult = 1						#出口贸易优势
+		state_trade_advantage_mult = 1						#贸易优势
 
 		#country_authority_mult = 0.5							#权威力修正
 		#state_tax_capacity_mult = 0.25							#征税能力修正

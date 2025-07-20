@@ -59,6 +59,8 @@ MH_succubus_conversion_journal_entries = {
 		#效果
 		effect = {
 			MH_succubus_culture_belief_assimilation_speed = yes			#来自魅魔科技的同化加速
+			MH_succubus_state_lust_concentration = yes					#地区淫欲浓度等级
+			#MH_succubus_state_lust_concentration_building = yes		#地区淫欲浓度等级（魅魔建筑专属）
 
 #############
 			#多个if可以同时判定且生效~

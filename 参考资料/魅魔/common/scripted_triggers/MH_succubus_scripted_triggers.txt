@@ -1,0 +1,14 @@
+﻿#魅魔建筑
+mh_succubus_industry_building = {
+	OR = {
+		has_building = mh_succubus_city_clusters							#魅魔城市群
+		has_building = mh_succubus_alchemy_workshop							#魅魔炼金工坊
+		has_building = mh_succubus_ecological_park							#魅魔生态园区
+
+		has_building = mh_succubus_basic_industry_industrial_park			#魅魔基础工业园区
+		has_building = mh_succubus_civilian_industry_industrial_park		#魅魔民用工业园区
+		has_building = mh_succubus_military_industry_industrial_park		#魅魔军用工业园区
+		has_building = mh_succubus_heavy_industry_park						#魅魔重工业园区
+		has_building = mh_succubus_luxury_goods_industrial_park				#魅魔奢侈品工业园区
+	}
+}

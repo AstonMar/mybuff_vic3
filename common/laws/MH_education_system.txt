@@ -47,11 +47,11 @@ law_succubus_education = {
 	
 	#每一级为教育机构提供的属性
 	institution_modifier = {
-		state_conversion_mult = 0.2									#皈依
+		# state_conversion_mult = 0.2									#皈依
 		state_assimilation_mult = 0.2								#同化
 		state_education_access_add = 0.2							#受教育机会
 		state_education_access_wealth_add = 0.01					#基于财富的受教育机会
-		country_weekly_innovation_max_add = 5						#最大创新力投入
+		country_weekly_innovation_max_add = 1						#最大创新力投入
 	}
 
 	#AI是否会启用该法律

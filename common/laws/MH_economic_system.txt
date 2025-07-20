@@ -55,16 +55,16 @@ law_succubus_economic_system = {
 		#building_group_bg_extraction_throughput_add = 0.1								#开采业吞吐量
 		building_throughput_add = 0.3													#吞吐量
 
-		state_expected_sol_mult = -0.1													#最低预期生活水平
+		# state_expected_sol_mult = -0.1													#最低预期生活水平
 		
 		country_loan_interest_rate_mult = -0.25											#贷款利率
-		country_free_charters_add = 2													#免费公司特许
+		# country_free_charters_add = 2													#免费公司特许
 
-		country_authority_mult = 0.25													#权威力
-		country_influence_mult = 0.25													#影响力
-		building_nationalization_radicals_mult = -0.75									#国有化的激进派
+		# country_authority_mult = 0.25													#权威力
+		# country_influence_mult = 0.25													#影响力
+		# building_nationalization_radicals_mult = -0.75									#国有化的激进派
 
-		country_economic_dependence_on_overlord_add = -0.5								#对宗主国的经济依赖
+		# country_economic_dependence_on_overlord_add = -0.5								#对宗主国的经济依赖
 
 		#country_allow_national_collectivization_bool = yes								#允许国有集体化
 		#country_foreign_collectivization_bool = yes									#外国集体化

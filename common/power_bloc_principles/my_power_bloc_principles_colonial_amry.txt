@@ -130,8 +130,8 @@ MH_principle_succubus_casting_a_city_for_sexual_intercourse_3 = {
 		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes			#对集团成员强制施行相同的殖民机构法律
 		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool=yes 				#对集团成员强制施行相同的军队类型法律
 		
-		country_leverage_generation_add=200 #影响产生
-		country_leverage_generation_mult=1 #影响产生
+		# country_leverage_generation_add=200 #影响产生
+		# country_leverage_generation_mult=1 #影响产生
 		#country_leverage_resistance_add=-200 #影响抗性
 		#country_leverage_resistance_mult=-1 #影响抗性
 		power_bloc_mandate_progress_mult=1 #每周授权进度

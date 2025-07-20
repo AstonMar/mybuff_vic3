@@ -4,7 +4,7 @@
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -18,7 +18,7 @@ my_free_speech_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -32,7 +32,7 @@ my_childrens_rights_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -46,7 +46,7 @@ my_workers_rights_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -60,7 +60,7 @@ my_women_rights_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
@@ -74,7 +74,7 @@ my_welfare_group = {
 	#linked_social_hierarchy = {
 	#}
 	#颁布所需时间
-	base_enactment_days = 150
+	base_enactment_days = 50
 	#受政权更迭影响
 	affected_by_regime_change = no
 	#法律政治运动可能性
