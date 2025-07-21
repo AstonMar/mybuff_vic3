@@ -141,8 +141,10 @@ MH_succubus_decease_without_offspring = {
 
 	#固定效果
 	modifier = {
-		state_birth_rate_mult = -1.00									#出生率
-		state_mortality_mult = 1.00										#死亡率
+		state_birth_rate_mult = -10.00									#出生率
+		#state_mortality_mult = 1.00									#死亡率
+		state_migration_pull_add = -1000								#移民吸引力
+		state_migration_pull_mult = -10.00								#移民吸引力（百分比）
 	}
 
 	#AI使用概率

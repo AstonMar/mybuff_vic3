@@ -57,8 +57,8 @@ mh_pm_succubus_free_peasants_farms = {
 
 		#每级需求的各类工作人员
 		level_scaled = {
-			building_employment_peasants_add = -100			#自给农
-			building_employment_farmers_add = 100			#农民
+			building_employment_peasants_add = -100			#自给农（原版-100）
+			building_employment_farmers_add = 100			#农民（原版100）
 		}
 	}
 }
@@ -121,8 +121,8 @@ mh_pm_succubus_free_peasants_orchards = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = -100			#自给农
-			building_employment_farmers_add = 100			#农民
+			building_employment_peasants_add = -100			#自给农（原版-100）
+			building_employment_farmers_add = 100			#农民（原版100）
 		}
 	}
 }
@@ -184,8 +184,8 @@ mh_pm_succubus_free_peasants_pastures = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = -100			#自给农
-			building_employment_farmers_add = 100			#农民
+			building_employment_peasants_add = -100			#自给农（原版-100）
+			building_employment_farmers_add = 100			#农民（原版100）
 		}			
 	}
 }
@@ -248,8 +248,8 @@ mh_pm_succubus_free_peasants_fishing_villages = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = -100			#自给农
-			building_employment_farmers_add = 100			#农民
+			building_employment_peasants_add = -100			#自给农（原版-100）
+			building_employment_farmers_add = 100			#农民（原版100）
 		}
 	}
 }
@@ -312,8 +312,8 @@ mh_pm_succubus_free_peasants_rice_paddies = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = -100			#自给农
-			building_employment_farmers_add = 100			#农民
+			building_employment_peasants_add = -100			#自给农（原版-100）
+			building_employment_farmers_add = 100			#农民（原版100）
 		}
 	}
 }

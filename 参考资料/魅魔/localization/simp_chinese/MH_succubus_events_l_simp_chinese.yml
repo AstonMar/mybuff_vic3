@@ -33,7 +33,9 @@
  #选项
  MH_succubus_come_event.3.a: "在全国各地建立起魅魔城市群~"
  MH_succubus_come_event.3.b: "魅惑世界各国的首脑承认我们的存在~"
- MH_succubus_come_event.3.c: "让梦回酱成为国家领袖~"
+ MH_succubus_come_event.3.c: "为魅魔公司铺路~"
+ MH_succubus_come_event.3.e: "让梦回酱成为国家领袖~"
+ MH_succubus_come_event.3.g: "咱全都要~"
  
  #科技文本
  effect_starting_technology_tier_1_tech_tt: "获得与带嘤嘤嘤相同级别的科技~"

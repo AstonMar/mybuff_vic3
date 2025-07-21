@@ -1,10 +1,16 @@
 ﻿#睡服淫行
 mh_succubus_sleep_and_sex = {
 	#可用的国家集团成员：领袖
-	groups= { power_bloc_leader }
+	groups = {
+		general
+		#power_bloc_leader
+	}
 
 	#地图上显示
-	show_in_lens = no
+	show_in_lens = yes
+
+	#需要对方同意
+	requires_approval = no
 
 	#图标
 	texture = "gfx/interface/icons/diplomatic_action_icons/force_become_subject.dds"
@@ -31,7 +37,7 @@ mh_succubus_sleep_and_sex = {
 	possible = {
 		#启用需要集团成员国呆在集团里的年份
 		scope:target_country = {
-			tenure_in_current_power_bloc_years >= 3
+			#tenure_in_current_power_bloc_years >= 3
 			#自定义提示工具
 			custom_tooltip = {
 				#插入文本
@@ -39,6 +45,10 @@ mh_succubus_sleep_and_sex = {
 				#没有变量标记
 				NOT = { has_variable = mh_succubus_sleep_and_sex_flag }
 			}
+			#国家类型不是松散部落
+			NOT = { is_country_type = decentralized }
+			#目标国家的国际地位小于等于次要政权
+			country_rank <= rank_value:minor_power
 		}
 	}
 

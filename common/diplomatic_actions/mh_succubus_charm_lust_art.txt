@@ -6,7 +6,11 @@ mh_succubus_charm_lust_art = {
 	}
 
 	#地图上显示
-	show_in_lens = no
+	show_in_lens = yes
+
+	#需要对方同意
+	requires_approval = no
+
 
 	#图标
 	texture = "gfx/interface/icons/diplomatic_action_icons/force_become_subject.dds"

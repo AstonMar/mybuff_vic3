@@ -75,3 +75,13 @@ NDiplomacy = {
 NGUI = {
 	CONSTRUCTION_QUEUE_MAX_SHOWN_ELEMENTS = 25 #建筑队列显示
 }
+
+NPops = {
+	MIGRATION_MIN_STATE_POPS = 1													#人口少于该数量的地区不会迁出移民【原版数值：20000】
+	MIGRATION_MAX_PER_STATE_BASE = 5000												#每周迁移的最大的移民数量（基础数量）【原版数值：500】
+	MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION = 0.05							#每周迁出的最大的移民数量绝对上限（地区人口的1*X%）【原版数值：0.005】
+	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 50										#每周迁入的最大的移民数量（X*基础设施）【原版数值：5】
+
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.5						#每周迁出的最大的移民数量（X*本地地区失业人口）【原版数值：0.05】
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.5						#每周迁入的最大的移民数量（X*目标地区失业人口）【原版数值：0.05】
+}

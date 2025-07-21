@@ -1,12 +1,15 @@
 ﻿#魅惑淫术
 mh_succubus_charm_lust_art = {
 	#可用
-	groups= {
+	groups = {
 		general
 	}
 
 	#地图上显示
-	show_in_lens = no
+	show_in_lens = yes
+
+	#需要对方同意
+	requires_approval = no
 
 	#图标
 	texture = "gfx/interface/icons/diplomatic_action_icons/force_become_subject.dds"
@@ -23,19 +26,36 @@ mh_succubus_charm_lust_art = {
 
 	#作用范围
 	potential = {
-		#国家类型不是松散部落
+		#选定范围：目标国家
 		scope:target_country = {
-			NOT = { is_country_type = decentralized }
+			#不是
+			NOT = {
+				#是松散部落
+				is_country_type = decentralized
+				#是附属国
+				is_subject = yes
+			}
 		}
 	}
 
 	#目标国家所需达成条件
-	possible = { }
+	possible = {
+		#选定范围：目标国家
+		scope:target_country = {
+			#不是
+			NOT = {
+				#是松散部落
+				is_country_type = decentralized
+				#是附属国
+				is_subject = yes
+			}
+		}
+	}
 
 	#效果
 	pact = {
 		#影响力花费
-		cost = 200
+		cost = 100
 
 		#这是一个双边协议：否
 		is_two_sided_pact = no
@@ -52,7 +72,7 @@ mh_succubus_charm_lust_art = {
 
 		#来自外交条约的影响产生
 		second_modifier = {
-			country_pact_leverage_generation_add = 400
+			country_pact_leverage_generation_add = 800
 		}
 
 		#每周效果

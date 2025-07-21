@@ -32,6 +32,8 @@ MH_succubus_population_1 = {
 	country_infamy_decay_mult = 0.07						#恶名衰减
 
 	country_weekly_innovation_max_add = 30					#最大创新力投入
+
+	country_legitimacy_min_add = 26							#最低合法性
 }
 
 #魅魔少数族裔
@@ -58,6 +60,8 @@ MH_succubus_population_2 = {
 	country_infamy_decay_mult = 0.14						#恶名衰减
 
 	country_weekly_innovation_max_add = 60					#最大创新力投入
+
+	country_legitimacy_min_add = 51							#最低合法性
 }
 
 #魅魔族裔
@@ -84,6 +88,8 @@ MH_succubus_population_3 = {
 	country_infamy_decay_mult = 0.21						#恶名衰减
 
 	country_weekly_innovation_max_add = 90					#最大创新力投入
+
+	country_legitimacy_min_add = 76							#最低合法性
 }
 
 #魅魔主体国家
@@ -110,6 +116,8 @@ MH_succubus_population_4 = {
 	country_infamy_decay_mult = 0.28						#恶名衰减
 
 	country_weekly_innovation_max_add = 120					#最大创新力投入
+
+	country_legitimacy_min_add = 91							#最低合法性
 }
 
 #纯粹的魅魔国度
@@ -136,4 +144,6 @@ MH_succubus_population_5 = {
 	country_infamy_decay_mult = 0.35						#恶名衰减
 
 	country_weekly_innovation_max_add = 150					#最大创新力投入
+
+	country_legitimacy_min_add = 100						#最低合法性
 }

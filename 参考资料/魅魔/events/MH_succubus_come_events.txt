@@ -318,71 +318,31 @@ MH_succubus_come_event.3 = {
 
 	#事件选项1
 	option = {
-		name = MH_succubus_come_event.3.a		#选项1:
+		name = MH_succubus_come_event.3.a		#选项1:在全国各地建立起魅魔城市群~
 
 		#定义域：全国地区
+		#魅魔城市群
 		every_scope_state = {
-			#建造建筑
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔城市群
 				building="mh_succubus_city_clusters"
- 				#建造数量
 				level=1
  			}
 		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
+		#魅魔炼金工坊
+		every_scope_state = {
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔基础工业园区
-				building="mh_succubus_basic_industry_industrial_park"
- 				#建造数量
-				level=5
+				building="mh_succubus_alchemy_workshop"
+				level=1
  			}
 		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
+		#魅魔生态园区
+		every_scope_state = {
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔民用工业园区
-				building="mh_succubus_civilian_industry_industrial_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔军用工业园区
-				building="mh_succubus_military_industry_industrial_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔重工业园区
-				building="mh_succubus_heavy_industry_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔奢侈品工业园区
-				building="mh_succubus_luxury_goods_industrial_park"
- 				#建造数量
-				level=5
+				building="mh_succubus_ecological_park"
+				level=1
  			}
 		}
 
@@ -394,7 +354,7 @@ MH_succubus_come_event.3 = {
 
 	#事件选项2
 	option = {
-		name = MH_succubus_come_event.3.b		#选项2:
+		name = MH_succubus_come_event.3.b		#选项2:魅惑世界各国的首脑承认我们的存在~
 
 		#成为受认可政权
 		set_country_type = recognized
@@ -402,61 +362,6 @@ MH_succubus_come_event.3 = {
 		#移除痴迷：鸦片
 		every_primary_culture = {
 			remove_cultural_obsession = opium
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔基础工业园区
-				building="mh_succubus_basic_industry_industrial_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔民用工业园区
-				building="mh_succubus_civilian_industry_industrial_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔军用工业园区
-				building="mh_succubus_military_industry_industrial_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔重工业园区
-				building="mh_succubus_heavy_industry_park"
- 				#建造数量
-				level=5
- 			}
-		}
-
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
-			create_building={
- 				#建筑名称：魅魔奢侈品工业园区
-				building="mh_succubus_luxury_goods_industrial_park"
- 				#建造数量
-				level=5
- 			}
 		}
 
 		#AI选择概率
@@ -467,7 +372,209 @@ MH_succubus_come_event.3 = {
 
 	#事件选项3
 	option = {
-		name = MH_succubus_come_event.3.c		#选项3:
+		name = MH_succubus_come_event.3.c		#选项3:为魅魔公司铺路~
+
+		#启用法律
+		activate_law = law_type:law_succubus_economic_system							#梦回酱の魅魔经济体制~
+
+		#定义域：随机城市
+		#魅魔基础工业园区
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+
+		#魅魔民用工业园区
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+
+		#魅魔军用工业园区
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+
+		#魅魔重工业园区
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+
+		#魅魔奢侈品工业园区
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+
+		#默认选项
+		default_option = yes
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#事件选项4
+	option = {
+		name = MH_succubus_come_event.3.e		#选项4:让梦回酱成为国家领袖~
 
 		#创建角色
 		create_character = {
@@ -475,57 +582,245 @@ MH_succubus_come_event.3 = {
 			template = agitator_menghui_jiang
 		}
 
-		#定义域：随机城市
-		random_scope_state = {
-			#建造建筑
+		#默认选项
+		default_option = yes
+
+		#AI选择概率
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#事件选项5
+	option = {
+		name = MH_succubus_come_event.3.g		#选项5:咱全都要~
+
+		#创建角色
+		create_character = {
+			#样板：梦回酱
+			template = agitator_menghui_jiang
+		}
+
+		#成为受认可政权
+		set_country_type = recognized
+
+		#移除痴迷：鸦片
+		every_primary_culture = {
+			remove_cultural_obsession = opium
+		}
+
+		#启用法律
+		activate_law = law_type:law_succubus_economic_system							#梦回酱の魅魔经济体制~
+
+		#定义域：全国地区
+		#魅魔城市群
+		every_scope_state = {
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔基础工业园区
+				building="mh_succubus_city_clusters"
+				level=1
+ 			}
+		}
+		#魅魔炼金工坊
+		every_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_alchemy_workshop"
+				level=1
+ 			}
+		}
+		#魅魔生态园区
+		every_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_ecological_park"
+				level=1
+ 			}
+		}
+
+
+		#定义域：随机城市
+		#魅魔基础工业园区
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
 				building="mh_succubus_basic_industry_industrial_park"
- 				#建造数量
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_basic_industry_industrial_park"
 				level=5
  			}
 		}
 
-		#定义域：随机城市
+		#魅魔民用工业园区
 		random_scope_state = {
-			#建造建筑
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔民用工业园区
 				building="mh_succubus_civilian_industry_industrial_park"
- 				#建造数量
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_civilian_industry_industrial_park"
 				level=5
  			}
 		}
 
-		#定义域：随机城市
+		#魅魔军用工业园区
 		random_scope_state = {
-			#建造建筑
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔军用工业园区
 				building="mh_succubus_military_industry_industrial_park"
- 				#建造数量
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_military_industry_industrial_park"
 				level=5
  			}
 		}
 
-		#定义域：随机城市
+		#魅魔重工业园区
 		random_scope_state = {
-			#建造建筑
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔重工业园区
 				building="mh_succubus_heavy_industry_park"
- 				#建造数量
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_heavy_industry_park"
 				level=5
  			}
 		}
 
-		#定义域：随机城市
+		#魅魔奢侈品工业园区
 		random_scope_state = {
-			#建造建筑
+			limit = { is_incorporated = yes }
 			create_building={
- 				#建筑名称：魅魔奢侈品工业园区
 				building="mh_succubus_luxury_goods_industrial_park"
- 				#建造数量
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
+				level=5
+ 			}
+		}
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			create_building={
+				building="mh_succubus_luxury_goods_industrial_park"
 				level=5
  			}
 		}

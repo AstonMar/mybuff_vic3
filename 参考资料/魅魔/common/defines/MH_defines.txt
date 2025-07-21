@@ -1,10 +1,20 @@
 ﻿NDiplomacy = {
-	BASE_YEARLY_INFAMY_DECAY_RATE = 10 				#年度恶名衰减基础值：【原本数值：5】
-	INFAMY_THRESHOLD_INFAMOUS = 50					#臭名昭著所需恶名：【原本数值：25】
-	INFAMY_THRESHOLD_NOTORIOUS = 100				#声名狼藉所需恶名：【原本数值：50】
-	INFAMY_THRESHOLD_PARIAH = 200					#国际弃民所需恶名：【原本数值：100】
-	AI_AGGRESSION_MAX_ACCEPTABLE_INFAMY = 200		#AI可接受的最高恶名：【原本数值：100】
+	INFAMY_THRESHOLD_INFAMOUS = 50													#臭名昭著所需恶名：【原版数值：25】
+	INFAMY_THRESHOLD_NOTORIOUS = 100												#声名狼藉所需恶名：【原版数值：50】
+	INFAMY_THRESHOLD_PARIAH = 200													#国际弃民所需恶名：【原版数值：100】
+	AI_AGGRESSION_MAX_ACCEPTABLE_INFAMY = 200										#AI可接受的最高恶名：【原版数值：100】
 }
+
 NCharacters = {
-	RECRUIT_COMMANDER_NUM_OPTIONS = 5				#招募栏将领数量：【原本数值：3】
+	RECRUIT_COMMANDER_NUM_OPTIONS = 5												#招募栏将领数量：【原版数值：3】
+}
+
+NPops = {
+	MIGRATION_MIN_STATE_POPS = 1													#人口少于该数量的地区不会迁出移民【原版数值：20000】
+	MIGRATION_MAX_PER_STATE_BASE = 5000												#每周迁移的最大的移民数量（基础数量）【原版数值：500】
+	MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION = 0.05							#每周迁出的最大的移民数量绝对上限（地区人口的1*X%）【原版数值：0.005】
+	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 50										#每周迁入的最大的移民数量（X*基础设施）【原版数值：5】
+
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.5						#每周迁出的最大的移民数量（X*本地地区失业人口）【原版数值：0.05】
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.5						#每周迁入的最大的移民数量（X*目标地区失业人口）【原版数值：0.05】
 }

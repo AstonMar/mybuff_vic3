@@ -56,7 +56,6 @@ MH_identity_succubus_lust_heaven = {
 
 	#“国家集团”领袖专属效果
 	leader_modifier = {
-		country_legitimacy_min_add = 100													#最低合法性
 		country_law_enactment_time_mult = -0.1												#立法时间（取自“意识形态联盟”，原版数值为：-0.1）
 		state_trade_capacity_mult = 0.25													#贸易能力（取自“贸易联盟”，原版数值为：0.25）
 		country_liberty_desire_of_subjects_add = -0.35										#所有附属的每周独立倾向（取自“至高帝国”，原版数值为：-0.05）

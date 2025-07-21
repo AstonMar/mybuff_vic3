@@ -14,11 +14,11 @@ mh_succubus_city_clusters = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：基础设施
 	building_group = bg_infrastructure
@@ -29,7 +29,15 @@ mh_succubus_city_clusters = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
 	can_build_private = {
 		always = no
 	}
@@ -58,11 +66,11 @@ mh_succubus_alchemy_workshop = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：基础设施
 	building_group = bg_infrastructure
@@ -73,7 +81,15 @@ mh_succubus_alchemy_workshop = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
 	can_build_private = {
 		always = no
 	}
@@ -102,11 +118,11 @@ mh_succubus_ecological_park = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：基础设施
 	building_group = bg_infrastructure
@@ -117,8 +133,17 @@ mh_succubus_ecological_park = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
 	can_build_private = {
+		#始终为非
 		always = no
 	}
 
@@ -145,11 +170,11 @@ mh_succubus_basic_industry_industrial_park = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	#has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：轻工业
 	building_group = bg_light_industry
@@ -160,10 +185,21 @@ mh_succubus_basic_industry_industrial_park = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
-	#can_build_private = {
-	#	always = no
-	#}
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
+	can_build_private = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -194,11 +230,11 @@ mh_succubus_civilian_industry_industrial_park = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	#has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：轻工业
 	building_group = bg_light_industry
@@ -209,11 +245,21 @@ mh_succubus_civilian_industry_industrial_park = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
-	#can_build_private = {
-	#	always = no
-	#}
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
 
+	#私人建造/私有化
+	can_build_private = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
 	#建筑生产方式
 	production_method_groups = {
 		mh_pmg_succubus_furniture_manufacturies			#家具制造产业区
@@ -243,11 +289,11 @@ mh_succubus_military_industry_industrial_park = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	#has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：轻工业
 	building_group = bg_light_industry
@@ -258,10 +304,21 @@ mh_succubus_military_industry_industrial_park = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
-	#can_build_private = {
-	#	always = no
-	#}
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
+	can_build_private = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -292,11 +349,11 @@ mh_succubus_heavy_industry_park = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	#has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：轻工业
 	building_group = bg_light_industry
@@ -307,10 +364,21 @@ mh_succubus_heavy_industry_park = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
-	#can_build_private = {
-	#	always = no
-	#}
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
+	can_build_private = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -341,11 +409,11 @@ mh_succubus_luxury_goods_industrial_park = {
 	#具有等级限制，需要其他关联代码来解锁等级上限
 	#has_max_level = yes
 
-	#建设成本：高
-	required_construction = construction_cost_high
+	#所需建造力：800
+	required_construction = construction_cost_very_high
 
-	#建造速度：25（原版最慢的建造速度，当然还可以更慢）
-	levels_per_mesh = 35
+	#建造成本：100（原版最高50）
+	levels_per_mesh = 100
 
 	#建筑类型：轻工业
 	building_group = bg_light_industry
@@ -356,10 +424,21 @@ mh_succubus_luxury_goods_industrial_park = {
 	#建筑所有权:建造方
 	ownership_type = self
 
-	#私有化：始终为非（NO）
-	#can_build_private = {
-	#	always = no
-	#}
+	#国有化/国家建造
+	can_build_government = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
+
+	#私人建造/私有化
+	can_build_private = {
+		#是已整合地区
+		is_incorporated = yes
+		#范围:建造者（投资者）所在国家
+		owner = scope:investor_country
+	}
 
 	#建筑生产方式
 	production_method_groups = {
@@ -369,7 +448,7 @@ mh_succubus_luxury_goods_industrial_park = {
 		mh_pmg_art										#艺术品产区
 	}
 
-	#AI建造倾向？
+	#AI建造倾向
 	ai_value = {
 		value = -10000
 	}
